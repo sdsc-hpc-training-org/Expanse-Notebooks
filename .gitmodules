@@ -4,3 +4,6 @@
 [submodule "Expanse-Notebooks"]
 	path = Expanse-Notebooks
 	url = https://github.com/sdsc-hpc-training-org/Expanse-Notebooks
+[submodule "notebook-examples"]
+	path = notebook-examples
+	url = https://github.com/sdsc-hpc-training-org/notebook-examples
