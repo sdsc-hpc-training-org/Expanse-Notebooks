@@ -1,11 +1,5 @@
-# Expanse-Notebooks
-
-## Update Notes:
-
-### 04/20/2024: The contents of this repository have been archived.
-
-### 04/20/2024: Updated notebooks can be found here: https://github.com/sdsc-hpc-training-dev/notebook-examples-expanse 
-
-
-
-
+# notebook-examples-expanse-dev
+## This is where we put notebooks that are part of the production notebooks that run on Expanse
+* development collection for production notebooks 
+* copy approved notebooks from notebooks-2024-staging
+* last update: 4/20/2024
