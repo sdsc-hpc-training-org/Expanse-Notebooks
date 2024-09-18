@@ -13,6 +13,7 @@ numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dim
   
 ## Install Modules
 - Watermark
+  
 I lanuced Juyper Notebook with Anaconda 2021.05 so I needed to installed Watermark, but it might be differ by the Jupyper Noteobook Enviornment. Make sure to check the Version of the Python and the System before run the notebook.
 
 ## Import Module:
