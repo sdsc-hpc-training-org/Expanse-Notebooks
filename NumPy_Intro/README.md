@@ -10,13 +10,19 @@ numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dim
 - [Install Modules](#install-modules)
 - [Location](#location)
 - [Sources](#sources)
+  
+## Install Modules
+- Watermark
+I lanuced Juyper Notebook with Anaconda 2021.05 so I needed to installed Watermark, but it might be differ by the Jupyper Noteobook Enviornment. Make sure to check the Version of the Python and the System before run the notebook.
 
 ## Import Module:
+These are the modules that needed to run the following noteobok. Make sure to check the Version of the Python and the System before run the notebook. If one of the following packaged are not installed make sure to insalled it or create a Conda Environemt or Singulariy Container. 
 - numpy
 - add
 - matplotlib 
 - collections
 - Counter
+- watermark
 
 ## Launch Galyleo
 For specific information about launching Galyleo, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
@@ -35,8 +41,7 @@ Also this command line loads GPU modules and Anaconda3 in the Jupyter session to
 ```
 galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
 ```
-## Install Modules
-To run numpy_intro notebook, we do not need to install any additional packages.
+
 
 ## Location 
 
