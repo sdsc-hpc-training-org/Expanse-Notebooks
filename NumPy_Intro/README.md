@@ -65,6 +65,9 @@ When launching Jupyter Notebook on Expanse, you can adjust various aspects of th
 
 If you want to learn more about the comman - line options plase refer to [this GitHub repository](https://github.com/mkandes/galyleo).
 
+## Define Software Environment
+
+There are several ways to 
 ## Environment Modules
 By utilizing `--env-modules`, we can load any software installed in Expanse. 
 For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.
