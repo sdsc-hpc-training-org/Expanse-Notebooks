@@ -1,30 +1,8 @@
-# SDSC Expanse Notebook: NumPy_Intro
-This README file provides instructions for Expanse users to run NumPy_intro notebooks in the Expanse.
+# SDSC Expanse Notebook: 
 
-NumPy is a fundamental numerical Python package. It includes array objects, high level array manipulation functions, and more. 
-numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dimentional arrays; basic NumPy functions like creating arrays, reshaping and manipulating arrays; some general linear algebra capabilities; and sampling for HPC capacities.\
-  **Listof Content**
-- [Import Module](#import-module)
-- [Launch Galyleo](#launch-galyleo)
-- [Environment Modules](#environment-modules)
-- [Install Modules](#install-modules)
-- [Location](#location)
-- [Sources](#sources)
-  
-## Install Modules
-- Watermark
-  
-I lanuced Juyper Notebook with Anaconda 2021.05 so I installed Watermark package, but it might be differ by the Jupyper Noteobook Enviornment. Make sure to check the Version of the Python and the System before run the notebook.
+This README provides a guideline for running Jupyter notebooks on SDSC Expanse using Galyleo. It contains specific instructions for logging into Expanse, launching Jupyter notebooks via command-line options, configuring environments, and checking the environment setup.
 
-## Import Module:
-These are the modules that needed to run the following noteobok. Make sure to check the Version of the Python and the System before run the notebook. If one of the following packaged are not installed make sure to insalled it or create a Conda Environemt or Singulariy Container. 
-
-- numpy
-- add
-- matplotlib 
-- collections
-- Counter
-- watermark
+If you have any updates or feedback, feel free to request changes.
 
 ##  How to login to Expanse
 
@@ -66,30 +44,57 @@ Before submitting your job, make sure to account for Expanse system resources an
 
 For additional information on command-line options, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
 
-## Define Software Environment
+## Modules
+At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
 
-There are several ways to 
-## Environment Modules
-By utilizing `--env-modules`, we can load any software installed in Expanse. 
-For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.
-  - CPU:
-`--env-modules cpu/0.17.3b,anaconda3`
-```
-galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
-```
-Also this command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.
- - GPU:
-`--env-modules  gpu/0.17.3b,anaconda3/2021.05`
-```
-galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
-```
+For example, in the `numpy_intro.ipynb`, the header will look like this:
 
+```
+#Module Needed: numpy, add, matplotlib, collections, Counter
+import numpy as np
+from operator import add
+import matplotlib.pyplot as plt
+import collections
+from collections import Counter
+```
+Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
+
+## System Environment
+
+At the end of each Jupyter Notebook session, you can view detailed hardware system information and the versions of installed Python packages. Using the watermark extension, the information might look like this:
+
+`%load_ext watermark`
+`%watermark -v -m -p ipywidgets,matplotlib,numpy,pandas,sklearn`
+```
+Python implementation: CPython
+Python version       : 3.8.8
+IPython version      : 7.22.0
+
+ipywidgets: 7.6.3
+matplotlib: 3.3.4
+numpy     : 1.22.4
+pandas    : 1.2.4
+sklearn   : 0.24.1
+
+Compiler    : GCC 7.3.0
+OS          : Linux
+Release     : 4.18.0-513.24.1.el8_9.x86_64
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 128
+Architecture: 64bitIf you need to insall additioal packages you can try to install indvidially or pefer to lauch the juypternotebook again using the conda, conatiner.
+```
+If additional packages are required, you can:
+
+Install them individually within the notebook using package managers like `pip` or `conda`.
+Alternatively, relaunch the Jupyter Notebook environment using a Conda environment or a Singularity Container to include the necessary dependencies.
+
+This ensures the proper setup of packages and an optimized environment for running your notebooks.
 
 ## Location 
 
-NumPy_Intro\
+Expanse-Notebooks_dev\
 ├── [numpy_intro.ipynb](./numpy_intro.ipynb)\
+├──\
+├──\
 ├── README.md
-
-## Sources
-For extensive NumPy documentation: https://numpy.org/doc/stable/reference/index.html
