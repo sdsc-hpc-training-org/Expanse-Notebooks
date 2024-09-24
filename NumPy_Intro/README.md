@@ -91,10 +91,10 @@ Alternatively, relaunch the Jupyter Notebook environment using a Conda environme
 
 This ensures the proper setup of packages and an optimized environment for running your notebooks.
 
-## Location 
+## List of Notebook
+## Notebook Repository Table
+| Name                              | File Type         | Status | Short Description                             |
+|----------------------------------- |-------------------|--------|------------------------------------|
+| numpy_intro.ipynb                  | Jupyter Notebook  | W      |                                    |
+| NetworkX.ipynb                     | Jupyter Notebook  | W      |                                    |
 
-Expanse-Notebooks_dev\
-├── [numpy_intro.ipynb](./numpy_intro.ipynb)\
-├──\
-├──\
-├── README.md
