@@ -11,8 +11,11 @@ Expanse supports web-based access. To log in, use your SDSC user account [here](
 
 2. Using ssh command line
    The following are examples of using the SSH command line to log in to Expanse:
+   
    `ssh <your_username>@login.expanse.sdsc.edu`
-   or 
+   
+   or
+   
     `ssh -l <your_username> login.expanse.sdsc.edu`
 
 ## Launch Jupyter Notebook 
@@ -32,7 +35,8 @@ We need to use more command line options to launch Glayleo in the proper environ
 If you prefer using the web portal, Expanse provides a user-friendly interface where you can easily launch Jupyter Notebook without needing to modify environment variables or use the command line.
 
 
-## Command-Line Options for Glayleo
+## Command-Line Options
+
 When launching Jupyter Notebook on Expanse, it is essential to configure the environment according to your resource requirements, such as the number of CPUs, memory, and specific modules needed. Below are key command-line options that help customize the environment for your job:
 - `--account`: Specify the account to be charged for the compute resources. You should use your assigned project account.
 - `--partition`: Choose the resource partition for your job. The default partition is `shared`, but if you require GPU resources, use the `gpu-shared` partition.
@@ -45,6 +49,19 @@ When launching Jupyter Notebook on Expanse, it is essential to configure the env
 Before submitting your job, make sure to account for Expanse system resources and current availability. You can check the Expanse system status and learn more about its resources by visiting SDSC’s [Expanse User Guide](https://www.sdsc.edu/support/user_guides/expanse.html).
 
 For additional information on command-line options, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
+
+## Specifying the Environment
+
+1.  Sigularity Container
+
+Singularity is a tool used for running complex applications on High Performance Computing (HPC) systems. The Expanse system has several pre-installed containers, including libraries such as PyTorch, Tapis, and TensorFlow. You can view the installed containers by navigating to the following directory:
+`/cm/shared/apps/containers/singularity`
+
+When launching a Jupyter Notebook with Singularity, you need to use the `--sif` option to specify the container image. For example, if you want to use the TensorFlow library, you would include the `--sif` option followed by the path to the TensorFlow container:
+
+ `--sif /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif `
+
+ii)
 
 ## Modules
 At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
