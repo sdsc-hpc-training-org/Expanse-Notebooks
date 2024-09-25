@@ -39,11 +39,17 @@ If you prefer using the web portal, Expanse provides a user-friendly interface w
 
 When launching Jupyter Notebook on Expanse, it is essential to configure the environment according to your resource requirements, such as the number of CPUs, memory, and specific modules needed. Below are key command-line options that help customize the environment for your job:
 - `--account`: Specify the account to be charged for the compute resources. You should use your assigned project account.
+  
 - `--partition`: Choose the resource partition for your job. The default partition is `shared`, but if you require GPU resources, use the `gpu-shared` partition.
-- `--cpus`: Define the number of CPUs you want to allocate for the job. 
+  
+- `--cpus`: Define the number of CPUs you want to allocate for the job.
+  
 - `--memory`: Specify the amount of memory(GB) want to use for the job. Specify the amount of memory (in GB) required for the job. Be sure to allocate sufficient memory for your notebook to avoid crashes or out-of-memory errors.
+  
 - `--time-limit`: Set a maximum time limit for the job in the format `HH:MM:SS`. For example, if your job is expected to run for 30 minutes, set this as `00:30:00`.
+  
 - `--env-modules`: Provide a comma-separated list of environment modules to load. These modules should include any necessary software or libraries required for your Jupyter notebook environment.
+  
 - `--sif`: Specify the path to a Singularity image file (container) in Expanse. For example, in Expanse, the Singularity container path could be `/cm/shared/apps/containers/singularity/`
 
 Before submitting your job, make sure to account for Expanse system resources and current availability. You can check the Expanse system status and learn more about its resources by visiting SDSC’s [Expanse User Guide](https://www.sdsc.edu/support/user_guides/expanse.html).
@@ -61,7 +67,6 @@ When launching a Jupyter Notebook with Singularity, you need to use the `--sif` 
 
  `--sif /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif `
 
-ii)
 
 ## Modules
 At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
