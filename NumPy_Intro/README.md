@@ -20,8 +20,10 @@ To launch Jupyter Notebook after logging into Expanse via the SSH command line, 
 
 1. Activate the Galyleo Shell Utility:
 After logging into Expanse, you'll need to launch the galyleo shell utility to run Jupyter Notebook. Begin by adding the install location to your PATH environment variable using the following command
+
 `export PATH="/cm/shared/apps/sdsc/galyleo:${PATH}"`
-After setting the path use the followinf command line to launch Galyleo `launch` :
+
+After setting the path use the following command line to launch Galyleo:
  `galyleo launch`
 
 We need to use more command line options to launch Glayleo in the proper environemnt.
@@ -30,7 +32,7 @@ We need to use more command line options to launch Glayleo in the proper environ
 If you prefer using the web portal, Expanse provides a user-friendly interface where you can easily launch Jupyter Notebook without needing to modify environment variables or use the command line.
 
 
-## Command-Line Options for Launching Jupyter Notebook on Expanse
+## Command-Line Options for Glayleo
 When launching Jupyter Notebook on Expanse, it is essential to configure the environment according to your resource requirements, such as the number of CPUs, memory, and specific modules needed. Below are key command-line options that help customize the environment for your job:
 - `--account`: Specify the account to be charged for the compute resources. You should use your assigned project account.
 - `--partition`: Choose the resource partition for your job. The default partition is `shared`, but if you require GPU resources, use the `gpu-shared` partition.
@@ -51,11 +53,7 @@ For example, in the `numpy_intro.ipynb`, the header will look like this:
 
 ```
 #Module Needed: numpy, add, matplotlib, collections, Counter
-import numpy as np
-from operator import add
-import matplotlib.pyplot as plt
-import collections
-from collections import Counter
+
 ```
 Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
 
@@ -91,8 +89,7 @@ Alternatively, relaunch the Jupyter Notebook environment using a Conda environme
 
 This ensures the proper setup of packages and an optimized environment for running your notebooks.
 
-## List of Notebook
-## Notebook Repository Table
+## List of Notebooks
 | Name                              | File Type         | Status | Short Description                             |
 |----------------------------------- |-------------------|--------|------------------------------------|
 | numpy_intro.ipynb                  | Jupyter Notebook  | W      |                                    |
