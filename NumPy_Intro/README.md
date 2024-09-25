@@ -90,8 +90,8 @@ Alternatively, relaunch the Jupyter Notebook environment using a Conda environme
 This ensures the proper setup of packages and an optimized environment for running your notebooks.
 
 ## List of Notebooks
-| Name                              | File Type         | Status | Short Description                             |
-|----------------------------------- |-------------------|--------|------------------------------------|
-| numpy_intro.ipynb                  | Jupyter Notebook  | W      |                                    |
-| NetworkX.ipynb                     | Jupyter Notebook  | W      |                                    |
+| Name                              | Short Description                             |
+|----------------------------------- |------------------------------------|
+| numpy_intro.ipynb                  | This notebook introduces NumPy, covering n-dimensional arrays, basic functions like array creation, reshaping, manipulation, and general linear algebra capabilities.                                |
+|                      |                           |
 
