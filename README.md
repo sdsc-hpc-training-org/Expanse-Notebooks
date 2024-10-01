@@ -67,6 +67,49 @@ When launching a Jupyter Notebook with Singularity, you need to use the `--sif` 
 
  `--sif /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif `
 
+2.Create Conda Environment
+
+Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file.
+
+Below is an example of a .yml file:
+
+```
+name: df-parallel
+ 
+channels:
+  - conda-forge
+  - anaconda
+
+dependencies:
+  - python=3.10
+  - jupyterlab=4.0.1
+  - ipywidgets=8.0.6
+  - matplotlib=3.7.1
+  - seaborn=0.12.2
+  - papermill=2.3.4
+  - dask=2023.3.2
+  - pyspark=3.4.0
+  - pyarrow=10.0.1
+  - openjdk=17.0.3
+
+variables:
+  # SPARK conf directory with logging configuration
+  SPARK_CONF_DIR: ../conf
+  SPARK_DRIVER_MEMORY: 16G
+  SPARK_DRIVER_MAXRESULTSIZE: 4G
+  SPARK_WORKER_MEMORY: 4G
+```
+To launch the Jupyter notebook with this custom environment, use the following command:
+
+```
+galyleo launch --account abc123 --partition shared --cpus 4 --memory 8 --time-limit 00:30:00 --conda-env df-parallel
+```
+Here, the --conda-env option specifies the name of the Conda environment to activate when launching the Jupyter notebook on Expanse.
+You can also specify the path to the `.yml` file using the `--conda-yml` option, like this:
+
+`--conda-env df-parallel --conda-yml "${HOME}/df-parallel/environment.yml"`
+
+Additionally, you can use options like `--mamba` and `--cache`. For more details on managing Conda environments, refer to the Galyleo [README](https://github.com/mkandes/galyleo?tab=readme-ov-file).
 
 ## Modules
 At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
