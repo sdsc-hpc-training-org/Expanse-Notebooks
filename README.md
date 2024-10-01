@@ -165,9 +165,3 @@ Install them individually within the notebook using package managers like `pip` 
 Alternatively, relaunch the Jupyter Notebook environment using a Conda environment or a Singularity Container to include the necessary dependencies.
 
 This ensures the proper setup of packages and an optimized environment for running your notebooks.
-
-## List of Notebooks
-| Name                              | Short Description                             |
-|----------------------------------- |------------------------------------|
-| numpy_intro.ipynb                  | This notebook introduces NumPy, covering n-dimensional arrays, basic functions like array creation, reshaping, manipulation, and general linear algebra capabilities.                                |
-|                      |                           |
