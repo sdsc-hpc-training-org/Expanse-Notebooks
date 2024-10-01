@@ -134,38 +134,6 @@ For example, in the `numpy_intro.ipynb`, the header will look like this:
 ```
 Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
 
-## System Environment
-
-At the end of each Jupyter Notebook session, you can view detailed hardware system information and the versions of installed Python packages. Using the watermark extension, the information might look like this:
-
-`%load_ext watermark`
-`%watermark -v -m -p ipywidgets,matplotlib,numpy,pandas,sklearn`
-```
-Python implementation: CPython
-Python version       : 3.8.8
-IPython version      : 7.22.0
-
-ipywidgets: 7.6.3
-matplotlib: 3.3.4
-numpy     : 1.22.4
-pandas    : 1.2.4
-sklearn   : 0.24.1
-
-Compiler    : GCC 7.3.0
-OS          : Linux
-Release     : 4.18.0-513.24.1.el8_9.x86_64
-Machine     : x86_64
-Processor   : x86_64
-CPU cores   : 128
-Architecture: 64bitIf you need to insall additioal packages you can try to install indvidially or pefer to lauch the juypternotebook again using the conda, conatiner.
-```
-If additional packages are required, you can:
-
-Install them individually within the notebook using package managers like `pip` or `conda`.
-Alternatively, relaunch the Jupyter Notebook environment using a Conda environment or a Singularity Container to include the necessary dependencies.
-
-This ensures the proper setup of packages and an optimized environment for running your notebooks.
-
 ## GPU Configuration
 
 **Partition and GPU Allocation**
@@ -196,3 +164,35 @@ To set up an Anaconda environment for GPU computing, refer to this [Repository](
 You can use the following command to specify the Conda environment:
 
 `--conda-env df-parallel-gpu --conda-yml "${HOME}/df-parallel/environment-gpu.yml"`
+
+## After Running the JuypSystem Environment
+
+If you want to know thcan view detailed hardware system information and the versions of installed Python packages. Using the watermark extension, the information might look like this:
+
+`%load_ext watermark`
+`%watermark -v -m -p ipywidgets,matplotlib,numpy,pandas,sklearn`
+```
+Python implementation: CPython
+Python version       : 3.8.8
+IPython version      : 7.22.0
+
+ipywidgets: 7.6.3
+matplotlib: 3.3.4
+numpy     : 1.22.4
+pandas    : 1.2.4
+sklearn   : 0.24.1
+
+Compiler    : GCC 7.3.0
+OS          : Linux
+Release     : 4.18.0-513.24.1.el8_9.x86_64
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 128
+Architecture: 64bitIf you need to insall additioal packages you can try to install indvidially or pefer to lauch the juypternotebook again using the conda, conatiner.
+```
+If additional packages are required, you can:
+
+Install them individually within the notebook using package managers like `pip` or `conda`.
+Alternatively, relaunch the Jupyter Notebook environment using a Conda environment or a Singularity Container to include the necessary dependencies.
+
+This ensures the proper setup of packages and an optimized environment for running your notebooks.
