@@ -71,7 +71,7 @@ When launching a Jupyter Notebook with Singularity, you need to use the `--sif` 
 
 Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file.
 
-Below is an example of a .yml file:
+Below is an example of a `.yml` file:
 
 ```
 name: df-parallel
@@ -104,7 +104,7 @@ To launch the Jupyter notebook with this custom environment, use the following c
 ```
 galyleo launch --account abc123 --partition shared --cpus 4 --memory 8 --time-limit 00:30:00 --conda-env df-parallel
 ```
-Here, the --conda-env option specifies the name of the Conda environment to activate when launching the Jupyter notebook on Expanse.
+Here, the `--conda-env` option specifies the name of the Conda environment to activate when launching the Jupyter notebook on Expanse.
 You can also specify the path to the `.yml` file using the `--conda-yml` option, like this:
 
 `--conda-env df-parallel --conda-yml "${HOME}/df-parallel/environment.yml"`
