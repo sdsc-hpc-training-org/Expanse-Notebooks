@@ -57,6 +57,7 @@ Before submitting your job, make sure to account for Expanse system resources an
 For additional information on command-line options, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
 
 ## Specifying the Environment
+There are several ways to define the software environment, but here are the common methods to specify the environment for launching Jupyter Notebooks.
 
 1.  Sigularity Container
 
@@ -65,9 +66,12 @@ Singularity is a tool used for running complex applications on High Performance 
 
 When launching a Jupyter Notebook with Singularity, you need to use the `--sif` option to specify the container image. For example, if you want to use the TensorFlow library, you would include the `--sif` option followed by the path to the TensorFlow container:
 
- `--sif /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif `
+ `-env-modules singularitypro --sif /cm/shared/apps/containers/singularity/tensorflow/tensorflow-latest.sif --bind /expanse,/scratch`
 
-2.Create Conda Environment
+You may need to load the  `singularitypro ` module to use Singularity. Additionally, you should use the  `--bind ` command line option to mount files. For example, this command line bind option allows access to both the /expanse network filesystem and the local NVMe.
+
+
+2. Create Conda Environment
 
 Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file.
 
@@ -110,6 +114,14 @@ You can also specify the path to the `.yml` file using the `--conda-yml` option,
 `--conda-env df-parallel --conda-yml "${HOME}/df-parallel/environment.yml"`
 
 Additionally, you can use options like `--mamba` and `--cache`. For more details on managing Conda environments, refer to the Galyleo [README](https://github.com/mkandes/galyleo?tab=readme-ov-file).
+
+
+3. Andaconda
+
+Anaconda is an open-source platform that includes over 300 packages for data science, machine learning, and scientific computing. Expanse supports the anaconda3/2021.05 version. You can find a full list of the packages included in this version [here](https://docs.anaconda.com/anaconda/allpkglists/2021.05/).
+To load the Anaconda environment on Expanse, you can use the following command:
+
+`-env-modules cpu/0.17.3b,anaconda3/2021.05 `
 
 ## Modules
 At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
