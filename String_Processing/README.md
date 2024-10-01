@@ -1,11 +1,6 @@
-# SDSC Expanse Notebook: Image_Processing
-This README file provides instructions for Expanse users on learning about the PILLOW package, authored by Leo Gu.
-
-The Python Imaging Library (PILLOW) adds image processing capabilities to your Python interpreter.
-This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.
-The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
-
-This chapter will give you an introduction to PILLOW packages. Enjoy!\
+# SDSC Expanse Notebook: Boring_Python
+This README file provides instructions for Expanse users to run String_Processing notebooks in the Expanse.
+A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.\
   **Listof Content**
 - [Import Module](#import-module)
 - [Launch Galyleo](#launch-galyleo)
@@ -14,10 +9,15 @@ This chapter will give you an introduction to PILLOW packages. Enjoy!\
 - [Location](#location)
 
 ## Import Module:
-- Image
-- ImageFilter
-- ImageEhance
-- Sys
+- sklearn
+- linear_model 
+- mean_squared_error
+- r2_score
+- load_diabetes
+- numpy
+- pandas
+- stats
+- scipy
 
 ## Launch Galyleo
 For specific information about launching Galyleo, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
@@ -37,11 +37,11 @@ Also this command line loads GPU modules and Anaconda3 in the Jupyter session to
 galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
 ```
 ## Install Modules
-To run pillow notebook, we do not need to install additional packages.
+To run StringProcessing notebooks, we do not need to install any additional packages.
 
 ## Location 
 
-Image_Processing\
-├──[pillow.ipynb](./pillow.ipynb)\
+String_Processing\
+├── [Regression.ipynb](./Regression.ipynb)\
 ├── README.md
 
