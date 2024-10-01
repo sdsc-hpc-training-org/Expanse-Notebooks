@@ -165,12 +165,24 @@ You can use the following command to specify the Conda environment:
 
 `--conda-env df-parallel-gpu --conda-yml "${HOME}/df-parallel/environment-gpu.yml"`
 
-## After Running the JuypSystem Environment
+## After Running the Jupyter Notebook: How to Check System Information and Installed Package Versions
 
-If you want to know thcan view detailed hardware system information and the versions of installed Python packages. Using the watermark extension, the information might look like this:
+After installing Jupyter Notebook, you might want to check the system information or verify the installed packages. This can be especially useful if you try to import a package and it doesn't work, and you need to check which packages are available in the current session.
+
+### Watermark
+Using the `watermark` extension, you can easily check system information and the versions of installed Python packages. 
+
+To get started:
+1. Install the `watermark` extension:
+
+`pip install watermark`
+
+2. Load the extension in your Jupyter Notebook:
 
 `%load_ext watermark`
-`%watermark -v -m -p ipywidgets,matplotlib,numpy,pandas,sklearn`
+
+3. Use the `watermark` command to display the Python version and installed package information. In this example, you can check the versions of `ipywidgets, matplotlib, numpy, pandas, and sklearn` using the following command:
+
 ```
 Python implementation: CPython
 Python version       : 3.8.8
