@@ -2,7 +2,11 @@
 
 This README provides a guideline for running Jupyter notebooks on SDSC Expanse using Galyleo. It contains specific instructions for logging into Expanse, launching Jupyter notebooks via command-line options, configuring environments, and checking the environment setup.
 
-If you have any updates or feedback, feel free to request changes.
+If you have any updates or feedback, feel free to request changes.[MPT SEND NOTE TO.....]
+If you wish to know more about Expanse see the User Guide here: https://www.sdsc.edu/support/user_guides/expanse.html
+
+## Table of contents
+TOC here
 
 ##  How to login to Expanse
 
@@ -18,8 +22,9 @@ Expanse supports web-based access. To log in, use your SDSC user account [here](
    
     `ssh -l <your_username> login.expanse.sdsc.edu`
 
-## Launch Jupyter Notebook 
-To launch Jupyter Notebook after logging into Expanse via the SSH command line, follow these steps:
+## Launching Jupyter Notebook 
+To launch a Jupyter Notebook on Expanse we use the ```galyleo``` command as shown below:
+
 
 1. Activate the Galyleo Shell Utility:
 After logging into Expanse, you'll need to launch the galyleo shell utility to run Jupyter Notebook. Begin by adding the install location to your PATH environment variable using the following command
@@ -34,6 +39,7 @@ We need to use more command line options to launch Glayleo in the proper environ
 2. Launching Jupyter Notebook via Web Portal:
 If you prefer using the web portal, Expanse provides a user-friendly interface where you can easily launch Jupyter Notebook without needing to modify environment variables or use the command line.
 
+For more information about ```galyleo```, see: [martys site]
 
 ## Command-Line Options
 
