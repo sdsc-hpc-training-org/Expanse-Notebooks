@@ -32,7 +32,7 @@ After logging into Expanse, you'll need to launch the galyleo shell utility to r
 `export PATH="/cm/shared/apps/sdsc/galyleo:${PATH}"`
 
 After setting the path use the following command line to launch Galyleo:
- `galyleo launch`
+ ```galyleo launch```
 
 We need to use more command line options to launch Glayleo in the proper environemnt.
 
@@ -79,7 +79,7 @@ You may need to load the  `singularitypro ` module to use Singularity. Additiona
 
 **2. Create Conda Environment**
 
-Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file. I recommend to first use Peter Rose .yml file to first use using Conda Environment. Click here for the [repository](https://github.com/sbl-sdsc/df-parallel).
+Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file. We recommend that you use the example shown in the `Dataframe libraries example` described here: https://github.com/sbl-sdsc/df-parallel.
 
 Below is an example of a `.yml` file:
 
