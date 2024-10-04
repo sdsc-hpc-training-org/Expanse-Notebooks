@@ -25,7 +25,6 @@ Expanse supports web-based access. To log in, use your SDSC user account [here](
 ## Launching Jupyter Notebook 
 To launch a Jupyter Notebook on Expanse we use the ```galyleo``` command as shown below:
 
-
 1. Activate the Galyleo Shell Utility:
 After logging into Expanse, you'll need to launch the galyleo shell utility to run Jupyter Notebook. Begin by adding the install location to your PATH environment variable using the following command
 
@@ -130,28 +129,36 @@ To load the Anaconda environment on Expanse, you can use the following command:
 `-env-modules cpu/0.17.3b,anaconda3/2021.05 `
 
 ## Modules
-At the beginning of each Jupyter Notebook, you will find a list of necessary modules and packages that need to be imported to ensure the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
+At the beginning of each of the Jupyter Notebooks in this collection you will find a list of necessary modules and packages that need to be imported to ensure that the notebook runs properly. Before running the notebook, check that your environment includes all the required modules.
 
-For example, in the `numpy_intro.ipynb`, the header will look like this:
+For example, in the `numpy_intro.ipynb`, the list of moduels will look like this:
 
 ```
-#Module Needed: numpy, add, matplotlib, collections, Counter
-
+#Module Needed:[MPT:  pull code from the actual notebook and show it here]
+#numpy, add, matplotlib, collections, Counter
+import ....
 ```
 Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
 
-## GPU Configuration
+## Configuring GPUs for `galyleo`
 
-**Partition and GPU Allocation**
--`--partition`:  Specifies the partition to use, such as `gpu -shared`
+Unlike to portal, where the user envionment is set up automatically, the configuration GPUs needs to be set up using arguments passed to `galyleo` as shown below:
+[MPT: gloria expand on explanaton]
+
+**Defining the Number of GPUs**
 -`--gpus `:  Defines the number of GPUs to allocate for the job.
+
+**Defining the Partition**
+MPT: add explanation with link the user guide table of partition
+
+-`--partition`:  Specifies the partition to use, such as `gpu -shared`
 
 For example, the following command launches a job with 2 GPUs, 16 GB of memory, and a time limit of 30 minutes:
 `galyleo launch --account abc123 --partition gpu --gpus 2 --memory 16`
 
-**Software Environment for Jupyter Notebooks**
+**GPU Software Environment for Jupyter Notebooks**
 
-i) Using environment modules
+1 Using environment modules
 
 To load GPU and Anaconda3 environments using module commands:
 `--env-modules`: Load the module `gpu/0.17.3b` and `anaconda3/2021.05`. This will ensure that GPU resources and necessary packages are available.
@@ -159,12 +166,12 @@ To load GPU and Anaconda3 environments using module commands:
 Example command:
  `galyleo launch --account abc123 --partition gpu --gpus 2 --memory 16 --time-limit 00:30:00 --env-modules gpu/0.17.3b,anaconda3/2021.05`
 
-ii) Singularity Contanier
+2 Singularity Contanier
 
 You can also use a Singularity container with GPU resources. Specify the container image using the `--sif` option and load the necessary modules:
  `--env-modules singularitypro --sif /cm/shared/apps/containers/singularity/pytorch/pytorch-latest.sif --bind /expanse,/scratch`
 
-iii) Anaconda
+3 Anaconda
 To set up an Anaconda environment for GPU computing, refer to this [Repository](https://github.com/sbl-sdsc/df-parallel). The repository includes an `environment-gpu.yml` file, which installs cuDF and Dask-cuDF packages for running Jupyter Notebooks on GPU.
 
 You can use the following command to specify the Conda environment:
