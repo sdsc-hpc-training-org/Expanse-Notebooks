@@ -5,7 +5,13 @@ This README provides a guideline for running Jupyter notebooks on SDSC Expanse u
 If you have any updates or feedback, feel free to request changes, please send note to consult@sdsc.edu.
 
 ## Table of contents
-TOC here
+- [How to login to Expanse](#how-to-login-to-expanse)
+- [Launching Jupyter Notebook ](#launching-jupyter-notebook )
+- [Command-Line Options](#command-line-options)
+- [Specifying the Environment](#specifying-the-environment)
+- [Modules](#modules)
+- [Configuring GPUs for `galyleo`](#configuring-gpus-for-`galyleo`)
+- [After Running the Jupyter Notebook: How to Check System Information and Installed Package Versions](#after-running-the-jupyter-notebook:-how-to-check-system-information-and-installed-package-versions)
 
 ##  How to login to Expanse
 
