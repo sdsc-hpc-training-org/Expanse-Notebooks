@@ -10,8 +10,8 @@ If you have any updates or feedback, feel free to request changes, please send n
 - [Command-Line Options](#command-line-options)
 - [Specifying the Environment](#specifying-the-environment)
 - [Modules](#modules)
-- [Configuring GPUs for `galyleo`](#configuring-gpus-for-`galyleo`)
-- [After Running the Jupyter Notebook: How to Check System Information and Installed Package Versions](#after-running-the-jupyter-notebook:-how-to-check-system-information-and-installed-package-versions)
+- [Configuring GPUs for galyleo](#configuring-gpus-for-galyleo)
+- [How to Check System Information and Installed Package Versions](#how-to-check-system-information-and-installed-package-versions)
 
 ##  How to login to Expanse
 
@@ -145,7 +145,7 @@ import ....
 ```
 Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
 
-## Configuring GPUs for `galyleo`
+## Configuring GPUs for galyleo
 
 Unlike to portal, where the user envionment is set up automatically, the configuration GPUs needs to be set up using arguments passed to `galyleo` as shown below:
 [MPT: gloria expand on explanaton]
@@ -183,7 +183,7 @@ You can use the following command to specify the Conda environment:
 
 `--conda-env df-parallel-gpu --conda-yml "${HOME}/df-parallel/environment-gpu.yml"`
 
-## After Running the Jupyter Notebook: How to Check System Information and Installed Package Versions
+## How to Check System Information and Installed Package Versions
 
 After installing Jupyter Notebook, you might want to check the system information or verify the installed packages. This can be especially useful if you try to import a package and it doesn't work, and you need to check which packages are available in the current session.
 
