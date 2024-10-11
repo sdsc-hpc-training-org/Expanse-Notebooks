@@ -139,9 +139,16 @@ At the beginning of each of the Jupyter Notebooks in this collection you will fi
 For example, in the `numpy_intro.ipynb`, the list of moduels will look like this:
 
 ```
-#Module Needed:[MPT:  pull code from the actual notebook and show it here]
-#numpy, add, matplotlib, collections, Counter
-import ....
+Required Modules for the Jupyter Notebook
+Module: numpy, add, matplotlib, collections, Counter
+
+Before running the notebook, we need to load the following modules.
+
+import numpy as np
+from operator import add
+import matplotlib.pyplot as plt
+import collections
+from collections import Counter
 ```
 Check that these modules are installed and available in the Jupyter environment. You can do this by defining the environment beforehand using command-line options.
 
