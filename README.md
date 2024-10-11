@@ -1,4 +1,4 @@
-# SDSC Expanse Notebook: 
+# SDSC Expanse Notebook
 
 This README provides a guideline for running Jupyter notebooks on SDSC Expanse using Galyleo. It contains specific instructions for logging into Expanse, launching Jupyter notebooks via command-line options, configuring environments, and checking the environment setup.
 
@@ -35,7 +35,7 @@ After logging into Expanse, you'll need to launch the galyleo shell utility to r
 
 `export PATH="/cm/shared/apps/sdsc/galyleo:${PATH}"`
 
-After setting the path use the following command line to launch Galyleo:
+  After setting the path use the following command line to launch Galyleo:
  ```galyleo launch```
 
 We need to use more command line options to launch Glayleo in the proper environemnt.
