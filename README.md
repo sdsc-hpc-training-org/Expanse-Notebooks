@@ -69,7 +69,7 @@ For additional information on command-line options, please refer to [this GitHub
 ## Specifying the Environment
 There are several ways to define the software environment, but here are the common methods to specify the environment for launching Jupyter Notebooks.
 
-**1.  Sigularity Container**
+1.  Sigularity Container
 
 Singularity is a tool used for running complex applications on High Performance Computing (HPC) systems. The Expanse system has several pre-installed containers, including libraries such as PyTorch, Tapis, and TensorFlow. You can view the installed containers by navigating to the following directory:
 `/cm/shared/apps/containers/singularity`
@@ -81,7 +81,7 @@ When launching a Jupyter Notebook with Singularity, you need to use the `--sif` 
 You may need to load the  `singularitypro ` module to use Singularity. Additionally, you should use the  `--bind ` command line option to mount files. For example, this command line bind option allows access to both the /expanse network filesystem and the local NVMe.
 
 
-**2. Create Conda Environment**
+2. Create Conda Environment
 
 Conda is an open-source software package, dependency, and environment management system created by Anaconda. It simplifies the installation of multiple packages for use in Jupyter notebooks on HPC systems. Galyleo supports both Anaconda and Miniconda (a minimal installer for Conda). You can create a custom Conda environment using a .yml file. We recommend that you use the example shown in the `Dataframe libraries example` described here: https://github.com/sbl-sdsc/df-parallel.
 
@@ -126,7 +126,7 @@ You can also specify the path to the `.yml` file using the `--conda-yml` option,
 Additionally, you can use options like `--mamba` and `--cache`. For more details on managing Conda environments, refer to the Galyleo [README](https://github.com/mkandes/galyleo?tab=readme-ov-file).
 
 
-**3. Andaconda**
+3. Andaconda
 
 Anaconda is an open-source platform that includes over 300 packages for data science, machine learning, and scientific computing. Expanse supports the anaconda3/2021.05 version. You can find a full list of the packages included in this version [here](https://docs.anaconda.com/anaconda/allpkglists/2021.05/).
 To load the Anaconda environment on Expanse, you can use the following command:
@@ -155,18 +155,20 @@ Check that these modules are installed and available in the Jupyter environment.
 ## Configuring GPUs for galyleo
 
 Unlike to portal, where the user envionment is set up automatically, the configuration GPUs needs to be set up using arguments passed to `galyleo` as shown below:
-[MPT: gloria expand on explanaton]
+
 
 **Defining the Number of GPUs**
 -`--gpus `:  Defines the number of GPUs to allocate for the job.
 
 **Defining the Partition**
-MPT: add explanation with link the user guide table of partition
 
 -`--partition`:  Specifies the partition to use, such as `gpu -shared`
 
 For example, the following command launches a job with 2 GPUs, 16 GB of memory, and a time limit of 30 minutes:
 `galyleo launch --account abc123 --partition gpu --gpus 2 --memory 16`
+
+If you would like to learn more about the command-line options for configuring GPUs, please visit Marty Kande's Galyleo Guidelines Repository [here](https://github.com/mkandes/galyleo?tab=readme-ov-file#command-line).
+
 
 **GPU Software Environment for Jupyter Notebooks**
 
@@ -184,7 +186,9 @@ You can also use a Singularity container with GPU resources. Specify the contain
  `--env-modules singularitypro --sif /cm/shared/apps/containers/singularity/pytorch/pytorch-latest.sif --bind /expanse,/scratch`
 
 3 Anaconda
-To set up an Anaconda environment for GPU computing, refer to this [Repository](https://github.com/sbl-sdsc/df-parallel). The repository includes an `environment-gpu.yml` file, which installs cuDF and Dask-cuDF packages for running Jupyter Notebooks on GPU.
+To set up an Anaconda environment for GPU computing, please refer to the Peter Rose Repository for instructions on setting up a CONDA environment [here](https://github.com/sbl-sdsc/df-parallel).
+
+The repository includes an `environment-gpu.yml` file, which installs cuDF and Dask-cuDF packages for running Jupyter Notebooks on GPU.
 
 You can use the following command to specify the Conda environment:
 
