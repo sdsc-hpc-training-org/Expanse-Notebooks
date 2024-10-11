@@ -43,7 +43,7 @@ We need to use more command line options to launch Glayleo in the proper environ
 2. Launching Jupyter Notebook via Web Portal:
 If you prefer using the web portal, Expanse provides a user-friendly interface where you can easily launch Jupyter Notebook without needing to modify environment variables or use the command line.
 
-For more information about ```galyleo```, see: [martys site]
+For more information about ```galyleo```, see Marty Kande's Galyleo Guidelines Repository [here](https://github.com/mkandes/galyleo?tab=readme-ov-file#command-line).
 
 ## Command-Line Options
 
