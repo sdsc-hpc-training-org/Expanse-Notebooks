@@ -9,4 +9,4 @@ Please report any issues with the collection to consult@sdsc.edu
 ### 4/20/2024 
 * development collection for production notebooks 
 * copy approved notebooks from notebooks-2024-staging
-* last update: 4/20/2024
+* last update: 10/12/2024
