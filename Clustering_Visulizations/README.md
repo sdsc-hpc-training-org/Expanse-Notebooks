@@ -6,6 +6,7 @@ This README file provides instructions for Expanse users on how to run basic clu
 - [Environment Modules](#environment-modules)
 - [Install Modules](#install-modules)
 - [Location](#location)
+- [Submit Ticket](#submit-ticket)
 
 ## Import Module:
 - make_blobs
@@ -41,4 +42,12 @@ To run Introduction_to_Clustering notebook, we do not need to install additional
 Clustering_Visulizations\
 ├── [Introduction_to_Clustering.ipynb](./Introduction_to_Clustering.ipynb)\
 ├── README.md
+
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!
 

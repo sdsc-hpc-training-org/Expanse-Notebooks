@@ -14,6 +14,7 @@ These contain the necessary data for the notebook to run.\
 - [Install Modules](#install-modules)
 - [Location](#location)
 - [Sources](#sources)
+- [Submit Ticket](#submit-ticket)
 
 ## Import Module:
 - numpy
@@ -47,3 +48,10 @@ Data_Analysis\
 
 ## Sources
 More info on pandas, including a detailed API: https://pandas.pydata.org/
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!
