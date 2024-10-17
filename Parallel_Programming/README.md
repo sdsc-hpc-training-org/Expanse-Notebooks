@@ -7,6 +7,7 @@ Introduces the Dask module with a simple example and illustrates the Dask graph.
 - [Environment Modules](#environment-modules)
 - [Install Modules](#install-modules)
 - [Location](#location)
+- [Submit Ticket](#submit-ticket)
 
 ## Import Module:
 - dask
@@ -39,3 +40,10 @@ Parallel_Programming\
 ├── [dask_graphs.ipynb](./dask_graphs.ipynb)\
 ├── [multithreaded_processing.ipynb](./multithreaded_processing.ipynb)\
 ├── README.md
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!

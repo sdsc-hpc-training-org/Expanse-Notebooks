@@ -10,7 +10,7 @@ numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dim
 - [Install Modules](#install-modules)
 - [Location](#location)
 - [Sources](#sources)
-
+- [Submit Ticket](#submit-ticket)
 ## Import Module:
 - numpy
 - add
@@ -46,3 +46,10 @@ NumPy_Intro\
 
 ## Sources
 For extensive NumPy documentation: https://numpy.org/doc/stable/reference/index.html
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!

@@ -11,6 +11,7 @@ This chapter will show you how to implement an image classifaction NN as well as
 - [Environment Modules](#environment-modules)
 - [Install Modules](#install-modules)
 - [Location](#location)
+- [Submit Ticket](#submit-ticket)
 
 ## Import Module:
 - matplotlib
@@ -46,3 +47,10 @@ Tensorflow\
 ├── [Image Classification.ipynb](./Image%20Classification.ipynb)\
 ├── [SimpleTraining.ipynb](./SimpleTraining.ipynb)\
 ├── README.md
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!

@@ -8,6 +8,7 @@ This guide provides instructions for Expanse users to run CUDA notebooks on GPU 
 - [Location](#location)
 - [Short Description](#short-description)
 - [Sources](#sources)
+- [Submit Ticket](#submit-ticket)
 
 ## Import Module:
 - numba
@@ -65,3 +66,10 @@ Numba.  As an exercise, complete the missing lines of code to successfully
 compute the result.  
 
 These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were **presented by Abe Stern, NVIDIA** with the topic of **GPU accelerated computing with CUDA Python**.
+
+## Submit Ticket
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
+
+Email: consult@sdsc.edu
+
+We appreciate your input and will review your suggestions promptly!
