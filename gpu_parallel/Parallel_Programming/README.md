@@ -19,14 +19,7 @@ Introduces the Dask module with a simple example and illustrates the Dask graph.
 For specific information about launching Galyleo, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
 
 ## Environment Modules
-By utilizing `--env-modules`, we can load any software installed in Expanse. 
-For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.
-  - CPU:
-`--env-modules cpu/0.17.3b,anaconda3`
-```
-galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
-```
-Also this command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.
+This command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.
  - GPU:
 `--env-modules  gpu/0.17.3b,anaconda3/2021.05`
 ```
@@ -38,7 +31,6 @@ To run Parallel_Programming notebooks, we do not need to install any additional 
 ## Location 
 Parallel_Programming\
 ├── [dask_graphs.ipynb](./dask_graphs.ipynb)\
-├── [multithreaded_processing.ipynb](./multithreaded_processing.ipynb)\
 ├── README.md
 
 ## Submit Ticket
