@@ -5,7 +5,7 @@ This repository contains Jupyter Notebooks designed to run on CPU with serial pr
 ## Notebooks List
 | File Name                  | Notebook                          | Description                                                                                   |
 |----------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------|
-| **Clustering Visualizations** | `Introduction_to_Clustering.ipynb` | Demonstrates how to run basic clustering methods in Python and execute them on Expanse.         |
+| **Clustering Visualizations** | [Introduction_to_Clustering.ipynb](/Clustering%20Visualizations/Introduction_to_Clustering.ipynb) | Demonstrates how to run basic clustering methods in Python and execute them on Expanse.         |
 | **Data Analysis**            | `data_analysis_pandas.ipynb`       | Covers the pandas library, exploring Series and DataFrame for data analysis.                   |
 | **Decision Trees**           | `Decision_trees.ipynb`             | Introduces decision trees using the scikit-learn library and runs on Expanse.                  |
 | **Graphs & Networks**        | `NetworkX.ipynb`                   | Notebooks for building, visualizing, and analyzing graphs and networks using NetworkX.         |
