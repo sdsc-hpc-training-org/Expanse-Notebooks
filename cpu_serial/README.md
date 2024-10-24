@@ -7,7 +7,7 @@ This repository contains Jupyter Notebooks designed to run on CPU with serial pr
 |----------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------|
 | **Clustering_Visualizations** | [Introduction_to_Clustering.ipynb](Clustering_Visulizations/Introduction_to_Clustering.ipynb) | Demonstrates how to run basic clustering methods in Python and execute them on Expanse.         |
 | **Data_Analysis**            | [data_analysis_pandas.ipynb](Data_Analysis/data_analysis_pandas.ipynb)       | Covers the pandas library, exploring Series and DataFrame for data analysis.                   |
-| **Decision_Trees**           | [Decision_trees.ipynb](Decision_Trees/Decision_trees.ipynb)            | Introduces decision trees using the scikit-learn library and runs on Expanse.                  |
+| **Decision_Trees**           | [Decision_trees.ipynb](Decision_Trees/Decision%20trees.ipynb)            | Introduces decision trees using the scikit-learn library and runs on Expanse.                  |
 | **Graphs&Networks**        | [NetworkX.ipynb](Graphs&Networks/NetworkX.ipynb)                   | Notebooks for building, visualizing, and analyzing graphs and networks using NetworkX.         |
 | **Hello_World**              | [hello_world_cpu.ipynb](Hello_World/hello_world_cpu.ipynb)            | Shows how to run a basic "Hello World" on CPU and configure CPU settings.                      |
 | **Image_Processing**         | [Pillow.ipynb](Image_Processing/Pillow.ipynb)                     | Introduces the Pillow library for loading, manipulating, and processing images.                |
