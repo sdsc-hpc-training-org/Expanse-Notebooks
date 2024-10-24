@@ -15,5 +15,5 @@ This repository contains Jupyter Notebooks designed to run on CPU with serial pr
 | **NumPy_Intro**              | [numpy_intro.ipynb](NumPy_Intro/numpy_intro.ipynb)                | Introduction to NumPy and its usage on Expanse.                                                |
 | **Python_Data_Analysis_Library** | [PandasCSV.ipynb](Python_Data_Analysis_Library/PandasCSV.ipynb)                | Data analysis using the pandas library.                                                        |
 | **String_Processing**        | [Regression.ipynb](String_Processing/Regression.ipynb)                 | Performs regression analysis using the diabetes dataset with scikit-learn.                     |
-| **Tensorflow**               | [Image_Classification.ipynb](Tensorflow/Image_Classification.ipynb)       | Builds an image classification model using TensorFlow and Keras.                               |
+| **Tensorflow**               | [Image_Classification.ipynb](Tensorflow/Image%20Classification.ipynb)       | Builds an image classification model using TensorFlow and Keras.                               |
 | **Tensorflow**               | [SimpleTraining.ipynb](Tensorflow/SimpleTraining.ipynb)             | Builds a simple time series forecasting model using TensorFlow.                                |
