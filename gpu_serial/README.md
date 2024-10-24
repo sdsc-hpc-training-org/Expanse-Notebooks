@@ -6,4 +6,4 @@ If you're new to GPU programming, start by setting up a GPU environment to run b
 # Content of the Notebooks
 | File | Notebooks | Description |
 |----------|----------|----------|
-| Hello_World   | `hello_world_gpu.ipynb` |  Print "Hello, World!" and check GPU system |
+| Hello_World   | [hello_world_gpu.ipynb](helloworld/hello_world_gpu.ipynb) |  Print "Hello, World!" and check GPU system |
