@@ -35,11 +35,8 @@ To run cuda_gpu_nvidia notebooks, no additional package installation is required
 
 CUDA_GPU_NVIDIA\
 ├── [cuda_gpu_nvidia_computing_pi_solution.ipynb](./cuda_gpu_nvidia_computing_pi_solution)\
-├── [cuda_gpu_nvidia_computing_pi.ipynb](./cuda_gpu_nvidia_computing_pi.ipynb)\
 ├── [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./cuda_gpu_nvidia_distance_matrix_solution.ipynb)\
-├── [cuda_gpu_nvidia_distance_matrix.ipynb](./cuda_gpu_nvidia_distance_matrix.ipynb)\
 ├── [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./cuda_gpu_nvidia_law_of_cosines_solution.ipynb)\
-├── [cuda_gpu_nvidia_law_of_cosines.ipynb](./cuda_gpu_nvidia_law_of_cosines.ipynb)\
 ├── README.md
 
 ## Short Description
