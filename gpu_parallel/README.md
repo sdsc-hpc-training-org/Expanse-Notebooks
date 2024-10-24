@@ -9,7 +9,7 @@ In this folder, you will find notebooks that explore various aspects of GPU para
 
 | File                | Notebooks                                                                  | Description                                    |
 |---------------------|---------------------------------------------------------------------------|------------------------------------------------|
-| **CUDA_GPU_NVIDIA**    | `cuda_gpu_nvidia_computing_pi_solution.ipynb`                           | Compute Pi using CUDA on NVIDIA GPUs          |
+| **CUDA_GPU_NVIDIA**    | [cuda_gpu_nvidia_computing_pi_solution.ipynb](CUDA_GPU_NVIDIA/cuda_gpu_nvidia_computing_pi_solution.ipynb)                           | Compute Pi using CUDA on NVIDIA GPUs          |
 |    **CUDA_GPU_NVIDIA**     | `cuda_gpu_nvidia_distance_matrix.ipynb`                                  | Calculate distance matrices with CUDA          |
 |  **CUDA_GPU_NVIDIA**      | `cuda_gpu_nvidia_law_of_cosines_solution.ipynb`                         | Solve the law of cosines using CUDA            |
 | **Data_Analysis**      | `data_analysis_cupy.ipynb`                                               | Data analysis using CuPy                       |
