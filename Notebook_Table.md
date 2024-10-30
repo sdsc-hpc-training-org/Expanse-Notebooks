@@ -4,15 +4,15 @@ Here's a table formatted to summarize the directories, notebooks, required modul
 
 | Directory               | Notebook                                                                                   | Required Modules                   | Keywords              |
 |-------------------------|--------------------------------------------------------------------------------------------|------------------------------------|-----------------------|
-| Clustering_Visualizations | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | `scikit-learn`, `NumPy`, `Matplotlib`, `SciPy` | CPU, Serial          |
-| CUDA_GPU_Computing_Pi   | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | `CUDA`, `NumPy`                   | GPU, Parallel        |
-| CUDA_GPU_Distance_Matrix | [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb) | `CUDA`, `NumPy`                   | GPU, Parallel        |
-| CUDA_GPU_Law_Of_Cosines | [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb) | `CUDA`, `NumPy`                   | GPU, Law of Cosines  |
-| Dask_Graph_CPU          | [dask_graphs_CPU.ipynb](./Dask_Graph_CPU/dask_graphs_CPU.ipynb)                                    | `Dask`, `NetworkX`                | CPU, Graphs, Parallel |
-| Dask_Graph_GPU          | [dask_graphs_GPU.ipynb](./Dask_Graph_GPU/dask_graphs_GPU.ipynb)                                    | `Dask`, `CUDA`, `NetworkX`        | GPU, Graphs, Parallel |
-| Data_Analysis           | [data_analysis_pandas.ipynb](./Data_Analysis/data_analysis_pandas.ipynb)                   | `Pandas`, `NumPy`                 | Data Analysis, CPU    |
-| Data_Analysis_Cupy      | [data_analysis_cupy.ipynb](./Data_Analysis_Cupy/data_analysis_cupy.ipynb)                  | `Cupy`, `Pandas`                  | Data Analysis, GPU    |
-| Decision_Trees          | [Decision trees.ipynb](./Decision_Trees/Decision%20trees.ipynb)                            | `scikit-learn`, `NumPy`           | Decision Trees, CPU   |
+| Clustering_Visualizations | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | `scikit-learn`, `numpy`, `matplotlib`, `sciPy` | CPU, Serial          |
+| CUDA_GPU_Computing_Pi   | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | `numba` ,   `math`, `numpy`             | GPU, Parallel        |
+| CUDA_GPU_Distance_Matrix | [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb) |   `numba` ,   `math`, `numpy`               | GPU, Parallel        |
+| CUDA_GPU_Law_Of_Cosines | [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb) | `numba` ,   `math`, `numpy`      | GPU, Parallel  |
+| Dask_Graph_CPU          | [dask_graphs_CPU.ipynb](./Dask_Graph_CPU/dask_graphs_CPU.ipynb)                                    | `dask`              | CPU, Parallel |
+| Dask_Graph_GPU          | [dask_graphs_GPU.ipynb](./Dask_Graph_GPU/dask_graphs_GPU.ipynb)                                    |     `dask`,`cupy`    | GPU, Parallel |
+| Data_Analysis           | [data_analysis_pandas.ipynb](./Data_Analysis/data_analysis_pandas.ipynb)                   | `numpy`, `pandas`                 | CPU, Serial    |
+| Data_Analysis_Cupy      | [data_analysis_cupy.ipynb](./Data_Analysis_Cupy/data_analysis_cupy.ipynb)                  | `cupy`, `cudf`, `pandas` , `numpy`                | GPU, Parallel    |
+| Decision_Trees          | [Decision trees.ipynb](./Decision_Trees/Decision%20trees.ipynb)                            | `scikit-learn`, `NumPy`           | CPU, Serial   |
 | Graphs&Networks         | [NetworkX.ipynb](./Graphs&Networks/NetworkX.ipynb)                                         | `NetworkX`, `Matplotlib`          | Networks, Graphs      |
 | Hello_World_CPU         | [hello_world_cpu.ipynb](./Hello_World_CPU/hello_world_cpu.ipynb)                           | `Python`                          | CPU, Basic            |
 | Hello_World_GPU         | [hello_world_gpu.ipynb](./Hello_World_GPU/hello_world_gpu.ipynb)                           | `CUDA`                            | GPU, Basic            |
