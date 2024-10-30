@@ -1,4 +1,4 @@
-# SDSC Expanse Notebook
+# SDSC Expanse Notebook User Guide
 
 This README provides a guideline for running Jupyter notebooks on SDSC Expanse using Galyleo. It contains specific instructions for logging into Expanse, launching Jupyter notebooks via command-line options, configuring environments, and checking the environment setup.
 
