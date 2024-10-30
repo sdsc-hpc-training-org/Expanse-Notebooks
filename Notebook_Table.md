@@ -12,7 +12,7 @@ scripts run by github actions triggered by some events (e.g. file change, new fi
 
 Here's a table formatted to summarize the directories, notebooks, required modules, and relevant keywords based on your file structure:
 
-| Directory               | Notebook                                                                                   | Required (Sub) Modules                   | Keywords              |
+| Notebook Project               | Notebook                                                                                   | Required (Sub) Modules                   | Type              |
 |-------------------------|--------------------------------------------------------------------------------------------|------------------------------------|-----------------------|
 | Clustering_Visualizations | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | `scikit-learn`, `numpy`, `matplotlib`, `sciPy`,`make_blobs`,`KMeans`, `dendrogram`, `linkage`, `AgglomerativeClustering`   | CPU, Serial          |
 | CUDA_GPU_Computing_Pi   | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | `numba` ,   `math`, `numpy`,  `cuda`            | GPU, Parallel        |
