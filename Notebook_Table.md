@@ -1,5 +1,15 @@
 # Expanse-Notebooks-dev: Notebook Table
 
+## View by:  
+* [Name](link-to-alphabetical-sorted notebooks)
+* [CPU/GPU](link-to-CPU-sorted notebooks)
+* [Serial/Parallel](linkg to paralllel sorted
+
+```
+these are created by the external python scripts
+scripts run by github actions triggered by some events (e.g. file change, new file, some other readme files changes)
+```
+
 Here's a table formatted to summarize the directories, notebooks, required modules, and relevant keywords based on your file structure:
 
 | Directory               | Notebook                                                                                   | Required (Sub) Modules                   | Keywords              |
