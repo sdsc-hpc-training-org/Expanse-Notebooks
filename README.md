@@ -1,14 +1,14 @@
 # Expanse-Notebooks-dev
 
-Refer to this [guide](./Expanse_Notebook_User_Guide.md) for specific instructions on loading required packages and launching Jupyter Notebook in Expanse.
+Refer to this [guide](./Expanse_Notebook_User_Guide.md) for instructions on loading required packages and launching Jupyter Notebook in Expanse.
 
-## View by: Name (alphabetical-sorted notebooks):
+## View by: Name (Alphabetical-Order)
 
-The following table lists the notebooks sorted in alphabetical order.
+The following table lists the notebooks in alphabetical order. To view by type, use the links below:
 
-If you would like to view the table by type:
 - [CPU/GPU](./Notebook_Table_Type(CPU\GPU).md)
 - [Serial/Parallel](./Notebook_Table_Type(Serial\Parallel).md)
+
 
 ## Notebook Table: Alphabetical Order
 | Notebook Project               | Notebook                                                                                   | Type               | Required (Sub) Modules                   |
