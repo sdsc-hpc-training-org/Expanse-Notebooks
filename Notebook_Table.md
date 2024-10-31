@@ -12,28 +12,26 @@ scripts run by github actions triggered by some events (e.g. file change, new fi
 
 Here's a table formatted to summarize the directories, notebooks, required modules, and relevant keywords based on your file structure:
 
-| Notebook Project               | Notebook                                                                                   | Required (Sub) Modules                   | Type              |
-|-------------------------|--------------------------------------------------------------------------------------------|------------------------------------|-----------------------|
-| Clustering_Visualizations | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | `scikit-learn`, `numpy`, `matplotlib`, `sciPy`,`make_blobs`,`KMeans`, `dendrogram`, `linkage`, `AgglomerativeClustering`   | CPU, Serial          |
-| CUDA_GPU_Computing_Pi   | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | `numba` ,   `math`, `numpy`,  `cuda`            | GPU, Parallel        |
-| CUDA_GPU_Distance_Matrix | [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb) |   `numba` ,   `math`, `numpy`,  `cuda`              | GPU, Parallel        |
-| CUDA_GPU_Law_Of_Cosines | [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb) | `numba` ,   `math`, `numpy`, `vectorize`,`cuda`      | GPU, Parallel  |
-| Dask_Graph_CPU          | [dask_graphs_CPU.ipynb](./Dask_Graph_CPU/dask_graphs_CPU.ipynb)                                    | `dask`              | CPU, Parallel |
-| Dask_Graph_GPU          | [dask_graphs_GPU.ipynb](./Dask_Graph_GPU/dask_graphs_GPU.ipynb)                                    |     `dask`,`cupy`,`dask.array`, `array`   | GPU, Parallel |
-| Data_Analysis           | [data_analysis_pandas.ipynb](./Data_Analysis/data_analysis_pandas.ipynb)                   | `numpy`, `pandas`                 | CPU, Serial    |
-| Data_Analysis_Cupy      | [data_analysis_cupy.ipynb](./Data_Analysis_Cupy/data_analysis_cupy.ipynb)                  | `cupy`, `cudf`, `pandas` , `numpy`                | GPU, Parallel    |
-| Decision_Trees          | [Decision trees.ipynb](./Decision_Trees/Decision%20trees.ipynb)                            | `scikitlearn`, `tree`, `sklearn.datasets`,`graphviz ` , `load_iris`  | CPU, Serial   |
-| Graphs&Networks         | [NetworkX.ipynb](./Graphs&Networks/NetworkX.ipynb)                                         | `NetworkX`, `matplotlib.pyplot`,`networkx`, `write_dot`,  `networkx.drawing.nx_pydot`,  `networkx`       | CPU, Serial     |
-| Hello_World_CPU         | [hello_world_cpu.ipynb](./Hello_World_CPU/hello_world_cpu.ipynb)                           |                          | CPU, Serial            |
-| Hello_World_GPU         | [hello_world_gpu.ipynb](./Hello_World_GPU/hello_world_gpu.ipynb)                           |                           | GPU, Serial           |
-| Image_Processing        | [Pillow.ipynb](./Image_Processing/Pillow.ipynb)                                            | `PIL`, `Image`,   `sys` ,  `ImageFilter`,  `ImageEnhance`   | CPU, Serial     |
-| Matplotlib_Intro        | [matplotlib_intro.ipynb](./Matplotlib_Intro/matplotlib_intro.ipynb)                         | `matplotlib`, `matplotlib.pyplot`,  `numpy`                    | CPU, Serial |
-| Multithreaded_Processing_CPU | [multithreaded_processing.ipynb](./Multithreaded_Processing_CPU/multithreaded_processing.ipynb) | `mkl`, `numpy` , `dask.array`           | CPU, Parallel   |
-| NumPy_Intro             | [numpy_intro.ipynb](./NumPy_Intro/numpy_intro.ipynb)                                       | `numpy`, `operator`   ,  `add`,`matplotlib.pyplot`,`collections` , `Counter` | CPU, Serial        |
-| Python_Data_Analysis_Library | [PandasCSV.ipynb](./Python_Data_Analysis_Library/PandasCSV.ipynb)                      | `IPython.display `, `Image`,  `pandas`          | CPU, Parallel    |
-| String_Processing       | [Regression.ipynb](./String_Processing/Regression.ipynb)                                   | `sklearn`,   `linear_model`, `mean_squared_error`, `r2_score`, `sklearn.datasets` ,`load_diabetes` ,  `numpy` , `matplotlib.pyplot`, `pandas`, `scipy`,`stats`       | CPU, Serial     |
-| Tensorflow_Image_Classification | [Image Classification.ipynb](./Tensorflow_Image_Classification/Image%20Classification.ipynb) | `tensorflow` ,`matplotlib.pyplot`,`numpy`,`PIL`,`keras`, `layers`,`tensorflow.keras`,`tensorflow.keras.models`,`Sequential`, `pathlib`  | CPU, GPU, Parallel |
-| Tensorflow_Simple_Training | [SimpleTraining.ipynb](./Tensorflow_Simple_Training/SimpleTraining.ipynb)              | `tensorflow`, `numpy`,`csv`, `matplotlib.pyplot`                     | CPU, GPU, Parallel
 
-
-
+| Notebook Project               | Notebook                                                                                   | Type               | Required (Sub) Modules                   |
+|--------------------------------|--------------------------------------------------------------------------------------------|--------------------|------------------------------------------|
+| Clustering_Visualizations      | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | CPU, Serial       | `scikit-learn`, `numpy`, `matplotlib`, `sciPy`, `make_blobs`, `KMeans`, `dendrogram`, `linkage`, `AgglomerativeClustering` |
+| CUDA_GPU_Computing_Pi          | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `cuda`        |
+| CUDA_GPU_Distance_Matrix       | [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `cuda`        |
+| CUDA_GPU_Law_Of_Cosines        | [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `vectorize`, `cuda` |
+| Dask_Graph_CPU                 | [dask_graphs_CPU.ipynb](./Dask_Graph_CPU/dask_graphs_CPU.ipynb)                           | CPU, Parallel     | `dask`                                  |
+| Dask_Graph_GPU                 | [dask_graphs_GPU.ipynb](./Dask_Graph_GPU/dask_graphs_GPU.ipynb)                           | GPU, Parallel     | `dask`, `cupy`, `dask.array`, `array`   |
+| Data_Analysis                  | [data_analysis_pandas.ipynb](./Data_Analysis/data_analysis_pandas.ipynb)                  | CPU, Serial       | `numpy`, `pandas`                       |
+| Data_Analysis_Cupy             | [data_analysis_cupy.ipynb](./Data_Analysis_Cupy/data_analysis_cupy.ipynb)                 | GPU, Parallel     | `cupy`, `cudf`, `pandas`, `numpy`       |
+| Decision_Trees                 | [Decision trees.ipynb](./Decision_Trees/Decision%20trees.ipynb)                          | CPU, Serial       | `scikit-learn`, `tree`, `sklearn.datasets`, `graphviz`, `load_iris` |
+| Graphs&Networks                | [NetworkX.ipynb](./Graphs&Networks/NetworkX.ipynb)                                       | CPU, Serial       | `NetworkX`, `matplotlib.pyplot`, `networkx`, `write_dot`, `networkx.drawing.nx_pydot`, `networkx` |
+| Hello_World_CPU                | [hello_world_cpu.ipynb](./Hello_World_CPU/hello_world_cpu.ipynb)                         | CPU, Serial       |                                          |
+| Hello_World_GPU                | [hello_world_gpu.ipynb](./Hello_World_GPU/hello_world_gpu.ipynb)                         | GPU, Serial       |                                          |
+| Image_Processing               | [Pillow.ipynb](./Image_Processing/Pillow.ipynb)                                          | CPU, Serial       | `PIL`, `Image`, `sys`, `ImageFilter`, `ImageEnhance` |
+| Matplotlib_Intro               | [matplotlib_intro.ipynb](./Matplotlib_Intro/matplotlib_intro.ipynb)                       | CPU, Serial       | `matplotlib`, `matplotlib.pyplot`, `numpy` |
+| Multithreaded_Processing_CPU   | [multithreaded_processing.ipynb](./Multithreaded_Processing_CPU/multithreaded_processing.ipynb) | CPU, Parallel   | `mkl`, `numpy`, `dask.array`           |
+| NumPy_Intro                    | [numpy_intro.ipynb](./NumPy_Intro/numpy_intro.ipynb)                                     | CPU, Serial       | `numpy`, `operator`, `add`, `matplotlib.pyplot`, `collections`, `Counter` |
+| Python_Data_Analysis_Library   | [PandasCSV.ipynb](./Python_Data_Analysis_Library/PandasCSV.ipynb)                         | CPU, Parallel     | `IPython.display`, `Image`, `pandas`     |
+| String_Processing              | [Regression.ipynb](./String_Processing/Regression.ipynb)                                 | CPU, Serial       | `sklearn`, `linear_model`, `mean_squared_error`, `r2_score`, `sklearn.datasets`, `load_diabetes`, `numpy`, `matplotlib.pyplot`, `pandas`, `scipy`, `stats` |
+| Tensorflow_Image_Classification | [Image Classification.ipynb](./Tensorflow_Image_Classification/Image%20Classification.ipynb) | CPU, GPU, Parallel | `tensorflow`, `matplotlib.pyplot`, `numpy`, `PIL`, `keras`, `layers`, `tensorflow.keras`, `tensorflow.keras.models`, `Sequential`, `pathlib` |
+| Tensorflow_Simple_Training      | [SimpleTraining.ipynb](./Tensorflow_Simple_Training/SimpleTraining.ipynb)                | CPU, GPU, Parallel | `tensorflow`, `numpy`, `csv`, `matplotlib.pyplot` |
