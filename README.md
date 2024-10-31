@@ -1,4 +1,5 @@
-## Expanse-Notebooks-dev: Notebook Table
+# Expanse-Notebooks-dev
+
 Refer to this [guide](./Expanse_Notebook_User_Guide.md) for specific instructions on loading required packages and launching Jupyter Notebook in Expanse.
 
 ## View by: Name (alphabetical-sorted notebooks):
