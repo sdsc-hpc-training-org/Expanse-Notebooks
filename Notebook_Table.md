@@ -1,17 +1,6 @@
 # Expanse-Notebooks-dev: Notebook Table
 
-## View by:  
-* [Name](link-to-alphabetical-sorted notebooks)
-* [CPU/GPU](link-to-CPU-sorted notebooks)
-* [Serial/Parallel](linkg to paralllel sorted
-
-```
-these are created by the external python scripts
-scripts run by github actions triggered by some events (e.g. file change, new file, some other readme files changes)
-```
-
-Here's a table formatted to summarize the directories, notebooks, required modules, and relevant keywords based on your file structure:
-
+## View by: Name (alphabetical-sorted notebooks)
 
 | Notebook Project               | Notebook                                                                                   | Type               | Required (Sub) Modules                   |
 |--------------------------------|--------------------------------------------------------------------------------------------|--------------------|------------------------------------------|
@@ -35,3 +24,6 @@ Here's a table formatted to summarize the directories, notebooks, required modul
 | String_Processing              | [Regression.ipynb](./String_Processing/Regression.ipynb)                                 | CPU, Serial       | `sklearn`, `linear_model`, `mean_squared_error`, `r2_score`, `sklearn.datasets`, `load_diabetes`, `numpy`, `matplotlib.pyplot`, `pandas`, `scipy`, `stats` |
 | Tensorflow_Image_Classification | [Image Classification.ipynb](./Tensorflow_Image_Classification/Image%20Classification.ipynb) | CPU, GPU, Parallel | `tensorflow`, `matplotlib.pyplot`, `numpy`, `PIL`, `keras`, `layers`, `tensorflow.keras`, `tensorflow.keras.models`, `Sequential`, `pathlib` |
 | Tensorflow_Simple_Training      | [SimpleTraining.ipynb](./Tensorflow_Simple_Training/SimpleTraining.ipynb)                | CPU, GPU, Parallel | `tensorflow`, `numpy`, `csv`, `matplotlib.pyplot` |
+
+* [CPU/GPU](link-to-CPU-sorted notebooks)
+* [Serial/Parallel](linkg to paralllel sorted
