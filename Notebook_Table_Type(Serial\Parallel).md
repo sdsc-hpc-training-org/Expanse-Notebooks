@@ -1,5 +1,4 @@
-# Expanse-Notebooks-dev: Notebook Table sorted by Type(Serial/Parallel)
-
+## Expanse-Notebooks-dev: Notebook Table Sorted by Type (Serial/Parallel)
 
 ### Serial Notebooks
 
