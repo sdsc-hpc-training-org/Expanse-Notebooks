@@ -1,6 +1,6 @@
-# Expanse-Notebooks-dev
+# Expanse Notebooks
 
-Refer to this [guide](./Expanse_Notebook_User_Guide.md) for instructions on loading required packages and launching Jupyter Notebook in Expanse.
+Refer to this [User Guide](./Expanse_Notebook_User_Guide.md) for instructions on loading required packages and launching Jupyter Notebook in Expanse.
 
 ## View by: Name (Alphabetical-Order)
 
