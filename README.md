@@ -1,12 +1,15 @@
-# Expanse-Notebooks-dev: Notebook Table:
-Refer to this [guide](./Expanse_Notebook_User_Guide.md) for specific instructions on loading required packages and launching Jupyter Notebook in Expanse. This table lists the notebooks sorted in alphabetical order.
+## Expanse-Notebooks-dev: Notebook Table
+Refer to this [guide](./Expanse_Notebook_User_Guide.md) for specific instructions on loading required packages and launching Jupyter Notebook in Expanse.
+
+## View by: Name (alphabetical-sorted notebooks):
+
+The following table lists the notebooks sorted in alphabetical order.
 
 If you would like to view the table by type:
 - [CPU/GPU](./Notebook_Table_Type(CPU\GPU).md)
 - [Serial/Parallel](./Notebook_Table_Type(Serial\Parallel).md)
-  
-## View by: Name (alphabetical-sorted notebooks)
 
+## Notebook Table: Alphabetical Order
 | Notebook Project               | Notebook                                                                                   | Type               | Required (Sub) Modules                   |
 |--------------------------------|--------------------------------------------------------------------------------------------|--------------------|------------------------------------------|
 | CUDA_GPU_Computing_Pi          | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `cuda`        |
