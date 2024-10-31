@@ -15,10 +15,10 @@ Here's a table formatted to summarize the directories, notebooks, required modul
 
 | Notebook Project               | Notebook                                                                                   | Type               | Required (Sub) Modules                   |
 |--------------------------------|--------------------------------------------------------------------------------------------|--------------------|------------------------------------------|
-| Clustering_Visualizations      | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | CPU, Serial       | `scikit-learn`, `numpy`, `matplotlib`, `sciPy`, `make_blobs`, `KMeans`, `dendrogram`, `linkage`, `AgglomerativeClustering` |
 | CUDA_GPU_Computing_Pi          | [cuda_gpu_nvidia_computing_pi_solution.ipynb](./CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `cuda`        |
 | CUDA_GPU_Distance_Matrix       | [cuda_gpu_nvidia_distance_matrix_solution.ipynb](./CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `cuda`        |
 | CUDA_GPU_Law_Of_Cosines        | [cuda_gpu_nvidia_law_of_cosines_solution.ipynb](./CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb) | GPU, Parallel     | `numba`, `math`, `numpy`, `vectorize`, `cuda` |
+| Clustering_Visualizations      | [Introduction_to_Clustering.ipynb](./Clustering_Visulizations/Introduction_to_Clustering.ipynb) | CPU, Serial       | `scikit-learn`, `numpy`, `matplotlib`, `sciPy`, `make_blobs`, `KMeans`, `dendrogram`, `linkage`, `AgglomerativeClustering` |
 | Dask_Graph_CPU                 | [dask_graphs_CPU.ipynb](./Dask_Graph_CPU/dask_graphs_CPU.ipynb)                           | CPU, Parallel     | `dask`                                  |
 | Dask_Graph_GPU                 | [dask_graphs_GPU.ipynb](./Dask_Graph_GPU/dask_graphs_GPU.ipynb)                           | GPU, Parallel     | `dask`, `cupy`, `dask.array`, `array`   |
 | Data_Analysis                  | [data_analysis_pandas.ipynb](./Data_Analysis/data_analysis_pandas.ipynb)                  | CPU, Serial       | `numpy`, `pandas`                       |
