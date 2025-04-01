@@ -38,6 +38,8 @@ Decision_Trees\
 
 
 ## Submit Ticket
+This notebook was tested on Expanse on 3/27/25. 
+
 If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
 
 Email: consult@sdsc.edu

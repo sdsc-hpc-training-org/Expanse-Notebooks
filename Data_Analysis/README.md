@@ -44,6 +44,7 @@ Data_Analysis\
 More info on pandas, including a detailed API: https://pandas.pydata.org/
 
 ## Submit Ticket
+This notebook was last tested on 3/31/25. 
 If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:
 
 Email: consult@sdsc.edu
