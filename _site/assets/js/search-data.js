@@ -101,6 +101,17 @@ ninja.data = [{
           window.location.href = "/al-folio/blog/2023/hello-world-cpu/";
         
       },
+    },{id: "post-clustering-visualizations",
+      
+        title: "Clustering Visualizations",
+      
+      description: "instructions for Expanse users to print &#39;Hello, World!&#39; using both CPU and GPU on Expanse.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2023/clustering-visualizations/";
+        
+      },
     },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",

@@ -1,5 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/al-folio/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/al-folio/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-07-11T15:52:20-07:00</updated><id>http://localhost:4000/al-folio/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Hello_World CPU</title><link href="http://localhost:4000/al-folio/blog/2023/hello-world-cpu/" rel="alternate" type="text/html" title="Hello_World CPU" /><published>2023-07-04T05:57:00-07:00</published><updated>2023-07-04T05:57:00-07:00</updated><id>http://localhost:4000/al-folio/blog/2023/hello-world-cpu</id><content type="html" xml:base="http://localhost:4000/al-folio/blog/2023/hello-world-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-hello_world">SDSC Expanse Notebook: Hello_World</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/al-folio/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/al-folio/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-07-11T15:59:33-07:00</updated><id>http://localhost:4000/al-folio/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Clustering Visualizations</title><link href="http://localhost:4000/al-folio/blog/2023/clustering-visualizations/" rel="alternate" type="text/html" title="Clustering Visualizations" /><published>2023-07-04T05:57:00-07:00</published><updated>2023-07-04T05:57:00-07:00</updated><id>http://localhost:4000/al-folio/blog/2023/clustering-visualizations</id><content type="html" xml:base="http://localhost:4000/al-folio/blog/2023/clustering-visualizations/"><![CDATA[<h1 id="sdsc-expanse-notebook-clustering_visulizations">SDSC Expanse Notebook: Clustering_Visulizations</h1>
+<p>This README file provides instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>make_blobs</li>
+  <li>numpy</li>
+  <li>matplotlib</li>
+  <li>KMeans</li>
+  <li>dendorgram</li>
+  <li>linkage</li>
+  <li>AgglomerativeClustering</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run Introduction_to_Clustering notebook, we do not need to install additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+
+<p>Clustering_Visulizations<br />
+├── <a href="./Introduction_to_Clustering.ipynb">Introduction_to_Clustering.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/al-folio/assets/jupyter/Clustering_Visulizations/Introduction_to_Clustering.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="cpu" /><category term="gpu" /><category term="modules" /><category term="conda" /><category term="list" /><category term="formatting" /><category term="jupyter" /><summary type="html"><![CDATA[instructions for Expanse users to print 'Hello, World!' using both CPU and GPU on Expanse.]]></summary></entry><entry><title type="html">Hello_World CPU</title><link href="http://localhost:4000/al-folio/blog/2023/hello-world-cpu/" rel="alternate" type="text/html" title="Hello_World CPU" /><published>2023-07-04T05:57:00-07:00</published><updated>2023-07-04T05:57:00-07:00</updated><id>http://localhost:4000/al-folio/blog/2023/hello-world-cpu</id><content type="html" xml:base="http://localhost:4000/al-folio/blog/2023/hello-world-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-hello_world">SDSC Expanse Notebook: Hello_World</h1>
 <p>This README file provides instructions for Expanse users to print ‘Hello, World!’ using both CPU and GPU on Expanse.</p>
 
 <p>These notebooks only include basic python functions and commands intended to test if your environment has been configured properly.
