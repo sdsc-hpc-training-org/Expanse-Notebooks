@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hello_World
+title: Hello_World CPU
 date: 2023-07-04 08:57:00-0400 {% comment %} This is from the template, update later {% endcomment %}
 description: instructions for Expanse users to print 'Hello, World!' using both CPU and GPU on Expanse.
 tags: formatting jupyter
-categories: cpu gpu modules conda list {% comment %} Check obsidian notes for link. Tags should match the ACCESS format for tagging {% endcomment %}
+categories: cpu gpu modules conda list #{% comment %} Check obsidian notes for link. Tags should match the ACCESS format for tagging {% endcomment %}
 giscus_comments: false
 related_posts: true
 ---

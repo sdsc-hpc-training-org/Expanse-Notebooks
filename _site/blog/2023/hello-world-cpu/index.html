@@ -17,13 +17,12 @@
   
   
     
-      endcomment | You R. Name
+      Hello_World CPU | You R. Name
     
   
 </title>
 <meta name="author" content="You R. Name">
-<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+<meta name="description" content="instructions for Expanse users to print 'Hello, World!' using both CPU and GPU on Expanse.">
 
   <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -60,7 +59,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/al-folio/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="http://localhost:4000/al-folio/blog/category/endcomment/">
+<link rel="canonical" href="http://localhost:4000/al-folio/blog/2023/hello-world-cpu/">
 
 <!-- Dark Mode -->
 <script src="/al-folio/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -120,44 +119,6 @@
 
           <!-- Other pages -->
           
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
           
             
           
@@ -421,29 +382,197 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       
-        <div class="post">
+        
+
+
+
+
+
+
+
+<div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-<i class="fa-solid fa-tag fa-sm"></i> endcomment</h1>
-    <p class="post-description">an archive of posts in this category</p>
+    <h1 class="post-title">Hello_World CPU</h1>
+    <p class="post-meta">
+      Created in July 04, 2023
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/al-folio/blog/2023"> <i class="fa-solid fa-calendar fa-sm"></i> 2023 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/al-folio/blog/tag/formatting"> <i class="fa-solid fa-hashtag fa-sm"></i> formatting</a>
+          
+          
+             
+          
+        
+          
+            <a href="/al-folio/blog/tag/jupyter"> <i class="fa-solid fa-hashtag fa-sm"></i> jupyter</a>
+          
+          
+        
+      
+
+      
+          ·  
+        
+          
+            <a href="/al-folio/blog/category/cpu">
+              <i class="fa-solid fa-tag fa-sm"></i> cpu</a>
+          
+          
+             
+          
+        
+          
+            <a href="/al-folio/blog/category/gpu">
+              <i class="fa-solid fa-tag fa-sm"></i> gpu</a>
+          
+          
+             
+          
+        
+          
+            <a href="/al-folio/blog/category/modules">
+              <i class="fa-solid fa-tag fa-sm"></i> modules</a>
+          
+          
+             
+          
+        
+          
+            <a href="/al-folio/blog/category/conda">
+              <i class="fa-solid fa-tag fa-sm"></i> conda</a>
+          
+          
+             
+          
+        
+          
+            <a href="/al-folio/blog/category/list">
+              <i class="fa-solid fa-tag fa-sm"></i> list</a>
+          
+          
+        
+      
+    </p>
   </header>
 
-  <article class="archive">
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-          <tr>
-            <th scope="row">Jul 04, 2023</th>
-            <td>
-              
-                <a class="post-link" href="/al-folio/blog/2023/jupyter-notebook-copy/">Hello_World</a>
-              
-            </td>
-          </tr>
-        
-      </table>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <h1 id="sdsc-expanse-notebook-hello_world">SDSC Expanse Notebook: Hello_World</h1>
+<p>This README file provides instructions for Expanse users to print ‘Hello, World!’ using both CPU and GPU on Expanse.</p>
+
+<p>These notebooks only include basic python functions and commands intended to test if your environment has been configured properly.
+It is recommended that you run these hello world notebooks to check that everything has been configured correctly.<br>
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li>
+<a href="#submit-ticket">Submit Ticket</a>
+    <h2 id="import-module">Import Module:</h2>
+  </li>
+  <li>hello</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo" rel="external nofollow noopener" target="_blank">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+    <p>Also this command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.</p>
+  </li>
+  <li>GPU:
+<code class="language-plaintext highlighter-rouge">--env-modules  gpu/0.17.3b,anaconda3/2021.05</code>
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run hello_world notebooks, we do not need to install any additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+
+<p>Hello_World<br>
+├── <a href="./hello_world_cpu.ipynb">hello_world_cpu.ipynb</a><br>
+├── <a href="./hello_world_gpu.ipynb">hello_world_gpu.ipynb</a><br>
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on Expanse on 3/27/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe src="/al-folio/assets/jupyter/Hello_World_CPU/hello_world_cpu.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>
+
+
+
     </div>
   </article>
+
+  
+
+  
+
+  
+    
+      
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/al-folio/blog/2023/hello-world-gpu/">Hello_World GPU</a>
+    
+  </li>
+
+
+
+    
+  
+
+  
+  
 </div>
 
       
