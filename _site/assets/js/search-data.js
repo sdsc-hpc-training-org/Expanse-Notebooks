@@ -79,7 +79,95 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/al-folio/blog/";
               },
-            },{id: "post-hello-world-gpu",
+            },{id: "post-",
+      
+        title: "",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/2025-03-25-data-analysis/";
+        
+      },
+    },{id: "post-",
+      
+        title: "",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/2025-03-25-data-analysis-cupy/";
+        
+      },
+    },{id: "post-parallel-programming-with-dask-on-gpu",
+      
+        title: "Parallel Programming with DASK on GPU",
+      
+      description: "instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/parallel-programming-dask-gpu/";
+        
+      },
+    },{id: "post-parallel-programming-with-dask-on-cpu",
+      
+        title: "Parallel Programming with DASK on CPU",
+      
+      description: "instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/parallel-programming-dask-cpu/";
+        
+      },
+    },{id: "post-clustering-visualizations",
+      
+        title: "Clustering Visualizations",
+      
+      description: "instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/clustering-visualizations/";
+        
+      },
+    },{id: "post-law-of-cosines-on-a-cuda-gpu-nvidia",
+      
+        title: "Law of Cosines on a CUDA GPU (NVIDIA)",
+      
+      description: "instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/law-of-cosines-cuda-gpu/";
+        
+      },
+    },{id: "post-computing-distance-matrices-on-a-cuda-gpu-nvidia",
+      
+        title: "Computing distance matrices on a CUDA GPU (NVIDIA)",
+      
+      description: "instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/distance-matrix-cuda-gpu/";
+        
+      },
+    },{id: "post-computing-pi-on-a-cuda-gpu-nvidia",
+      
+        title: "Computing Pi on a CUDA GPU (NVIDIA)",
+      
+      description: "instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/computing-pi-cuda-gpu-nvidia/";
+        
+      },
+    },{id: "post-hello-world-gpu",
       
         title: "Hello_World GPU",
       
@@ -87,7 +175,18 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/al-folio/blog/2023/hello-world-gpu/";
+          window.location.href = "/al-folio/blog/2025/hello-world-gpu/";
+        
+      },
+    },{id: "post-graphs-amp-networks",
+      
+        title: "Graphs &amp; Networks",
+      
+      description: "instructions for Expanse users on how to run notebooks related to building, visualizing, and analyzing graphs and networks.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/graphs-networks/";
         
       },
     },{id: "post-hello-world-cpu",
@@ -98,18 +197,18 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/al-folio/blog/2023/hello-world-cpu/";
+          window.location.href = "/al-folio/blog/2025/hello-world-cpu/";
         
       },
-    },{id: "post-clustering-visualizations",
+    },{id: "post-decision-trees",
       
-        title: "Clustering Visualizations",
+        title: "Decision Trees",
       
-      description: "instructions for Expanse users to print &#39;Hello, World!&#39; using both CPU and GPU on Expanse.",
+      description: "instructions for Expanse users to run DecisionTrees notebooks in the Expanse. Introduces the scikit-learn machine learning package, using a classic decision tree example.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/al-folio/blog/2023/clustering-visualizations/";
+          window.location.href = "/al-folio/blog/2025/decision-trees/";
         
       },
     },{id: "news-a-simple-inline-announcement",
