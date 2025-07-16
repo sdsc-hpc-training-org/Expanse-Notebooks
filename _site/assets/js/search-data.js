@@ -123,6 +123,17 @@ ninja.data = [{
           window.location.href = "/al-folio/blog/2025/parallel-programming-dask-cpu/";
         
       },
+    },{id: "post-numpy-intro",
+      
+        title: "NumPy Intro",
+      
+      description: "instructions for Expanse users to run NumPy_intro notebooks in the Expanse.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/numpy-intro/";
+        
+      },
     },{id: "post-clustering-visualizations",
       
         title: "Clustering Visualizations",
@@ -132,6 +143,28 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/al-folio/blog/2025/clustering-visualizations/";
+        
+      },
+    },{id: "post-string-processing",
+      
+        title: "String Processing",
+      
+      description: "instructions for Expanse users to run String_Processing notebooks in the Expanse. A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/boring-python/";
+        
+      },
+    },{id: "post-python-data-analysis-library",
+      
+        title: "Python Data Analysis Library",
+      
+      description: "instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2025/python-data-analysis/";
         
       },
     },{id: "post-law-of-cosines-on-a-cuda-gpu-nvidia",
@@ -209,6 +242,50 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/al-folio/blog/2025/decision-trees/";
+        
+      },
+    },{id: "post-tensorflow-simple-training",
+      
+        title: "Tensorflow Simple Training",
+      
+      description: "instructions for Expanse users on how to run TensorFlow on Expanse, both on CPU and GPU.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2024/tensorflow-simple-training/";
+        
+      },
+    },{id: "post-tensorflow",
+      
+        title: "Tensorflow",
+      
+      description: "instructions for Expanse users on how to run TensorFlow on Expanse, both on CPU and GPU.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2024/tensorflow-image-classification/";
+        
+      },
+    },{id: "post-matplotlib-intro",
+      
+        title: "Matplotlib Intro",
+      
+      description: "instructions for Expanse users on running Matplotlib Python Package.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2024/matplotlib-intro/";
+        
+      },
+    },{id: "post-image-processing",
+      
+        title: "Image Processing",
+      
+      description: "instructions for Expanse users on learning about the PILLOW package, authored by Leo Gu.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/al-folio/blog/2024/image-processing/";
         
       },
     },{id: "news-a-simple-inline-announcement",
