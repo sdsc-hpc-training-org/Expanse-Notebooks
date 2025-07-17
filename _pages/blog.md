@@ -1,14 +1,14 @@
 ---
 layout: default
-permalink: /blog/
-title: blog
+permalink: /notebooks/
+title: Notebooks
 nav: true
 nav_order: 1
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 50
   sort_field: date
   sort_reverse: true
   trail:
