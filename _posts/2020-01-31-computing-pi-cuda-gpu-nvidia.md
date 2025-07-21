@@ -8,6 +8,8 @@ tags:
   - gpu 
   - nvidia 
   - monte-carlo
+  - cuda
+  - expanse
 categories:
 giscus_comments: false
 related_posts: true

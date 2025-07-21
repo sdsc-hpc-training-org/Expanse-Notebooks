@@ -4,6 +4,12 @@ title: Computing distance matrices on a CUDA GPU (NVIDIA)
 date: 2025-03-31
 description: instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.
 tags: 
+  - computer-graphics
+  - gpu 
+  - nvidia 
+  - molecular-dynamics
+  - cuda
+  - expanse
 categories:
 giscus_comments: false
 related_posts: true
