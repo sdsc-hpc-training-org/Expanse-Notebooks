@@ -4,6 +4,9 @@ title: Image Processing
 date: 2024-10-29
 description: instructions for Expanse users on learning about the PILLOW package, authored by Leo Gu.
 tags: 
+  - expanse 
+  - computer-vision
+  - python
 categories: 
 giscus_comments: false
 related_posts: true
