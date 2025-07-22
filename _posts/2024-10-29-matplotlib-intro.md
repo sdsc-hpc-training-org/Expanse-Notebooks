@@ -4,6 +4,8 @@ title: Matplotlib Intro
 date: 2024-10-29
 description: instructions for Expanse users on running Matplotlib Python Package. 
 tags: 
+  - expanse
+  - python 
 categories: 
 giscus_comments: false
 related_posts: true

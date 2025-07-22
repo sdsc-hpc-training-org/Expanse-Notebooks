@@ -4,6 +4,15 @@ title: Tensorflow Simple Training
 date: 2024-10-29
 description: instructions for Expanse users on how to run TensorFlow on Expanse, both on CPU and GPU.
 tags: 
+  - expanse
+  - tensorflow
+  - cpu 
+  - gpu 
+  - machine-learning
+  - ai 
+  - AI/ML
+  - cuda
+  - nvidia
 categories: 
 giscus_comments: false
 related_posts: true

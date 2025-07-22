@@ -4,6 +4,16 @@ title: Tensorflow
 date: 2024-10-29
 description: instructions for Expanse users on how to run TensorFlow on Expanse, both on CPU and GPU.
 tags: 
+  - expanse
+  - cpu
+  - gpu
+  - singularity 
+  - machine-learning
+  - ai
+  - AI/ML
+  - tensorflow 
+  - cuda
+  - nvidia
 categories: 
 giscus_comments: false
 related_posts: true
