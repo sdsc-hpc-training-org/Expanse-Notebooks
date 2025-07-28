@@ -4,6 +4,10 @@ title: String Processing
 date: 2025-03-31
 description: instructions for Expanse users to run String_Processing notebooks in the Expanse. A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.
 tags: 
+  - expanse
+  - scikit-learn
+  - python
+  
 categories: 
 giscus_comments: false
 related_posts: true
