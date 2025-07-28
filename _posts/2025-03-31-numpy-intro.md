@@ -4,6 +4,10 @@ title: NumPy Intro
 date: 2025-03-31
 description: instructions for Expanse users to run NumPy_intro notebooks in the Expanse.
 tags: 
+  - expanse
+  - anaconda
+  - jupyter 
+  - python
 categories: 
 giscus_comments: false
 related_posts: true

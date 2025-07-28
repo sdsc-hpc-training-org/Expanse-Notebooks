@@ -4,6 +4,11 @@ title: Parallel Programming with DASK on CPU
 date: 2025-03-31
 description: instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.
 tags: 
+  - anaconda
+  - expanse
+  - python
+  - jupyter 
+  - parallelization
 categories: 
 giscus_comments: false
 related_posts: true

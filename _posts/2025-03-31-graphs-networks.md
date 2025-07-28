@@ -4,6 +4,11 @@ title: Graphs & Networks
 date: 2025-03-27
 description: instructions for Expanse users on how to run notebooks related to building, visualizing, and analyzing graphs and networks.
 tags: 
+  - expanse
+  - anaconda
+  - jupyter
+  - python
+  - visualization
 categories: 
 giscus_comments: false
 related_posts: true

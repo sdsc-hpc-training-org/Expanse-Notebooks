@@ -4,6 +4,12 @@ title: Python Data Analysis Library
 date: 2025-03-31
 description: instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.
 tags: 
+  - expanse
+  - anaconda
+  - python
+  - jupyter
+  - data-analysis
+  - 
 categories: 
 giscus_comments: false
 related_posts: true

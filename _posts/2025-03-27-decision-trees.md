@@ -4,6 +4,11 @@ title: Decision Trees
 date: 2025-03-27
 description: instructions for Expanse users to run DecisionTrees notebooks in the Expanse. Introduces the scikit-learn machine learning package, using a classic decision tree example.
 tags: 
+  - expanse
+  - python
+  - anaconda
+  - jupyter
+  - scikit-learn
 categories: 
 giscus_comments: false
 related_posts: true
