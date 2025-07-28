@@ -2,7 +2,7 @@
 layout: post
 title: Data-Analysis
 date: 2025-03-31
-description: instructions for Expanse users to run data analyis notebooks. The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects: Series and DataFrame (1D and 2D data structures).
+description: instructions for Expanse users to run data analyis notebooks. The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects- Series and DataFrame (1D and 2D data structures).
 tags: data analysis
 categories: 
 giscus_comments: false
