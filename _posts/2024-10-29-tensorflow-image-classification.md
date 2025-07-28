@@ -14,6 +14,7 @@ tags:
   - tensorflow 
   - cuda
   - nvidia
+  - anaconda
 categories: 
 giscus_comments: false
 related_posts: true

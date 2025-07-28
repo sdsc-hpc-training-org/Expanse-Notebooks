@@ -7,7 +7,7 @@ tags:
   - expanse
   - scikit-learn
   - python
-  
+  - anaconda
 categories: 
 giscus_comments: false
 related_posts: true

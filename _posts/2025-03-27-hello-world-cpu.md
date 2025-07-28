@@ -6,6 +6,7 @@ description: instructions for Expanse users to print 'Hello, World!' using both 
 tags: 
   - expanse
   - modules 
+  - anaconda
 categories: cpu gpu modules conda list #{% comment %} Check obsidian notes for link. Tags should match the ACCESS format for tagging {% endcomment %}
 giscus_comments: false
 related_posts: true

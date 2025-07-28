@@ -10,6 +10,7 @@ tags:
   - monte-carlo
   - cuda
   - expanse
+  - anaconda
 categories:
 giscus_comments: false
 related_posts: true

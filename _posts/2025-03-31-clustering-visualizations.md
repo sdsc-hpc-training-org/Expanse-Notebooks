@@ -3,8 +3,14 @@ layout: post
 title: Clustering Visualizations
 date: 2025-03-31
 description: instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.
-tags: formatting jupyter
-categories: cpu gpu modules conda list #{% comment %} Check obsidian notes for link. Tags should match the ACCESS format for tagging {% endcomment %}
+tags: 
+  - expanse
+  - jupyter 
+  - anaconda
+  - ai
+  - AI/ML
+  - machine-learning
+categories: 
 giscus_comments: false
 related_posts: true
 ---

@@ -3,14 +3,14 @@ layout: post
 title: Hello_World GPU
 date: 2025-03-28
 description: instructions for Expanse users to print 'Hello, World!' using both CPU and GPU on Expanse.
-tags: formatting jupyter
-categories: 
-  - cpu
+tags: 
   - gpu 
   - modules 
   - conda 
   - list 
   - expanse
+  - anaconda
+categories: 
 giscus_comments: false
 related_posts: true
 ---

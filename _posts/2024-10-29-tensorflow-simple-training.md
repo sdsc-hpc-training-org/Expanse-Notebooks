@@ -13,6 +13,7 @@ tags:
   - AI/ML
   - cuda
   - nvidia
+  - anaconda
 categories: 
 giscus_comments: false
 related_posts: true

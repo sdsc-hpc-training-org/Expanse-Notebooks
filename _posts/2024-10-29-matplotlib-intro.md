@@ -6,6 +6,7 @@ description: instructions for Expanse users on running Matplotlib Python Package
 tags: 
   - expanse
   - python 
+  - anaconda
 categories: 
 giscus_comments: false
 related_posts: true
