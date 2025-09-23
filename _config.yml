@@ -230,6 +230,9 @@ defaults:
 sass:
   style: compressed
 
+
+jupyter-notebook: 
+  input: true #control whether a converted .html includes code inputs or not
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
