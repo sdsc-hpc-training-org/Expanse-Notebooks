@@ -7,4 +7,4 @@ nav: true
 nav_order: 60
 ---
 
-Click [here](/_pages/tags.md) to search by tag.
+Click [here](/blog/tag) to search by tag.
