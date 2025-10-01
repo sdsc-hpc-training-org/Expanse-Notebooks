@@ -1,28 +1,7 @@
-<<<<<<< HEAD
 #ignoring specific files
 .DS_Store
 .ipynb_checkpoints
 __pycache__
-=======
-#Ignoring Specific Files
-#.DS_Store
-
-#Ignoring Specific Directories
-__pycache__/
-.ipynb_checkpoints/
-__pycache__/
-#Ignoring File Extension
-*.DS_Store
-
-
-
-
-
-
-
-
-
->>>>>>> dev_remote/refile
 /_site
 tags.txt
 tags.py

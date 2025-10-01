@@ -39,7 +39,7 @@ pagination:
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
-        {% endunless %}
+        {% endunless %} 
       {% endfor %}
       {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
         <p>&bull;</p>

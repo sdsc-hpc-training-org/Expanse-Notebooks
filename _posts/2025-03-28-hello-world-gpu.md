@@ -7,7 +7,6 @@ tags:
   - gpu 
   - modules 
   - conda 
-  - list 
   - expanse
   - anaconda
 categories: 
