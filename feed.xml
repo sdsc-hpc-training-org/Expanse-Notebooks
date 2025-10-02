@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-10-02T09:53:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HPC Training Notebooks</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Computing distance matrices on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/distance-matrix-cuda-gpu/" rel="alternate" type="text/html" title="Computing distance matrices on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/distance-matrix-cuda-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/distance-matrix-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+<p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#short-description">Short Description</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>numba</li>
+  <li>math</li>
+  <li>numpy</li>
+  <li>cuda</li>
+  <li>vectorize</li>
+  <li>cuda</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing –env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse.</p>
+
+<p>Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the <code class="language-plaintext highlighter-rouge">--conda-env</code> option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
+</code></pre></div></div>
+<h2 id="install-modules">Install Modules</h2>
+<p>To run cuda_gpu_nvidia notebooks, no additional package installation is required.</p>
+
+<h2 id="location">Location</h2>
+
+<p>CUDA_GPU_NVIDIA<br />
+├── <a href="./cuda_gpu_nvidia_computing_pi_solution">cuda_gpu_nvidia_computing_pi_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_distance_matrix_solution.ipynb">cuda_gpu_nvidia_distance_matrix_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_law_of_cosines_solution.ipynb">cuda_gpu_nvidia_law_of_cosines_solution.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="short-description">Short Description</h2>
+<p>In the Computing Pi exercise, we will design a CUDA kernel to compute the value of Pi 
+via Monte Carlo.  The concepts of writing and invoking CUDA kernels in 
+Numba are introduced.</p>
+
+<p>In the Distance Matrix exercise, we will compute a distance matrix for a synthetic dataset of 
+3-D molecular geometries.  We will learn how to leverage higher-dimensional
+CUDA thread-block hierarchies.</p>
+
+<p>In Law of Cosines exercise, we will explore GPU Ufuncs which are simple to write, invoke, 
+and are compatible with Numpy Ufuncs.  We will learn how to write a simple GPU 
+Ufunc to compute the law of cosines.</p>
+
+<h2 id="sources">Sources</h2>
+<p>Below are listed a few related readings and presentations.
+<a href="http://numba.pydata.org/">Numba</a> supports CUDA GPU programming by directly 
+compiling a subset of Python code into CUDA kernels and device functions 
+following the CUDA execution model.</p>
+
+<p>In the provided notebooks, a problem is introduced and mostly implemented in 
+Numba.  As an exercise, complete the missing lines of code to successfully 
+compute the result.</p>
+
+<p>These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were <strong>presented by Abe Stern, NVIDIA</strong> with the topic of <strong>GPU accelerated computing with CUDA Python</strong>.</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="molecular-dynamics" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Law of Cosines on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu/" rel="alternate" type="text/html" title="Law of Cosines on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+<p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#short-description">Short Description</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>numba</li>
+  <li>math</li>
+  <li>numpy</li>
+  <li>cuda</li>
+  <li>vectorize</li>
+  <li>cuda</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing –env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse.</p>
+
+<p>Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the <code class="language-plaintext highlighter-rouge">--conda-env</code> option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
+</code></pre></div></div>
+<h2 id="install-modules">Install Modules</h2>
+<p>To run cuda_gpu_nvidia notebooks, no additional package installation is required.</p>
+
+<h2 id="location">Location</h2>
+
+<p>CUDA_GPU_NVIDIA<br />
+├── <a href="./cuda_gpu_nvidia_computing_pi_solution">cuda_gpu_nvidia_computing_pi_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_distance_matrix_solution.ipynb">cuda_gpu_nvidia_distance_matrix_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_law_of_cosines_solution.ipynb">cuda_gpu_nvidia_law_of_cosines_solution.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="short-description">Short Description</h2>
+<p>In the Computing Pi exercise, we will design a CUDA kernel to compute the value of Pi 
+via Monte Carlo.  The concepts of writing and invoking CUDA kernels in 
+Numba are introduced.</p>
+
+<p>In the Distance Matrix exercise, we will compute a distance matrix for a synthetic dataset of 
+3-D molecular geometries.  We will learn how to leverage higher-dimensional
+CUDA thread-block hierarchies.</p>
+
+<p>In Law of Cosines exercise, we will explore GPU Ufuncs which are simple to write, invoke, 
+and are compatible with Numpy Ufuncs.  We will learn how to write a simple GPU 
+Ufunc to compute the law of cosines.</p>
+
+<h2 id="sources">Sources</h2>
+<p>Below are listed a few related readings and presentations.
+<a href="http://numba.pydata.org/">Numba</a> supports CUDA GPU programming by directly 
+compiling a subset of Python code into CUDA kernels and device functions 
+following the CUDA execution model.</p>
+
+<p>In the provided notebooks, a problem is introduced and mostly implemented in 
+Numba.  As an exercise, complete the missing lines of code to successfully 
+compute the result.</p>
+
+<p>These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were <strong>presented by Abe Stern, NVIDIA</strong> with the topic of <strong>GPU accelerated computing with CUDA Python</strong>.</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="cuda" /><category term="nvidia" /><category term="gpu" /><category term="expanse" /><category term="computer-graphics" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Data-Analysis</title><link href="http://localhost:4000/blog/2025/data-analysis/" rel="alternate" type="text/html" title="Data-Analysis" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/data-analysis</id><content type="html" xml:base="http://localhost:4000/blog/2025/data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-data_analysis">SDSC Expanse Notebook: Data_Analysis</h1>
+<p>This README file provides instructions for Expanse users to run data analyis notebooks.
+The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects: Series and DataFrame (1D and 2D data structures).</p>
+
+<p>Keep in mind the added files: <br />
+• city temps spreadsheet.xlsx<br />
+• city temps.csv<br />
+• olympics.csv<br />
+These contain the necessary data for the notebook to run.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>numpy</li>
+  <li>pandas</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run data_analysis_pandas notebook, we do not need to install additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+
+<p>Data_Analysis<br />
+├──<a href="./data_analysis_pandas.ipynb">data_analysis_pandas.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="sources">Sources</h2>
+<p>More info on pandas, including a detailed API: https://pandas.pydata.org/</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/Data_Analysis/data_analysis_pandas.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="data-analysis" /><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="data-science" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run data analyis notebooks. The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects- Series and DataFrame (1D and 2D data structures).]]></summary></entry><entry><title type="html">Python Data Analysis Library</title><link href="http://localhost:4000/blog/2025/python-data-analysis/" rel="alternate" type="text/html" title="Python Data Analysis Library" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/python-data-analysis</id><content type="html" xml:base="http://localhost:4000/blog/2025/python-data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-python_data_analysis_library">SDSC Expanse Notebook: Python_Data_Analysis_Library</h1>
+<p>This README file provides instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.
+pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.</p>
+
+<p>This notebook will give you an introduction to PANDAS. Enjoy!/
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>Image</li>
+  <li>pandas</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="install-modules">Install Modules</h2>
+<p>To run PandasCSV notebook, we do not need to install any additional packages.</p>
+<h2 id="location">Location</h2>
+
+<p>Python_Data_Analysis_Library<br />
+├── <a href="./PandasCSV.ipynb">PandasCSV.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+
+<p>Sorry, the notebook you are looking for does not exist.</p>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="python" /><category term="jupyter" /><category term="data-analysis" /><summary type="html"><![CDATA[instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.]]></summary></entry><entry><title type="html">String Processing</title><link href="http://localhost:4000/blog/2025/boring-python/" rel="alternate" type="text/html" title="String Processing" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/boring-python</id><content type="html" xml:base="http://localhost:4000/blog/2025/boring-python/"><![CDATA[<h1 id="sdsc-expanse-notebook-boring_python">SDSC Expanse Notebook: Boring_Python</h1>
+<p>This README file provides instructions for Expanse users to run String_Processing notebooks in the Expanse.
+A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>sklearn</li>
+  <li>linear_model</li>
+  <li>mean_squared_error</li>
+  <li>r2_score</li>
+  <li>load_diabetes</li>
+  <li>numpy</li>
+  <li>pandas</li>
+  <li>stats</li>
+  <li>scipy</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="install-modules">Install Modules</h2>
+<p>To run StringProcessing notebooks, we do not need to install any additional packages.</p>
+
+<h2 id="location">Location</h2>
+
+<p>String_Processing<br />
+├── <a href="./Regression.ipynb">Regression.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last updated and tested on 3/31/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/String_Processing/Regression.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="scikit-learn" /><category term="python" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run String_Processing notebooks in the Expanse. A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.]]></summary></entry><entry><title type="html">Clustering Visualizations</title><link href="http://localhost:4000/blog/2025/clustering-visualizations/" rel="alternate" type="text/html" title="Clustering Visualizations" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/clustering-visualizations</id><content type="html" xml:base="http://localhost:4000/blog/2025/clustering-visualizations/"><![CDATA[<h1 id="sdsc-expanse-notebook-clustering_visulizations">SDSC Expanse Notebook: Clustering_Visulizations</h1>
+<p>This README file provides instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>make_blobs</li>
+  <li>numpy</li>
+  <li>matplotlib</li>
+  <li>KMeans</li>
+  <li>dendorgram</li>
+  <li>linkage</li>
+  <li>AgglomerativeClustering</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run Introduction_to_Clustering notebook, we do not need to install additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+
+<p>Clustering_Visulizations<br />
+├── <a href="./Introduction_to_Clustering.ipynb">Introduction_to_Clustering.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/Clustering_Visulizations/Introduction_to_Clustering.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="jupyter" /><category term="anaconda" /><category term="ai" /><category term="AI/ML" /><category term="machine-learning" /><summary type="html"><![CDATA[instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.]]></summary></entry><entry><title type="html">NumPy Intro</title><link href="http://localhost:4000/blog/2025/numpy-intro/" rel="alternate" type="text/html" title="NumPy Intro" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/numpy-intro</id><content type="html" xml:base="http://localhost:4000/blog/2025/numpy-intro/"><![CDATA[<h1 id="sdsc-expanse-notebook-numpy_intro">SDSC Expanse Notebook: NumPy_Intro</h1>
+<p>This README file provides instructions for Expanse users to run NumPy_intro notebooks in the Expanse.</p>
+
+<p>NumPy is a fundamental numerical Python package. It includes array objects, high level array manipulation functions, and more. 
+numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dimentional arrays; basic NumPy functions like creating arrays, reshaping and manipulating arrays; some general linear algebra capabilities; and sampling for HPC capacities.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a>
+    <h2 id="import-module">Import Module:</h2>
+  </li>
+  <li>numpy</li>
+  <li>add</li>
+  <li>matplotlib</li>
+  <li>collections</li>
+  <li>Counter</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="install-modules">Install Modules</h2>
+<p>To run numpy_intro notebook, we do not need to install any additional packages.</p>
+
+<h2 id="location">Location</h2>
+
+<p>NumPy_Intro<br />
+├── <a href="./numpy_intro.ipynb">numpy_intro.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="sources">Sources</h2>
+<p>For extensive NumPy documentation: https://numpy.org/doc/stable/reference/index.html</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/NumPy_Intro/numpy_intro.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run NumPy_intro notebooks in the Expanse.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on CPU</title><link href="http://localhost:4000/blog/2025/parallel-programming-dask-cpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on CPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/parallel-programming-dask-cpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/parallel-programming-dask-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
+<p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
+Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>dask</li>
+  <li>mkl</li>
+  <li>da</li>
+  <li>numpy</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
+For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
+<ul>
+  <li>CPU:
+<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
+</code></pre></div>    </div>
+    <p>Also this command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.</p>
+  </li>
+  <li>GPU:
+<code class="language-plaintext highlighter-rouge">--env-modules  gpu/0.17.3b,anaconda3/2021.05</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run Parallel_Programming notebooks, we do not need to install any additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+<p>Parallel_Programming<br />
+├── <a href="./dask_graphs.ipynb">dask_graphs.ipynb</a><br />
+├── <a href="./multithreaded_processing.ipynb">multithreaded_processing.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>This notebook was last tested on 3/31/25. 
+If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/Dask_Graph_CPU/dask_graphs_CPU.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry><entry><title type="html">Computing Pi on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia/" rel="alternate" type="text/html" title="Computing Pi on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia</id><content type="html" xml:base="http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+<p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#short-description">Short Description</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>numba</li>
+  <li>math</li>
+  <li>numpy</li>
+  <li>cuda</li>
+  <li>vectorize</li>
+  <li>cuda</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>By utilizing –env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse.</p>
+
+<p>Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the <code class="language-plaintext highlighter-rouge">--conda-env</code> option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
+</code></pre></div></div>
+<h2 id="install-modules">Install Modules</h2>
+<p>To run cuda_gpu_nvidia notebooks, no additional package installation is required.</p>
+
+<h2 id="location">Location</h2>
+
+<p>CUDA_GPU_NVIDIA<br />
+├── <a href="./cuda_gpu_nvidia_computing_pi_solution">cuda_gpu_nvidia_computing_pi_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_distance_matrix_solution.ipynb">cuda_gpu_nvidia_distance_matrix_solution.ipynb</a><br />
+├── <a href="./cuda_gpu_nvidia_law_of_cosines_solution.ipynb">cuda_gpu_nvidia_law_of_cosines_solution.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="short-description">Short Description</h2>
+<p>In the Computing Pi exercise, we will design a CUDA kernel to compute the value of Pi 
+via Monte Carlo.  The concepts of writing and invoking CUDA kernels in 
+Numba are introduced.</p>
+
+<p>In the Distance Matrix exercise, we will compute a distance matrix for a synthetic dataset of 
+3-D molecular geometries.  We will learn how to leverage higher-dimensional
+CUDA thread-block hierarchies.</p>
+
+<p>In Law of Cosines exercise, we will explore GPU Ufuncs which are simple to write, invoke, 
+and are compatible with Numpy Ufuncs.  We will learn how to write a simple GPU 
+Ufunc to compute the law of cosines.</p>
+
+<h2 id="sources">Sources</h2>
+<p>Below are listed a few related readings and presentations.
+<a href="http://numba.pydata.org/">Numba</a> supports CUDA GPU programming by directly 
+compiling a subset of Python code into CUDA kernels and device functions 
+following the CUDA execution model.</p>
+
+<p>In the provided notebooks, a problem is introduced and mostly implemented in 
+Numba.  As an exercise, complete the missing lines of code to successfully 
+compute the result.</p>
+
+<p>These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were <strong>presented by Abe Stern, NVIDIA</strong> with the topic of <strong>GPU accelerated computing with CUDA Python</strong>.</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="monte-carlo" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on GPU</title><link href="http://localhost:4000/blog/2025/parallel-programming-dask-gpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on GPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/parallel-programming-dask-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/parallel-programming-dask-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
+<p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
+Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
+  <strong>Listof Content</strong></p>
+<ul>
+  <li><a href="#import-module">Import Module</a></li>
+  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
+  <li><a href="#environment-modules">Environment Modules</a></li>
+  <li><a href="#install-modules">Install Modules</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#submit-ticket">Submit Ticket</a></li>
+</ul>
+
+<h2 id="import-module">Import Module:</h2>
+<ul>
+  <li>dask</li>
+  <li>mkl</li>
+  <li>da</li>
+  <li>numpy</li>
+</ul>
+
+<h2 id="launch-galyleo">Launch Galyleo</h2>
+<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
+
+<h2 id="environment-modules">Environment Modules</h2>
+<p>This command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.</p>
+<ul>
+  <li>GPU:
+<code class="language-plaintext highlighter-rouge">--env-modules  gpu/0.17.3b,anaconda3/2021.05</code>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
+</code></pre></div>    </div>
+    <h2 id="install-modules">Install Modules</h2>
+    <p>To run Parallel_Programming notebooks, we do not need to install any additional packages.</p>
+  </li>
+</ul>
+
+<h2 id="location">Location</h2>
+<p>Parallel_Programming<br />
+├── <a href="./dask_graphs.ipynb">dask_graphs.ipynb</a><br />
+├── README.md</p>
+
+<h2 id="submit-ticket">Submit Ticket</h2>
+<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
+
+<p>Email: consult@sdsc.edu</p>
+
+<p>We appreciate your input and will review your suggestions promptly!</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/assets/jupyter/Dask_Graph_GPU/dask_graphs_GPU.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><category term="gpu" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry></feed>
