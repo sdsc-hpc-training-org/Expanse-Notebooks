@@ -1,8 +1,8 @@
 ---
 layout: about
 title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+permalink: /about
+subtitle: This page is under construction. 
 
 profile:
   align: right

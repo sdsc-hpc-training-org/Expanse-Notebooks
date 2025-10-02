@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /notebooks/
+permalink: /
 title: Notebooks
 nav: true
 nav_order: 1
