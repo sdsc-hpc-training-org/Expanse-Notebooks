@@ -7,14 +7,14 @@ ninja.data = [{
     title: "",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/";
+      window.location.href = "/Expanse-Notebooks/";
     },
   },{id: "nav-notebooks",
           title: "Notebooks",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/index.html";
+            window.location.href = "/Expanse-Notebooks/index.html";
           },
         },{id: "post-parallel-programming-with-dask-on-gpu",
       
@@ -24,7 +24,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/parallel-programming-dask-gpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu/";
         
       },
     },{id: "post-parallel-programming-with-dask-on-cpu",
@@ -35,7 +35,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/parallel-programming-dask-cpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu/";
         
       },
     },{id: "post-numpy-intro",
@@ -46,7 +46,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/numpy-intro/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/numpy-intro/";
         
       },
     },{id: "post-clustering-visualizations",
@@ -57,7 +57,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/clustering-visualizations/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/clustering-visualizations/";
         
       },
     },{id: "post-string-processing",
@@ -68,7 +68,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/boring-python/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/boring-python/";
         
       },
     },{id: "post-python-data-analysis-library",
@@ -79,7 +79,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/python-data-analysis/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/python-data-analysis/";
         
       },
     },{id: "post-data-analysis",
@@ -90,7 +90,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/data-analysis/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/data-analysis/";
         
       },
     },{id: "post-law-of-cosines-on-a-cuda-gpu-nvidia",
@@ -101,7 +101,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/law-of-cosines-cuda-gpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/";
         
       },
     },{id: "post-computing-distance-matrices-on-a-cuda-gpu-nvidia",
@@ -112,7 +112,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/distance-matrix-cuda-gpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/";
         
       },
     },{id: "post-computing-pi-on-a-cuda-gpu-nvidia",
@@ -123,7 +123,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/computing-pi-cuda-gpu-nvidia/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/";
         
       },
     },{id: "post-hello-world-gpu",
@@ -134,7 +134,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/hello-world-gpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/hello-world-gpu/";
         
       },
     },{id: "post-graphs-amp-networks",
@@ -145,7 +145,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/graphs-networks/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/graphs-networks/";
         
       },
     },{id: "post-hello-world-cpu",
@@ -156,7 +156,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/hello-world-cpu/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/hello-world-cpu/";
         
       },
     },{id: "post-decision-trees",
@@ -167,7 +167,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/decision-trees/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/decision-trees/";
         
       },
     },{id: "post-data-analysis-with-cupy",
@@ -178,7 +178,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/data-analysis-cupy/";
+          window.location.href = "/Expanse-Notebooks/blog/2025/data-analysis-cupy/";
         
       },
     },{id: "post-tensorflow-simple-training",
@@ -189,7 +189,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2024/tensorflow-simple-training/";
+          window.location.href = "/Expanse-Notebooks/blog/2024/tensorflow-simple-training/";
         
       },
     },{id: "post-tensorflow",
@@ -200,7 +200,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2024/tensorflow-image-classification/";
+          window.location.href = "/Expanse-Notebooks/blog/2024/tensorflow-image-classification/";
         
       },
     },{id: "post-matplotlib-intro",
@@ -211,7 +211,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2024/matplotlib-intro/";
+          window.location.href = "/Expanse-Notebooks/blog/2024/matplotlib-intro/";
         
       },
     },{id: "post-image-processing",
@@ -222,7 +222,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2024/image-processing/";
+          window.location.href = "/Expanse-Notebooks/blog/2024/image-processing/";
         
       },
     },{id: "news-a-simple-inline-announcement",
@@ -232,7 +232,7 @@ ninja.data = [{
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/Expanse-Notebooks/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
@@ -240,47 +240,47 @@ ninja.data = [{
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/Expanse-Notebooks/projects/1_project/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/Expanse-Notebooks/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/Expanse-Notebooks/projects/3_project/";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/Expanse-Notebooks/projects/4_project/";
             },},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/Expanse-Notebooks/projects/5_project/";
             },},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
+              window.location.href = "/Expanse-Notebooks/projects/6_project/";
             },},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/Expanse-Notebooks/projects/7_project/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/Expanse-Notebooks/projects/8_project/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/Expanse-Notebooks/projects/9_project/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',

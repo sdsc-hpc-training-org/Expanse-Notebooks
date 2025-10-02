@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-10-02T09:53:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HPC Training Notebooks</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Computing distance matrices on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/distance-matrix-cuda-gpu/" rel="alternate" type="text/html" title="Computing distance matrices on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/distance-matrix-cuda-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/distance-matrix-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-10-02T10:41:45-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml</id><title type="html">HPC Training Notebooks</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Computing distance matrices on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/" rel="alternate" type="text/html" title="Computing distance matrices on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
 <p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
   <strong>Listof Content</strong></p>
 <ul>
@@ -83,13 +83,13 @@ compute the result.</p>
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/CUDA_GPU_Distance_Matrix/cuda_gpu_nvidia_distance_matrix_solution.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="molecular-dynamics" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Law of Cosines on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu/" rel="alternate" type="text/html" title="Law of Cosines on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/law-of-cosines-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="molecular-dynamics" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Law of Cosines on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/" rel="alternate" type="text/html" title="Law of Cosines on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
 <p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
   <strong>Listof Content</strong></p>
 <ul>
@@ -173,13 +173,13 @@ compute the result.</p>
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="cuda" /><category term="nvidia" /><category term="gpu" /><category term="expanse" /><category term="computer-graphics" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Data-Analysis</title><link href="http://localhost:4000/blog/2025/data-analysis/" rel="alternate" type="text/html" title="Data-Analysis" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/data-analysis</id><content type="html" xml:base="http://localhost:4000/blog/2025/data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-data_analysis">SDSC Expanse Notebook: Data_Analysis</h1>
+</div>]]></content><author><name></name></author><category term="cuda" /><category term="nvidia" /><category term="gpu" /><category term="expanse" /><category term="computer-graphics" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Data-Analysis</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/" rel="alternate" type="text/html" title="Data-Analysis" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-data_analysis">SDSC Expanse Notebook: Data_Analysis</h1>
 <p>This README file provides instructions for Expanse users to run data analyis notebooks.
 The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects: Series and DataFrame (1D and 2D data structures).</p>
 
@@ -246,13 +246,13 @@ If you find anything that needs to be changed, edited, or if you would like to p
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/Data_Analysis/data_analysis_pandas.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/Data_Analysis/data_analysis_pandas.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="data-analysis" /><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="data-science" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run data analyis notebooks. The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects- Series and DataFrame (1D and 2D data structures).]]></summary></entry><entry><title type="html">Python Data Analysis Library</title><link href="http://localhost:4000/blog/2025/python-data-analysis/" rel="alternate" type="text/html" title="Python Data Analysis Library" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/python-data-analysis</id><content type="html" xml:base="http://localhost:4000/blog/2025/python-data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-python_data_analysis_library">SDSC Expanse Notebook: Python_Data_Analysis_Library</h1>
+</div>]]></content><author><name></name></author><category term="data-analysis" /><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="data-science" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run data analyis notebooks. The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects- Series and DataFrame (1D and 2D data structures).]]></summary></entry><entry><title type="html">Python Data Analysis Library</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/python-data-analysis/" rel="alternate" type="text/html" title="Python Data Analysis Library" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/python-data-analysis</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/python-data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-python_data_analysis_library">SDSC Expanse Notebook: Python_Data_Analysis_Library</h1>
 <p>This README file provides instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.</p>
 
@@ -307,7 +307,7 @@ If you find anything that needs to be changed, edited, or if you would like to p
 
 
 
-<p>Sorry, the notebook you are looking for does not exist.</p>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="python" /><category term="jupyter" /><category term="data-analysis" /><summary type="html"><![CDATA[instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.]]></summary></entry><entry><title type="html">String Processing</title><link href="http://localhost:4000/blog/2025/boring-python/" rel="alternate" type="text/html" title="String Processing" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/boring-python</id><content type="html" xml:base="http://localhost:4000/blog/2025/boring-python/"><![CDATA[<h1 id="sdsc-expanse-notebook-boring_python">SDSC Expanse Notebook: Boring_Python</h1>
+<p>Sorry, the notebook you are looking for does not exist.</p>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="python" /><category term="jupyter" /><category term="data-analysis" /><summary type="html"><![CDATA[instructions for Expanse users to run Python_Data_Analysis_Library using CPU on Expanse.]]></summary></entry><entry><title type="html">String Processing</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/boring-python/" rel="alternate" type="text/html" title="String Processing" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/boring-python</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/boring-python/"><![CDATA[<h1 id="sdsc-expanse-notebook-boring_python">SDSC Expanse Notebook: Boring_Python</h1>
 <p>This README file provides instructions for Expanse users to run String_Processing notebooks in the Expanse.
 A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.<br />
   <strong>Listof Content</strong></p>
@@ -372,13 +372,13 @@ If you find anything that needs to be changed, edited, or if you would like to p
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/String_Processing/Regression.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/String_Processing/Regression.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="expanse" /><category term="scikit-learn" /><category term="python" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run String_Processing notebooks in the Expanse. A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.]]></summary></entry><entry><title type="html">Clustering Visualizations</title><link href="http://localhost:4000/blog/2025/clustering-visualizations/" rel="alternate" type="text/html" title="Clustering Visualizations" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/clustering-visualizations</id><content type="html" xml:base="http://localhost:4000/blog/2025/clustering-visualizations/"><![CDATA[<h1 id="sdsc-expanse-notebook-clustering_visulizations">SDSC Expanse Notebook: Clustering_Visulizations</h1>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="scikit-learn" /><category term="python" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run String_Processing notebooks in the Expanse. A brief introduction to regression using scikit-learn. Covers basic linear regression, multiple linear regression, combining scikit-learn with pandas and working with categorical data.]]></summary></entry><entry><title type="html">Clustering Visualizations</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/clustering-visualizations/" rel="alternate" type="text/html" title="Clustering Visualizations" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/clustering-visualizations</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/clustering-visualizations/"><![CDATA[<h1 id="sdsc-expanse-notebook-clustering_visulizations">SDSC Expanse Notebook: Clustering_Visulizations</h1>
 <p>This README file provides instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.<br />
   <strong>Listof Content</strong></p>
 <ul>
@@ -439,13 +439,13 @@ If you find anything that needs to be changed, edited, or if you would like to p
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/Clustering_Visulizations/Introduction_to_Clustering.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/Clustering_Visulizations/Introduction_to_Clustering.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="expanse" /><category term="jupyter" /><category term="anaconda" /><category term="ai" /><category term="AI/ML" /><category term="machine-learning" /><summary type="html"><![CDATA[instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.]]></summary></entry><entry><title type="html">NumPy Intro</title><link href="http://localhost:4000/blog/2025/numpy-intro/" rel="alternate" type="text/html" title="NumPy Intro" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/numpy-intro</id><content type="html" xml:base="http://localhost:4000/blog/2025/numpy-intro/"><![CDATA[<h1 id="sdsc-expanse-notebook-numpy_intro">SDSC Expanse Notebook: NumPy_Intro</h1>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="jupyter" /><category term="anaconda" /><category term="ai" /><category term="AI/ML" /><category term="machine-learning" /><summary type="html"><![CDATA[instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.]]></summary></entry><entry><title type="html">NumPy Intro</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro/" rel="alternate" type="text/html" title="NumPy Intro" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro/"><![CDATA[<h1 id="sdsc-expanse-notebook-numpy_intro">SDSC Expanse Notebook: NumPy_Intro</h1>
 <p>This README file provides instructions for Expanse users to run NumPy_intro notebooks in the Expanse.</p>
 
 <p>NumPy is a fundamental numerical Python package. It includes array objects, high level array manipulation functions, and more. 
@@ -510,13 +510,13 @@ If you find anything that needs to be changed, edited, or if you would like to p
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/NumPy_Intro/numpy_intro.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/NumPy_Intro/numpy_intro.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run NumPy_intro notebooks in the Expanse.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on CPU</title><link href="http://localhost:4000/blog/2025/parallel-programming-dask-cpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on CPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/parallel-programming-dask-cpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/parallel-programming-dask-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run NumPy_intro notebooks in the Expanse.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on CPU</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on CPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
 <p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
 Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
   <strong>Listof Content</strong></p>
@@ -581,13 +581,13 @@ If you find anything that needs to be changed, edited, or if you would like to p
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/Dask_Graph_CPU/dask_graphs_CPU.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/Dask_Graph_CPU/dask_graphs_CPU.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry><entry><title type="html">Computing Pi on a CUDA GPU (NVIDIA)</title><link href="http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia/" rel="alternate" type="text/html" title="Computing Pi on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia</id><content type="html" xml:base="http://localhost:4000/blog/2025/computing-pi-cuda-gpu-nvidia/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry><entry><title type="html">Computing Pi on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/" rel="alternate" type="text/html" title="Computing Pi on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
 <p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
   <strong>Listof Content</strong></p>
 <ul>
@@ -671,13 +671,13 @@ compute the result.</p>
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="monte-carlo" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on GPU</title><link href="http://localhost:4000/blog/2025/parallel-programming-dask-gpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on GPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>http://localhost:4000/blog/2025/parallel-programming-dask-gpu</id><content type="html" xml:base="http://localhost:4000/blog/2025/parallel-programming-dask-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
+</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="monte-carlo" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on GPU</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on GPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
 <p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
 Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
   <strong>Listof Content</strong></p>
@@ -733,7 +733,7 @@ Introduces the Dask module with a simple example and illustrates the Dask graph.
   style="position: relative; width: 100%; margin: 0 auto;">
   <div class="jupyter-notebook-iframe-container">
     <iframe
-      src="/assets/jupyter/Dask_Graph_GPU/dask_graphs_GPU.ipynb.html"
+      src="/Expanse-Notebooks/assets/jupyter/Dask_Graph_GPU/dask_graphs_GPU.ipynb.html"
       style="position: absolute; top: 0; left: 0; border-style: none;"
       width="100%"
       height="100%"
