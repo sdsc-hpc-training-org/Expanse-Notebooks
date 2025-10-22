@@ -18,6 +18,10 @@ tags:
 categories: 
 giscus_comments: false
 related_posts: true
+year_created: 
+date_last_tested: 
+cpu_or_gpu: 
+hpc_system: 
 ---
 # SDSC Expanse Notebook: Tensorflow
 This README file provides instructions for Expanse users on how to run TensorFlow on Expanse, both on CPU and GPU.

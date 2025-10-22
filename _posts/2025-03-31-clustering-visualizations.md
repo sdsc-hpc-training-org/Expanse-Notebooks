@@ -13,6 +13,10 @@ tags:
 categories: 
 giscus_comments: false
 related_posts: true
+year_created: 
+date_last_tested: 
+cpu_or_gpu: 
+hpc_system: 
 ---
 # SDSC Expanse Notebook: Clustering_Visulizations
 This README file provides instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.\

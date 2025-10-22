@@ -12,6 +12,10 @@ tags:
 categories: 
 giscus_comments: false
 related_posts: true
+year_created: 
+date_last_tested: 
+cpu_or_gpu: 
+hpc_system: 
 ---
 # SDSC Expanse Notebook: Data_Analysis
 This README file provides instructions for Expanse users to run data analyis notebooks.

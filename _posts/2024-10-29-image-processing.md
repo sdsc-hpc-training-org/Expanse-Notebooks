@@ -11,6 +11,10 @@ tags:
 categories: 
 giscus_comments: false
 related_posts: true
+year_created: 
+date_last_tested: 
+cpu_or_gpu: 
+hpc_system: 
 ---
 # SDSC Expanse Notebook: Image_Processing
 This README file provides instructions for Expanse users on learning about the PILLOW package, authored by Leo Gu.
