@@ -1,16 +1,13 @@
 ---
 layout: page
-title: submenus
-nav: false
+title: Event Archives
+nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
+  - title: CIML 2025 Archive
+    permalink: /blog/tag/ciml-2025/
   - title: divider
-  - title: projects
-    permalink: /projects/
-  - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: CIML 2024 Archive
+    permalink: /blog/tag/ciml-2024/
 ---
