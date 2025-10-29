@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Getting Started with Batch Job Scheduling | HPC Training Notebooks
+    
+  
+</title>
+<meta name="author" content=" ">
+<meta name="description" content="Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...">
+
+  <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/Expanse-Notebooks/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/Expanse-Notebooks/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/GPU-computing/">
+
+<!-- Dark Mode -->
+<script src="/Expanse-Notebooks/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/Expanse-Notebooks/">
+          HPC Training Notebooks
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/Expanse-Notebooks/">
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/Expanse-Notebooks/index.html">Notebooks
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Event Archives
+                    
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                      
+                        <a class="dropdown-item " href="/Expanse-Notebooks/blog/tag/ciml-2025/">CIML 2025 Archive</a>
+                      
+                    
+                      
+                        <div class="dropdown-divider"></div>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="/Expanse-Notebooks/blog/tag/ciml-2024/">CIML 2024 Archive</a>
+                      
+                    
+                  </div>
+                </li>
+              
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Getting Started with Batch Job Scheduling</h1>
+    <p class="post-meta">
+      Created in June 24, 2025
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/Expanse-Notebooks/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/expanse"> <i class="fa-solid fa-hashtag fa-sm"></i> expanse</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/ciml-2025"> <i class="fa-solid fa-hashtag fa-sm"></i> CIML-2025</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/gpu"> <i class="fa-solid fa-hashtag fa-sm"></i> GPU</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/slurm"> <i class="fa-solid fa-hashtag fa-sm"></i> Slurm</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/cuda"> <i class="fa-solid fa-hashtag fa-sm"></i> CUDA</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/nvidia"> <i class="fa-solid fa-hashtag fa-sm"></i> NVIDIA</a>
+          
+          
+        
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <h1 id="session-25-gpu-computing---hardware-architecture-and-software-infrastructure">Session 2.5 GPU Computing - Hardware architecture and software infrastructure</h1>
+
+<p><strong>Date:</strong> Tuesday, June 24, 2025</p>
+
+<p><strong>Summary</strong>: Brief overview of the massively parallel GPU architecture that enables large-scale deep learning applications, access and use of GPUs on SDSC Expanse for ML applications</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html" rel="external nofollow noopener" target="_blank">Andreas Goetz</a> (awgoetz @ucsd.edu)</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+<ul>
+  <li>
+<strong>Lecture material:</strong>
+    <ul>
+      <li>Presentation Slides: <a href="./CIML-SI25-GPU-Computing.pdf">GPU Computing - Hardware Architecture and Software Infrastructure</a>
+</li>
+    </ul>
+  </li>
+  <li>
+<strong>Source Code/Examples:</strong> <a href="https://github.com/NVIDIA/cuda-samples" rel="external nofollow noopener" target="_blank">Nvidia CUDA Samples</a>
+</li>
+</ul>
+
+<h3 id="tasks">TASKS:</h3>
+
+<p>We will log into an Expanse GPU node, compile and test some examples from the Nvidia CUDA samples.</p>
+
+<h3 id="log-into-expanse-get-onto-a-shared-gpu-node-and-load-required-modules">Log into Expanse, get onto a shared GPU node, and load required modules</h3>
+
+<p>First, log onto Expanse using your <code class="language-plaintext highlighter-rouge">train</code> training account. You can do this either via the Expanse user portal or simply using ssh:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh trainXXX@login.expanse.sdsc.edu
+</code></pre></div></div>
+
+<p>Next we will use the alias for the <code class="language-plaintext highlighter-rouge">srun</code> command that is defined in your <code class="language-plaintext highlighter-rouge">.bashrc</code> file to access a single GPU on a shared GPU node:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>srun-gpu-shared
+</code></pre></div></div>
+
+<p>Once we are on a GPU node, we load the default modules for the GPU nodes to gain access to the GPU software stack. We will also load the CUDA toolkit:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module reset
+module load cuda12.2/toolkit
+module list
+</code></pre></div></div>
+<p>You should see following output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Currently Loaded Modules:
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules
+  2) gpu/0.17.3b (g)   4) sdsc/1.0                6) cuda12.2/toolkit/12.2.2
+
+  Where:
+   g:  built natively for Intel Skylake
+
+</code></pre></div></div>
+
+<p>We can use the <code class="language-plaintext highlighter-rouge">nvidia-smi</code> command to check for available GPUs and which processes are running on the GPU.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi
+</code></pre></div></div>
+<p>You should have a single V100 GPU available and there should be no processes running:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mon Jun 27 08:39:33 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.39.01    Driver Version: 510.39.01    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:18:00.0 Off |                    0 |
+| N/A   39C    P0    41W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</code></pre></div></div>
+
+<h3 id="copy-the-nvidia-cuda-samples-into-the-local-scratch-directory">Copy the Nvidia CUDA samples into the local scratch directory</h3>
+
+<p>We will first copy the Nvidia CUDA samples from the shared CIML Summer Institute Data directory. If we work in the home directory, then this operation will take a few minutes, in particular if there are many participants copying the data at the same time, as there are many files to copy. You can try to do this in the home directory to see how much time it takes.</p>
+
+<p>Instead of using the home directory we will use the node-local scratch directory. Data in this directory will be purged upon job completion but this is OK as we do not need to retain the toolkit samples. Working in the the scratch directory will be very fast. This is also important when you operate with datasets and/or have heavy I/O during your ML applications.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /scratch/$USER/job_$SLURM_JOB_ID
+tar xvf $CIML25_DATA_DIR/cuda-samples-v12.2.tar.gz
+</code></pre></div></div>
+<p>You can look into the data directory to see if there other samples that are of interest to you. The CUDA samples have been obtained from <a href="https://github.com/nvidia/cuda-samples" rel="external nofollow noopener" target="_blank">Nvidia’s Github repository</a>.</p>
+
+<p>For convenience, we will store the location of the CUDA samples in an environment variable:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CUDA_SAMPLES=/scratch/$USER/job_$SLURM_JOB_ID/cuda-samples-12.2
+</code></pre></div></div>
+
+<p>We are now ready to look at the CUDA samples.
+It can be instructive to look at the source code if you want to learn about CUDA.</p>
+
+<h3 id="compile-and-run-the-devicequery-cuda-sample">Compile and run the <code class="language-plaintext highlighter-rouge">deviceQuery</code> CUDA sample</h3>
+
+<p>The first sample we will look at is <code class="language-plaintext highlighter-rouge">device_query</code>. This is a utility that demonstrates how to query Nvidia GPU properties. It often comes in handy to check information on the GPU that you have available.</p>
+
+<p>First, we check that we have an appropriate NVIDIA CUDA compiler available. The CUDA samples require at least version 11.7. Because we loaded the CUDA Toolkit module above, we should have the <code class="language-plaintext highlighter-rouge">nvcc</code> compiler available:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvcc --version
+</code></pre></div></div>
+<p>should give the following output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
+</code></pre></div></div>
+
+<p>We have version 12.2 installed so we are good to go. 
+We can now move into the <code class="language-plaintext highlighter-rouge">device_query</code> source directory and compile the code with the <code class="language-plaintext highlighter-rouge">make</code> command.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/1_Utilities/deviceQuery
+make
+</code></pre></div></div>
+
+<p>You now should have an executable <code class="language-plaintext highlighter-rouge">deviceQuery</code> in the directory. If you execute it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./deviceQuery
+</code></pre></div></div>
+<p>you should see an output with details about the GPU that is available. In our case on Expanse it is a Tesla V100-SXM2-32GB GPU:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "Tesla V100-SXM2-32GB"
+  CUDA Driver Version / Runtime Version          11.6 / 11.2
+  CUDA Capability Major/Minor version number:    7.0
+  Total amount of global memory:                 32511 MBytes (34089926656 bytes)
+  (080) Multiprocessors, (064) CUDA Cores/MP:    5120 CUDA Cores
+  GPU Max Clock rate:                            1530 MHz (1.53 GHz)
+  Memory Clock rate:                             877 Mhz
+  Memory Bus Width:                              4096-bit
+  L2 Cache Size:                                 6291456 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total shared memory per multiprocessor:        98304 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 5 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Enabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device supports Managed Memory:                Yes
+  Device supports Compute Preemption:            Yes
+  Supports Cooperative Kernel Launch:            Yes
+  Supports MultiDevice Co-op Kernel Launch:      Yes
+  Compute Mode:
+     &lt; Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) &gt;
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 11.6, CUDA Runtime Version = 11.2, NumDevs = 1
+Result = PASS
+</code></pre></div></div>
+
+<h3 id="compile-and-run-the-matrix-multiplication">Compile and run the matrix multiplication</h3>
+
+<p>It is instructive to look at two different matrix multiplication examples and compare the performance.</p>
+
+<p>First we will look at a hand-written matrix multiplication. This implementation features several performance optimizations such as tiling to minimize data transfer from GPU RAM to the GPU processors and thus increasing arithmetic intensity and overall floating point performance.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/0_Introduction/matrixMul
+make
+</code></pre></div></div>
+<p>We now have the executable <code class="language-plaintext highlighter-rouge">matrixMul</code> available. If we execute it,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./matrixMul
+</code></pre></div></div>
+<p>a matrix multiplication will be performed and the performance reported</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Volta" with compute capability 7.0
+
+MatrixA(320,320), MatrixB(640,320)
+Computing result using CUDA Kernel...
+done
+Performance= 2796.59 GFlop/s, Time= 0.047 msec, Size= 131072000 Ops, WorkgroupSize= 1024 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+</code></pre></div></div>
+
+<h3 id="compile-and-run-matrix-multiplication-with-cublas-library">Compile and run matrix multiplication with CUBLAS library</h3>
+
+<p>Finally, let us look at a matrix multiplication that uses Nvidia’s CUBLAS library, which is a highly optimized version of the Basic Linear Algebra System for Nvidia GPUs.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/4_CUDA_Libraries/matrixMulCUBLAS
+make
+</code></pre></div></div>
+<p>If we run the executable</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./matrixMulCUBLAS
+</code></pre></div></div>
+<p>we should get following output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Matrix Multiply CUBLAS] - Starting...
+GPU Device 0: "Volta" with compute capability 7.0
+
+GPU Device 0: "Tesla V100-SXM2-32GB" with compute capability 7.0
+
+MatrixA(640,480), MatrixB(480,320), MatrixC(640,320)
+Computing result using CUBLAS...done.
+Performance= 7032.97 GFlop/s, Time= 0.028 msec, Size= 196608000 Ops
+Computing result using host CPU...done.
+Comparing CUBLAS Matrix Multiply with CPU results: PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+</code></pre></div></div>
+
+<p>How does the performance compare to the hand written (but optimized) matrix multiplication?</p>
+
+<p><a href="#top">Back to Top</a></p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+    
+      
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/">Computing Pi on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/">Computing distance matrices on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/">Law of Cosines on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/accounts-login-environment-running-jobs/">Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/hello-world-cpu/">Hello_World CPU</a>
+    
+  </li>
+
+
+
+    
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2025
+      
+      
+      . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/Expanse-Notebooks/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/Expanse-Notebooks/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/Expanse-Notebooks/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/Expanse-Notebooks/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/Expanse-Notebooks/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/Expanse-Notebooks/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/Expanse-Notebooks/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/Expanse-Notebooks/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/Expanse-Notebooks/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/Expanse-Notebooks/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+  <!-- Search -->
+  <script type="module" src="/Expanse-Notebooks/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script src="/Expanse-Notebooks/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script>
+  <script src="/Expanse-Notebooks/assets/js/search-data.js"></script>
+  <script src="/Expanse-Notebooks/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
+
+
+
+  </body>
+</html>

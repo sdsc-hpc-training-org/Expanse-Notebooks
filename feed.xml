@@ -1,5 +1,464 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-10-02T10:41:45-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml</id><title type="html">HPC Training Notebooks</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Computing distance matrices on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/" rel="alternate" type="text/html" title="Computing distance matrices on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-10-29T10:56:34-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/feed.xml</id><title type="html">HPC Training Notebooks</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Getting Started with Batch Job Scheduling</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/batch-job-scheduling/" rel="alternate" type="text/html" title="Getting Started with Batch Job Scheduling" /><published>2025-06-24T00:00:00-07:00</published><updated>2025-06-24T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/batch-job-scheduling</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/batch-job-scheduling/"><![CDATA[<h1 id="session-23-getting-started-with-batch-job-scheduling">Session 2.3 Getting Started with Batch Job Scheduling</h1>
+
+<p><strong>Date:</strong> Tuesday, June 24, 2025</p>
+
+<p><strong>Summary</strong>: Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance computing (HPC) systems. Learning how to interact with them and compose your work into batch jobs is essential to becoming an effective HPC user.</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.linkedin.com/in/marty-kandes-b53a34144">Marty Kandes</a> (mkandes @ucsd.edu)</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+
+<ul>
+  <li><strong>Lecture material:</strong>
+    <ul>
+      <li><a href="https://education.sdsc.edu/training/interactive/?id=202502-Batch-Computing-Part-1">COMPLECS: Batch Computing 1: Working with the Linux Scheduler</a></li>
+      <li><a href="https://education.sdsc.edu/training/interactive/?id=202403-Batch-Computing-Part-1">COMPLECS: Batch Computing 2: Getting Started with Batch Job Scheduling - Slurm Edition</a></li>
+      <li><a href="https://education.sdsc.edu/training/interactive/?id=202410-High-Throughput%20and%20Many-Task%20Computing-%20Slurm%20Edition">COMPLECS: Batch Computing 3: High-Throughput and Many-Task Computing - Slurm Edition</a></li>
+    </ul>
+  </li>
+  <li><strong>Source Code/Examples:</strong>
+    <ul>
+      <li>https://github.com/sdsc-complecs/batch-computing</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#top">Back to Top</a></p>]]></content><author><name></name></author><category term="expanse" /><category term="CIML-2025" /><category term="XSEDE" /><category term="Slurm" /><summary type="html"><![CDATA[Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...]]></summary></entry><entry><title type="html">Getting Started with Batch Job Scheduling</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/GPU-computing/" rel="alternate" type="text/html" title="Getting Started with Batch Job Scheduling" /><published>2025-06-24T00:00:00-07:00</published><updated>2025-06-24T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/GPU-computing</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/GPU-computing/"><![CDATA[<h1 id="session-25-gpu-computing---hardware-architecture-and-software-infrastructure">Session 2.5 GPU Computing - Hardware architecture and software infrastructure</h1>
+
+<p><strong>Date:</strong> Tuesday, June 24, 2025</p>
+
+<p><strong>Summary</strong>: Brief overview of the massively parallel GPU architecture that enables large-scale deep learning applications, access and use of GPUs on SDSC Expanse for ML applications</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html">Andreas Goetz</a> (awgoetz @ucsd.edu)</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+<ul>
+  <li><strong>Lecture material:</strong>
+    <ul>
+      <li>Presentation Slides: <a href="./CIML-SI25-GPU-Computing.pdf">GPU Computing - Hardware Architecture and Software Infrastructure</a></li>
+    </ul>
+  </li>
+  <li><strong>Source Code/Examples:</strong> <a href="https://github.com/NVIDIA/cuda-samples">Nvidia CUDA Samples</a></li>
+</ul>
+
+<h3 id="tasks">TASKS:</h3>
+
+<p>We will log into an Expanse GPU node, compile and test some examples from the Nvidia CUDA samples.</p>
+
+<h3 id="log-into-expanse-get-onto-a-shared-gpu-node-and-load-required-modules">Log into Expanse, get onto a shared GPU node, and load required modules</h3>
+
+<p>First, log onto Expanse using your <code class="language-plaintext highlighter-rouge">train</code> training account. You can do this either via the Expanse user portal or simply using ssh:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh trainXXX@login.expanse.sdsc.edu
+</code></pre></div></div>
+
+<p>Next we will use the alias for the <code class="language-plaintext highlighter-rouge">srun</code> command that is defined in your <code class="language-plaintext highlighter-rouge">.bashrc</code> file to access a single GPU on a shared GPU node:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>srun-gpu-shared
+</code></pre></div></div>
+
+<p>Once we are on a GPU node, we load the default modules for the GPU nodes to gain access to the GPU software stack. We will also load the CUDA toolkit:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module reset
+module load cuda12.2/toolkit
+module list
+</code></pre></div></div>
+<p>You should see following output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Currently Loaded Modules:
+  1) shared            3) slurm/expanse/23.02.7   5) DefaultModules
+  2) gpu/0.17.3b (g)   4) sdsc/1.0                6) cuda12.2/toolkit/12.2.2
+
+  Where:
+   g:  built natively for Intel Skylake
+
+</code></pre></div></div>
+
+<p>We can use the <code class="language-plaintext highlighter-rouge">nvidia-smi</code> command to check for available GPUs and which processes are running on the GPU.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi
+</code></pre></div></div>
+<p>You should have a single V100 GPU available and there should be no processes running:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mon Jun 27 08:39:33 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 510.39.01    Driver Version: 510.39.01    CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:18:00.0 Off |                    0 |
+| N/A   39C    P0    41W / 300W |      0MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+</code></pre></div></div>
+
+<h3 id="copy-the-nvidia-cuda-samples-into-the-local-scratch-directory">Copy the Nvidia CUDA samples into the local scratch directory</h3>
+
+<p>We will first copy the Nvidia CUDA samples from the shared CIML Summer Institute Data directory. If we work in the home directory, then this operation will take a few minutes, in particular if there are many participants copying the data at the same time, as there are many files to copy. You can try to do this in the home directory to see how much time it takes.</p>
+
+<p>Instead of using the home directory we will use the node-local scratch directory. Data in this directory will be purged upon job completion but this is OK as we do not need to retain the toolkit samples. Working in the the scratch directory will be very fast. This is also important when you operate with datasets and/or have heavy I/O during your ML applications.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /scratch/$USER/job_$SLURM_JOB_ID
+tar xvf $CIML25_DATA_DIR/cuda-samples-v12.2.tar.gz
+</code></pre></div></div>
+<p>You can look into the data directory to see if there other samples that are of interest to you. The CUDA samples have been obtained from <a href="https://github.com/nvidia/cuda-samples">Nvidia’s Github repository</a>.</p>
+
+<p>For convenience, we will store the location of the CUDA samples in an environment variable:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CUDA_SAMPLES=/scratch/$USER/job_$SLURM_JOB_ID/cuda-samples-12.2
+</code></pre></div></div>
+
+<p>We are now ready to look at the CUDA samples.
+It can be instructive to look at the source code if you want to learn about CUDA.</p>
+
+<h3 id="compile-and-run-the-devicequery-cuda-sample">Compile and run the <code class="language-plaintext highlighter-rouge">deviceQuery</code> CUDA sample</h3>
+
+<p>The first sample we will look at is <code class="language-plaintext highlighter-rouge">device_query</code>. This is a utility that demonstrates how to query Nvidia GPU properties. It often comes in handy to check information on the GPU that you have available.</p>
+
+<p>First, we check that we have an appropriate NVIDIA CUDA compiler available. The CUDA samples require at least version 11.7. Because we loaded the CUDA Toolkit module above, we should have the <code class="language-plaintext highlighter-rouge">nvcc</code> compiler available:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvcc --version
+</code></pre></div></div>
+<p>should give the following output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
+</code></pre></div></div>
+
+<p>We have version 12.2 installed so we are good to go. 
+We can now move into the <code class="language-plaintext highlighter-rouge">device_query</code> source directory and compile the code with the <code class="language-plaintext highlighter-rouge">make</code> command.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/1_Utilities/deviceQuery
+make
+</code></pre></div></div>
+
+<p>You now should have an executable <code class="language-plaintext highlighter-rouge">deviceQuery</code> in the directory. If you execute it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./deviceQuery
+</code></pre></div></div>
+<p>you should see an output with details about the GPU that is available. In our case on Expanse it is a Tesla V100-SXM2-32GB GPU:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "Tesla V100-SXM2-32GB"
+  CUDA Driver Version / Runtime Version          11.6 / 11.2
+  CUDA Capability Major/Minor version number:    7.0
+  Total amount of global memory:                 32511 MBytes (34089926656 bytes)
+  (080) Multiprocessors, (064) CUDA Cores/MP:    5120 CUDA Cores
+  GPU Max Clock rate:                            1530 MHz (1.53 GHz)
+  Memory Clock rate:                             877 Mhz
+  Memory Bus Width:                              4096-bit
+  L2 Cache Size:                                 6291456 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total shared memory per multiprocessor:        98304 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 5 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Enabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device supports Managed Memory:                Yes
+  Device supports Compute Preemption:            Yes
+  Supports Cooperative Kernel Launch:            Yes
+  Supports MultiDevice Co-op Kernel Launch:      Yes
+  Compute Mode:
+     &lt; Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) &gt;
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 11.6, CUDA Runtime Version = 11.2, NumDevs = 1
+Result = PASS
+</code></pre></div></div>
+
+<h3 id="compile-and-run-the-matrix-multiplication">Compile and run the matrix multiplication</h3>
+
+<p>It is instructive to look at two different matrix multiplication examples and compare the performance.</p>
+
+<p>First we will look at a hand-written matrix multiplication. This implementation features several performance optimizations such as tiling to minimize data transfer from GPU RAM to the GPU processors and thus increasing arithmetic intensity and overall floating point performance.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/0_Introduction/matrixMul
+make
+</code></pre></div></div>
+<p>We now have the executable <code class="language-plaintext highlighter-rouge">matrixMul</code> available. If we execute it,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./matrixMul
+</code></pre></div></div>
+<p>a matrix multiplication will be performed and the performance reported</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Volta" with compute capability 7.0
+
+MatrixA(320,320), MatrixB(640,320)
+Computing result using CUDA Kernel...
+done
+Performance= 2796.59 GFlop/s, Time= 0.047 msec, Size= 131072000 Ops, WorkgroupSize= 1024 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+</code></pre></div></div>
+
+<h3 id="compile-and-run-matrix-multiplication-with-cublas-library">Compile and run matrix multiplication with CUBLAS library</h3>
+
+<p>Finally, let us look at a matrix multiplication that uses Nvidia’s CUBLAS library, which is a highly optimized version of the Basic Linear Algebra System for Nvidia GPUs.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $CUDA_SAMPLES/Samples/4_CUDA_Libraries/matrixMulCUBLAS
+make
+</code></pre></div></div>
+<p>If we run the executable</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./matrixMulCUBLAS
+</code></pre></div></div>
+<p>we should get following output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Matrix Multiply CUBLAS] - Starting...
+GPU Device 0: "Volta" with compute capability 7.0
+
+GPU Device 0: "Tesla V100-SXM2-32GB" with compute capability 7.0
+
+MatrixA(640,480), MatrixB(480,320), MatrixC(640,320)
+Computing result using CUBLAS...done.
+Performance= 7032.97 GFlop/s, Time= 0.028 msec, Size= 196608000 Ops
+Computing result using host CPU...done.
+Comparing CUBLAS Matrix Multiply with CPU results: PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+</code></pre></div></div>
+
+<p>How does the performance compare to the hand written (but optimized) matrix multiplication?</p>
+
+<p><a href="#top">Back to Top</a></p>]]></content><author><name></name></author><category term="expanse" /><category term="CIML-2025" /><category term="GPU" /><category term="Slurm" /><category term="CUDA" /><category term="NVIDIA" /><summary type="html"><![CDATA[Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...]]></summary></entry><entry><title type="html">Getting Started with Batch Job Scheduling</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-management/" rel="alternate" type="text/html" title="Getting Started with Batch Job Scheduling" /><published>2025-06-24T00:00:00-07:00</published><updated>2025-06-24T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-management</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-management/"><![CDATA[<h1 id="session-24-data-management-and-file-systems">Session 2.4 Data Management and File Systems</h1>
+
+<p><strong>Date:</strong> Tuesday, June 24, 2025</p>
+
+<p><strong>Summary</strong>: Managing data efficiently on a supercomputer is important from both users’ and system’s perspectives. We will cover a few basic data management techniques and I/O best practices in the context of the Expanse system at SDSC.</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.linkedin.com/in/marty-kandes-b53a34144">Marty Kandes</a> (mkandes @ucsd.edu)</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+
+<ul>
+  <li><strong>Lecture material:</strong>
+    <ul>
+      <li><a href="https://education.sdsc.edu/training/interactive/?id=202505-Data-Storage-and-File-Systems">COMPLECS: Data Management 1: Data Storage and File Systems</a></li>
+      <li><a href="https://github.com/sdsc/sdsc-summer-institute-2023/tree/main/3.2_data_management">COMPLECS: Data Management 2: Data Transfer</a></li>
+    </ul>
+  </li>
+  <li><strong>Source Code/Examples:</strong>
+    <ul>
+      <li><a href="https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.5_data_management">Data Management: Or how (not) to handle your data in an HPC environment</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#top">Back to Top</a></p>]]></content><author><name></name></author><category term="expanse" /><category term="CIML-2025" /><summary type="html"><![CDATA[Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...]]></summary></entry><entry><title type="html">Parallel Concepts</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-concepts/" rel="alternate" type="text/html" title="Parallel Concepts" /><published>2025-06-18T00:00:00-07:00</published><updated>2025-06-18T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-concepts</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-concepts/"><![CDATA[<h1 id="parallel-concepts">Parallel-concepts</h1>
+<p>This repository accompanies the Parallel Computing Concepts talk that is offered by SDSC and delivered through XSEDE, SDSC’s HPC training series and other venues. It currently contains code and figures for presenting scaling data - the right way and the wrong way - and illustrating the limits on scalability imposed by Amdahl’s Law. This is a work in progress and new content will be added as necessary.</p>
+
+<h2 id="about-complecs">About COMPLECS</h2>
+
+<p>COMPLECS (COMPrehensive Learning for end-users to Effectively utilize
+CyberinfraStructure) is a new SDSC program where training will cover
+non-programming skills needed to effectively use
+supercomputers. Topics include parallel computing concepts, Linux
+tools and bash scripting, security, batch computing, how to get help,
+data management and interactive computing. COMPLECS is supported by
+NSF award 2320934.</p>
+
+<p><img src="./images/NSF_Official_logo_Med_Res_600ppi.png" alt="drawing" width="150" /></p>
+
+<p><a href="https://mybinder.org/v2/gh/sdsc-complecs/Parallel-computing-concepts/HEAD"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+
+<p><a href="https://mybinder.org/v2/gh/sdsc-complecs/Parallel-computing-concepts/HEAD"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+
+<iframe src="https://github.com/ciml-org/ciml-summer-institute-2025/blob/b5070ff4ded8e927dbee4578d59009782d188e4b/2.2_parallel_computing_concepts/Parallel%20concepts%20CIML.pdf" width="100%" height="600px" style="border: none;">
+</iframe>
+
+<p>Note that there are 2 notebooks for this topic:</p>
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/Expanse-Notebooks/assets/jupyter/CIML_2025/2-2/Amdahls%20law.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+<div
+  class="jupyter-notebook"
+  style="position: relative; width: 100%; margin: 0 auto;">
+  <div class="jupyter-notebook-iframe-container">
+    <iframe
+      src="/Expanse-Notebooks/assets/jupyter/CIML_2025/2-2/Strong%20scaling.ipynb.html"
+      style="position: absolute; top: 0; left: 0; border-style: none;"
+      width="100%"
+      height="100%"
+      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
+  </div>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="CIML-2025" /><category term="XSEDE" /><summary type="html"><![CDATA[Topic 2.2- Parallel Computing Concepts talk by SDSC, delivered through XSEDE]]></summary></entry><entry><title type="html">Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/accounts-login-environment-running-jobs/" rel="alternate" type="text/html" title="Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal" /><published>2025-06-17T00:00:00-07:00</published><updated>2025-06-17T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/accounts-login-environment-running-jobs</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/accounts-login-environment-running-jobs/"><![CDATA[<h1 id="ciml-summer-institute---accounts-login-environments-running-jobs-logging-into-expanse-user-portal">CIML Summer Institute:   Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal</h1>
+
+<h2 id="session-12_accounts_login_environments_running_jobs_expanse_portal">Session: 1.2_accounts_login_environments_running_jobs_expanse_portal</h2>
+
+<p><strong>Date:</strong>  Tuesday, June 17, 2025</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html">Mary Thomas</a>  ( mpthomas  @  ucsd.edu )</p>
+
+<p><strong>Title:</strong> Expanse Webinar:  Accessing and Running Jobs on Expanse</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+<ul>
+  <li><strong>Lecture material:</strong>
+    <ul>
+      <li>
+        <p>Presentation Slides: Access, accounts, modules &amp; Envs</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/ciml-org/ciml-summer-institute-2025/blob/main/1.2_accounts_login_environment_expanse_portal/MThomas-CIML-SI25_Jun_17_2025-PrepDay_accts_login_envs_jobs.pdf
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Source Code/Examples:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/sdsc-hpc-training-org/hpctr-examples
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Exercises:</strong></p>
+
+    <ul>
+      <li>
+        <p>Exercise 1: Log onto Expanse
+Use your training account and password to log on, find out what project you are on, and list out your module environment.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>quantum:ciml accountname$ ssh -Y train111@login.expanse.sdsc.edu
+(train111@login.expanse.sdsc.edu) Password: 
+ Welcome to Bright release         9.0
+                                                    Based on Rocky Linux 8
+                                                               ID: #000002
+--------------------------------------------------------------------------------
+                            WELCOME TO
+             _______  __ ____  ___    _   _______ ______
+            / ____/ |/ // __ \/   |  / | / / ___// ____/
+           / __/  |   // /_/ / /| | /  |/ /\__ \/ __/
+          / /___ /   |/ ____/ ___ |/ /|  /___/ / /___
+         /_____//_/|_/_/   /_/  |_/_/ |_//____/_____/
+--------------------------------------------------------------------------------
+Use the following commands to adjust your environment:
+'module avail'            - show available modules
+'module add &lt;module&gt;'     - adds a module to your environment for this session
+'module initadd &lt;module&gt;' - configure module to be loaded at every login
+-------------------------------------------------------------------------------
+Last login: Mon Jun 17 19:18:38 2024 from 75.80.45.222
+connect /private/tmp/com.apple.launchd.HbagVgBfXZ/org.xquartz:0: Connection refused
+[train111@login02 ~]$ 
+</code></pre></div>        </div>
+      </li>
+      <li>Exercise 2: Clone the HPC Training GitHub Repo:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[train111@login02 ~]$ git clone https://github.com/sdsc-hpc-training-org/hpctr-examples.git
+Cloning into 'hpctr-examples'...
+remote: Enumerating objects: 485, done.
+remote: Counting objects: 100% (485/485), done.
+remote: Compressing objects: 100% (318/318), done.
+remote: Total 485 (delta 212), reused 421 (delta 158), pack-reused 0
+Receiving objects: 100% (485/485), 27.65 MiB | 27.87 MiB/s, done.
+Resolving deltas: 100% (212/212), done.
+Updating files: 100% (304/304), done.
+[train111@login02 ~]$ ll hpctr-examples/
+total 214
+drwxr-xr-x 15 train111 gue998    19 Jun 17 22:35 .
+drwxr-x--- 10 train111 gue998    20 Jun 17 22:35 ..
+drwxr-xr-x  9 train111 gue998    10 Jun 17 22:35 basic_par
+drwxr-xr-x  2 train111 gue998     6 Jun 17 22:35 calc-pi
+drwxr-xr-x  2 train111 gue998     5 Jun 17 22:35 calc-prime
+drwxr-xr-x  6 train111 gue998     7 Jun 17 22:35 cuda
+drwxr-xr-x  2 train111 gue998     5 Jun 17 22:35 env_info
+-rw-r--r--  1 train111 gue998  5772 Jun 17 22:35 file-tree.txt
+drwxr-xr-x  8 train111 gue998    13 Jun 17 22:35 .git
+[snip]
+drwxr-xr-x  2 train111 gue998    21 Jun 17 22:35 mpi
+drwxr-xr-x  2 train111 gue998     3 Jun 17 22:35 netcdf
+drwxr-xr-x  2 train111 gue998    17 Jun 17 22:35 openacc
+drwxr-xr-x  2 train111 gue998     8 Jun 17 22:35 openmp
+-rw-r--r--  1 train111 gue998  5772 Jun 17 22:35 README.md
+[train111@login02 ~]$ 
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 3: create an interactive CPU node
+The following example will request one regular compute node, 4 cores,  in the debug partition for 30 minutes.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [train111@exp-9-55 ~]$ hostname
+ login02
+ [train111@login02 ~]$ srun --partition=debug  --pty --account=gue998 --nodes=1 --ntasks-per-node=4 --mem=8G
+   -t 00:30:00 --wait=0 --export=ALL /bin/bash
+ srun: job 31426273 queued and waiting for resources
+ srun: job 31426273 has been allocated resources
+ [train111@exp-9-55 ~]$ hostname
+ exp-9-55
+ [train111@exp-9-55 ~]$ exit
+  [train111@login02 ~]$
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 4: create an interactive GPU node
+The following example will request a GPU node, 10 cores, 1 GPU and 96G  in the debug partition for 30 minutes.  To ensure the GPU environment is properly loaded, please be sure run both the module purge and module restore commands.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [train111@login02 ~]$ hostname
+ login02
+ login02$ srun --partition=gpu-debug --pty --account=gue998 --ntasks-per-node=10 
+  --nodes=1 --mem=96G --gpus=1 -t 00:30:00 --wait=0 --export=ALL /bin/bash
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 5: compile the MPI Hello World code.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd hpctr-examples/mpi 
+[train111@login02 mpi]$ module purge
+[train111@login02 mpi]$ module load slurm
+[train111@login02 mpi]$ module load cpu/0.15.4  
+[train111@login02 mpi]$ module load gcc/10.2.0
+[train111@login02 mpi]$ module load openmpi/4.0.4
+[train111@login02 mpi]$ mpif90 -o hello_mpi hello_mpi.f90
+[train111@login02 mpi]$ 
+[train111@login02 mpi]$ mpicc -o mpi_hello mpi_hello.c
+[train111@login02 mpi]$ ll mpi_hello
+-rwxr-xr-x 1 train111 gue998 18120 Jun 17 23:22 mpi_hello
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 6: Log onto the Expanse User Portal:
+ Use your training account and password</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  https://portal.expanse.sdsc.edu/training
+</code></pre></div>        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="expanse" /><category term="CIML-2025" /><category term="tutorial" /><summary type="html"><![CDATA[Session 1.2_accounts_login_environments_running_jobs_expanse_portal]]></summary></entry><entry><title type="html">Computing distance matrices on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/" rel="alternate" type="text/html" title="Computing distance matrices on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
 <p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
   <strong>Listof Content</strong></p>
 <ul>
@@ -89,97 +548,7 @@ compute the result.</p>
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="molecular-dynamics" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Law of Cosines on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/" rel="alternate" type="text/html" title="Law of Cosines on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
-<p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
-  <strong>Listof Content</strong></p>
-<ul>
-  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
-  <li><a href="#import-module">Import Module</a></li>
-  <li><a href="#environment-modules">Environment Modules</a></li>
-  <li><a href="#install-modules">Install Modules</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#short-description">Short Description</a></li>
-  <li><a href="#sources">Sources</a></li>
-  <li><a href="#submit-ticket">Submit Ticket</a></li>
-</ul>
-
-<h2 id="import-module">Import Module:</h2>
-<ul>
-  <li>numba</li>
-  <li>math</li>
-  <li>numpy</li>
-  <li>cuda</li>
-  <li>vectorize</li>
-  <li>cuda</li>
-</ul>
-
-<h2 id="launch-galyleo">Launch Galyleo</h2>
-<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-
-<h2 id="environment-modules">Environment Modules</h2>
-<p>By utilizing –env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse.</p>
-
-<p>Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the <code class="language-plaintext highlighter-rouge">--conda-env</code> option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
-</code></pre></div></div>
-<h2 id="install-modules">Install Modules</h2>
-<p>To run cuda_gpu_nvidia notebooks, no additional package installation is required.</p>
-
-<h2 id="location">Location</h2>
-
-<p>CUDA_GPU_NVIDIA<br />
-├── <a href="./cuda_gpu_nvidia_computing_pi_solution">cuda_gpu_nvidia_computing_pi_solution.ipynb</a><br />
-├── <a href="./cuda_gpu_nvidia_distance_matrix_solution.ipynb">cuda_gpu_nvidia_distance_matrix_solution.ipynb</a><br />
-├── <a href="./cuda_gpu_nvidia_law_of_cosines_solution.ipynb">cuda_gpu_nvidia_law_of_cosines_solution.ipynb</a><br />
-├── README.md</p>
-
-<h2 id="short-description">Short Description</h2>
-<p>In the Computing Pi exercise, we will design a CUDA kernel to compute the value of Pi 
-via Monte Carlo.  The concepts of writing and invoking CUDA kernels in 
-Numba are introduced.</p>
-
-<p>In the Distance Matrix exercise, we will compute a distance matrix for a synthetic dataset of 
-3-D molecular geometries.  We will learn how to leverage higher-dimensional
-CUDA thread-block hierarchies.</p>
-
-<p>In Law of Cosines exercise, we will explore GPU Ufuncs which are simple to write, invoke, 
-and are compatible with Numpy Ufuncs.  We will learn how to write a simple GPU 
-Ufunc to compute the law of cosines.</p>
-
-<h2 id="sources">Sources</h2>
-<p>Below are listed a few related readings and presentations.
-<a href="http://numba.pydata.org/">Numba</a> supports CUDA GPU programming by directly 
-compiling a subset of Python code into CUDA kernels and device functions 
-following the CUDA execution model.</p>
-
-<p>In the provided notebooks, a problem is introduced and mostly implemented in 
-Numba.  As an exercise, complete the missing lines of code to successfully 
-compute the result.</p>
-
-<p>These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were <strong>presented by Abe Stern, NVIDIA</strong> with the topic of <strong>GPU accelerated computing with CUDA Python</strong>.</p>
-
-<h2 id="submit-ticket">Submit Ticket</h2>
-<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
-
-<p>Email: consult@sdsc.edu</p>
-
-<p>We appreciate your input and will review your suggestions promptly!</p>
-
-
-
-
-<div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/Expanse-Notebooks/assets/jupyter/CUDA_GPU_Law_Of_Cosines/cuda_gpu_nvidia_law_of_cosines_solution.ipynb.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>]]></content><author><name></name></author><category term="cuda" /><category term="nvidia" /><category term="gpu" /><category term="expanse" /><category term="computer-graphics" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Data-Analysis</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/" rel="alternate" type="text/html" title="Data-Analysis" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-data_analysis">SDSC Expanse Notebook: Data_Analysis</h1>
+</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="molecular-dynamics" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Data-Analysis</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/" rel="alternate" type="text/html" title="Data-Analysis" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/data-analysis/"><![CDATA[<h1 id="sdsc-expanse-notebook-data_analysis">SDSC Expanse Notebook: Data_Analysis</h1>
 <p>This README file provides instructions for Expanse users to run data analyis notebooks.
 The notebook covers pandas, a useful Python data analysis toolkit. We will look at two pandas objects: Series and DataFrame (1D and 2D data structures).</p>
 
@@ -445,298 +814,4 @@ If you find anything that needs to be changed, edited, or if you would like to p
       height="100%"
       onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
   </div>
-</div>]]></content><author><name></name></author><category term="expanse" /><category term="jupyter" /><category term="anaconda" /><category term="ai" /><category term="AI/ML" /><category term="machine-learning" /><summary type="html"><![CDATA[instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.]]></summary></entry><entry><title type="html">NumPy Intro</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro/" rel="alternate" type="text/html" title="NumPy Intro" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/numpy-intro/"><![CDATA[<h1 id="sdsc-expanse-notebook-numpy_intro">SDSC Expanse Notebook: NumPy_Intro</h1>
-<p>This README file provides instructions for Expanse users to run NumPy_intro notebooks in the Expanse.</p>
-
-<p>NumPy is a fundamental numerical Python package. It includes array objects, high level array manipulation functions, and more. 
-numpy_intro.ipynb: This is an introduction to NumPy. The notebook explores n-dimentional arrays; basic NumPy functions like creating arrays, reshaping and manipulating arrays; some general linear algebra capabilities; and sampling for HPC capacities.<br />
-  <strong>Listof Content</strong></p>
-<ul>
-  <li><a href="#import-module">Import Module</a></li>
-  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
-  <li><a href="#environment-modules">Environment Modules</a></li>
-  <li><a href="#install-modules">Install Modules</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#sources">Sources</a></li>
-  <li><a href="#submit-ticket">Submit Ticket</a>
-    <h2 id="import-module">Import Module:</h2>
-  </li>
-  <li>numpy</li>
-  <li>add</li>
-  <li>matplotlib</li>
-  <li>collections</li>
-  <li>Counter</li>
-</ul>
-
-<h2 id="launch-galyleo">Launch Galyleo</h2>
-<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-
-<h2 id="environment-modules">Environment Modules</h2>
-<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
-For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
-<ul>
-  <li>CPU:
-<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h2 id="install-modules">Install Modules</h2>
-<p>To run numpy_intro notebook, we do not need to install any additional packages.</p>
-
-<h2 id="location">Location</h2>
-
-<p>NumPy_Intro<br />
-├── <a href="./numpy_intro.ipynb">numpy_intro.ipynb</a><br />
-├── README.md</p>
-
-<h2 id="sources">Sources</h2>
-<p>For extensive NumPy documentation: https://numpy.org/doc/stable/reference/index.html</p>
-
-<h2 id="submit-ticket">Submit Ticket</h2>
-<p>This notebook was last tested on 3/31/25. 
-If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
-
-<p>Email: consult@sdsc.edu</p>
-
-<p>We appreciate your input and will review your suggestions promptly!</p>
-
-
-
-
-<div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/Expanse-Notebooks/assets/jupyter/NumPy_Intro/numpy_intro.ipynb.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>]]></content><author><name></name></author><category term="expanse" /><category term="anaconda" /><category term="jupyter" /><category term="python" /><summary type="html"><![CDATA[instructions for Expanse users to run NumPy_intro notebooks in the Expanse.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on CPU</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on CPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-cpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
-<p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
-Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
-  <strong>Listof Content</strong></p>
-<ul>
-  <li><a href="#import-module">Import Module</a></li>
-  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
-  <li><a href="#environment-modules">Environment Modules</a></li>
-  <li><a href="#install-modules">Install Modules</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#submit-ticket">Submit Ticket</a></li>
-</ul>
-
-<h2 id="import-module">Import Module:</h2>
-<ul>
-  <li>dask</li>
-  <li>mkl</li>
-  <li>da</li>
-  <li>numpy</li>
-</ul>
-
-<h2 id="launch-galyleo">Launch Galyleo</h2>
-<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-
-<h2 id="environment-modules">Environment Modules</h2>
-<p>By utilizing <code class="language-plaintext highlighter-rouge">--env-modules</code>, we can load any software installed in Expanse. 
-For instance, executing this command line will load CPU modules and Anaconda3 within the Jupyter session.</p>
-<ul>
-  <li>CPU:
-<code class="language-plaintext highlighter-rouge">--env-modules cpu/0.17.3b,anaconda3</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 --partition shared --cpus 2 --memory 4 --time-limit 00:30:00 --env-modules cpu/0.17.3b,anaconda3/2021.05
-</code></pre></div>    </div>
-    <p>Also this command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.</p>
-  </li>
-  <li>GPU:
-<code class="language-plaintext highlighter-rouge">--env-modules  gpu/0.17.3b,anaconda3/2021.05</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
-</code></pre></div>    </div>
-    <h2 id="install-modules">Install Modules</h2>
-    <p>To run Parallel_Programming notebooks, we do not need to install any additional packages.</p>
-  </li>
-</ul>
-
-<h2 id="location">Location</h2>
-<p>Parallel_Programming<br />
-├── <a href="./dask_graphs.ipynb">dask_graphs.ipynb</a><br />
-├── <a href="./multithreaded_processing.ipynb">multithreaded_processing.ipynb</a><br />
-├── README.md</p>
-
-<h2 id="submit-ticket">Submit Ticket</h2>
-<p>This notebook was last tested on 3/31/25. 
-If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
-
-<p>Email: consult@sdsc.edu</p>
-
-<p>We appreciate your input and will review your suggestions promptly!</p>
-
-
-
-
-<div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/Expanse-Notebooks/assets/jupyter/Dask_Graph_CPU/dask_graphs_CPU.ipynb.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry><entry><title type="html">Computing Pi on a CUDA GPU (NVIDIA)</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/" rel="alternate" type="text/html" title="Computing Pi on a CUDA GPU (NVIDIA)" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/"><![CDATA[<h1 id="sdsc-expanse-notebook-cuda_gpu_nvidia">SDSC Expanse Notebook: CUDA_GPU_NVIDIA</h1>
-<p>This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.<br />
-  <strong>Listof Content</strong></p>
-<ul>
-  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
-  <li><a href="#import-module">Import Module</a></li>
-  <li><a href="#environment-modules">Environment Modules</a></li>
-  <li><a href="#install-modules">Install Modules</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#short-description">Short Description</a></li>
-  <li><a href="#sources">Sources</a></li>
-  <li><a href="#submit-ticket">Submit Ticket</a></li>
-</ul>
-
-<h2 id="import-module">Import Module:</h2>
-<ul>
-  <li>numba</li>
-  <li>math</li>
-  <li>numpy</li>
-  <li>cuda</li>
-  <li>vectorize</li>
-  <li>cuda</li>
-</ul>
-
-<h2 id="launch-galyleo">Launch Galyleo</h2>
-<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-
-<h2 id="environment-modules">Environment Modules</h2>
-<p>By utilizing –env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse.</p>
-
-<p>Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the <code class="language-plaintext highlighter-rouge">--conda-env</code> option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
-</code></pre></div></div>
-<h2 id="install-modules">Install Modules</h2>
-<p>To run cuda_gpu_nvidia notebooks, no additional package installation is required.</p>
-
-<h2 id="location">Location</h2>
-
-<p>CUDA_GPU_NVIDIA<br />
-├── <a href="./cuda_gpu_nvidia_computing_pi_solution">cuda_gpu_nvidia_computing_pi_solution.ipynb</a><br />
-├── <a href="./cuda_gpu_nvidia_distance_matrix_solution.ipynb">cuda_gpu_nvidia_distance_matrix_solution.ipynb</a><br />
-├── <a href="./cuda_gpu_nvidia_law_of_cosines_solution.ipynb">cuda_gpu_nvidia_law_of_cosines_solution.ipynb</a><br />
-├── README.md</p>
-
-<h2 id="short-description">Short Description</h2>
-<p>In the Computing Pi exercise, we will design a CUDA kernel to compute the value of Pi 
-via Monte Carlo.  The concepts of writing and invoking CUDA kernels in 
-Numba are introduced.</p>
-
-<p>In the Distance Matrix exercise, we will compute a distance matrix for a synthetic dataset of 
-3-D molecular geometries.  We will learn how to leverage higher-dimensional
-CUDA thread-block hierarchies.</p>
-
-<p>In Law of Cosines exercise, we will explore GPU Ufuncs which are simple to write, invoke, 
-and are compatible with Numpy Ufuncs.  We will learn how to write a simple GPU 
-Ufunc to compute the law of cosines.</p>
-
-<h2 id="sources">Sources</h2>
-<p>Below are listed a few related readings and presentations.
-<a href="http://numba.pydata.org/">Numba</a> supports CUDA GPU programming by directly 
-compiling a subset of Python code into CUDA kernels and device functions 
-following the CUDA execution model.</p>
-
-<p>In the provided notebooks, a problem is introduced and mostly implemented in 
-Numba.  As an exercise, complete the missing lines of code to successfully 
-compute the result.</p>
-
-<p>These notebooks were part of th SDSC HPU User Training Spring 2020 Session Week 4 (01/31/2020) and were <strong>presented by Abe Stern, NVIDIA</strong> with the topic of <strong>GPU accelerated computing with CUDA Python</strong>.</p>
-
-<h2 id="submit-ticket">Submit Ticket</h2>
-<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
-
-<p>Email: consult@sdsc.edu</p>
-
-<p>We appreciate your input and will review your suggestions promptly!</p>
-
-
-
-
-<div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/Expanse-Notebooks/assets/jupyter/CUDA_GPU_Computing_Pi/cuda_gpu_nvidia_computing_pi_solution.ipynb.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>]]></content><author><name></name></author><category term="computer-graphics" /><category term="gpu" /><category term="nvidia" /><category term="monte-carlo" /><category term="cuda" /><category term="expanse" /><category term="anaconda" /><summary type="html"><![CDATA[instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.]]></summary></entry><entry><title type="html">Parallel Programming with DASK on GPU</title><link href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu/" rel="alternate" type="text/html" title="Parallel Programming with DASK on GPU" /><published>2025-03-31T00:00:00-07:00</published><updated>2025-03-31T00:00:00-07:00</updated><id>https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu</id><content type="html" xml:base="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/parallel-programming-dask-gpu/"><![CDATA[<h1 id="sdsc-expanse-notebook-parallel_programming">SDSC Expanse Notebook: Parallel_Programming</h1>
-<p>This README file provides instructions for Expanse users to run Parallel_Programming notebooks in the Expanse.
-Introduces the Dask module with a simple example and illustrates the Dask graph.<br />
-  <strong>Listof Content</strong></p>
-<ul>
-  <li><a href="#import-module">Import Module</a></li>
-  <li><a href="#launch-galyleo">Launch Galyleo</a></li>
-  <li><a href="#environment-modules">Environment Modules</a></li>
-  <li><a href="#install-modules">Install Modules</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#submit-ticket">Submit Ticket</a></li>
-</ul>
-
-<h2 id="import-module">Import Module:</h2>
-<ul>
-  <li>dask</li>
-  <li>mkl</li>
-  <li>da</li>
-  <li>numpy</li>
-</ul>
-
-<h2 id="launch-galyleo">Launch Galyleo</h2>
-<p>For specific information about launching Galyleo, please refer to <a href="https://github.com/mkandes/galyleo">this GitHub repository</a>.</p>
-
-<h2 id="environment-modules">Environment Modules</h2>
-<p>This command line loads GPU modules and Anaconda3 in the Jupyter session to run in a GPU environment.</p>
-<ul>
-  <li>GPU:
-<code class="language-plaintext highlighter-rouge">--env-modules  gpu/0.17.3b,anaconda3/2021.05</code>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>galyleo launch --account abc123 —partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00  --env-modules  gpu/0.17.3b,anaconda3/2021.05 --bind /oasis,/scratch --nv
-</code></pre></div>    </div>
-    <h2 id="install-modules">Install Modules</h2>
-    <p>To run Parallel_Programming notebooks, we do not need to install any additional packages.</p>
-  </li>
-</ul>
-
-<h2 id="location">Location</h2>
-<p>Parallel_Programming<br />
-├── <a href="./dask_graphs.ipynb">dask_graphs.ipynb</a><br />
-├── README.md</p>
-
-<h2 id="submit-ticket">Submit Ticket</h2>
-<p>If you find anything that needs to be changed, edited, or if you would like to provide feedback or contribute to the notebook, please submit a ticket by contacting us at:</p>
-
-<p>Email: consult@sdsc.edu</p>
-
-<p>We appreciate your input and will review your suggestions promptly!</p>
-
-
-
-
-<div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/Expanse-Notebooks/assets/jupyter/Dask_Graph_GPU/dask_graphs_GPU.ipynb.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>]]></content><author><name></name></author><category term="anaconda" /><category term="expanse" /><category term="python" /><category term="jupyter" /><category term="parallelization" /><category term="gpu" /><summary type="html"><![CDATA[instructions for Expanse users to run Parallel_Programming notebooks in the Expanse. Introduces the Dask module with a simple example and illustrates the Dask graph.]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="expanse" /><category term="jupyter" /><category term="anaconda" /><category term="ai" /><category term="AI/ML" /><category term="machine-learning" /><summary type="html"><![CDATA[instructions for Expanse users on how to run basic clustering methods, implement them in Python notebooks, and execute them on Expanse.]]></summary></entry></feed>

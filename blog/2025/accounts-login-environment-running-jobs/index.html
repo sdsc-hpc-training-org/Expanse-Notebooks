@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal | HPC Training Notebooks
+    
+  
+</title>
+<meta name="author" content=" ">
+<meta name="description" content="Session 1.2_accounts_login_environments_running_jobs_expanse_portal">
+
+  <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/Expanse-Notebooks/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/Expanse-Notebooks/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://hpc-training.sdsc.edu//Expanse-Notebooks/blog/2025/accounts-login-environment-running-jobs/">
+
+<!-- Dark Mode -->
+<script src="/Expanse-Notebooks/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/Expanse-Notebooks/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/Expanse-Notebooks/">
+          HPC Training Notebooks
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/Expanse-Notebooks/">
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/Expanse-Notebooks/index.html">Notebooks
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Event Archives
+                    
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                      
+                        <a class="dropdown-item " href="/Expanse-Notebooks/blog/tag/ciml-2025/">CIML 2025 Archive</a>
+                      
+                    
+                      
+                        <div class="dropdown-divider"></div>
+                      
+                    
+                      
+                        <a class="dropdown-item " href="/Expanse-Notebooks/blog/tag/ciml-2024/">CIML 2024 Archive</a>
+                      
+                    
+                  </div>
+                </li>
+              
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal</h1>
+    <p class="post-meta">
+      Created in June 17, 2025
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/Expanse-Notebooks/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/expanse"> <i class="fa-solid fa-hashtag fa-sm"></i> expanse</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/ciml-2025"> <i class="fa-solid fa-hashtag fa-sm"></i> CIML-2025</a>
+          
+          
+             
+          
+        
+          
+            <a href="/Expanse-Notebooks/blog/tag/tutorial"> <i class="fa-solid fa-hashtag fa-sm"></i> tutorial</a>
+          
+          
+        
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <h1 id="ciml-summer-institute---accounts-login-environments-running-jobs-logging-into-expanse-user-portal">CIML Summer Institute:   Accounts, Login, Environments, Running Jobs, Logging into Expanse User Portal</h1>
+
+<h2 id="session-12_accounts_login_environments_running_jobs_expanse_portal">Session: 1.2_accounts_login_environments_running_jobs_expanse_portal</h2>
+
+<p><strong>Date:</strong>  Tuesday, June 17, 2025</p>
+
+<p><strong>Presented by:</strong> <a href="https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html" rel="external nofollow noopener" target="_blank">Mary Thomas</a>  ( mpthomas  @  ucsd.edu )</p>
+
+<p><strong>Title:</strong> Expanse Webinar:  Accessing and Running Jobs on Expanse</p>
+
+<h3 id="reading-and-presentations">Reading and Presentations:</h3>
+<ul>
+  <li>
+<strong>Lecture material:</strong>
+    <ul>
+      <li>
+        <p>Presentation Slides: Access, accounts, modules &amp; Envs</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>https://github.com/ciml-org/ciml-summer-institute-2025/blob/main/1.2_accounts_login_environment_expanse_portal/MThomas-CIML-SI25_Jun_17_2025-PrepDay_accts_login_envs_jobs.pdf
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Source Code/Examples:</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>https://github.com/sdsc-hpc-training-org/hpctr-examples
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Exercises:</strong></p>
+
+    <ul>
+      <li>
+        <p>Exercise 1: Log onto Expanse
+Use your training account and password to log on, find out what project you are on, and list out your module environment.</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>quantum:ciml accountname$ ssh -Y train111@login.expanse.sdsc.edu
+(train111@login.expanse.sdsc.edu) Password: 
+ Welcome to Bright release         9.0
+                                                    Based on Rocky Linux 8
+                                                               ID: #000002
+--------------------------------------------------------------------------------
+                            WELCOME TO
+             _______  __ ____  ___    _   _______ ______
+            / ____/ |/ // __ \/   |  / | / / ___// ____/
+           / __/  |   // /_/ / /| | /  |/ /\__ \/ __/
+          / /___ /   |/ ____/ ___ |/ /|  /___/ / /___
+         /_____//_/|_/_/   /_/  |_/_/ |_//____/_____/
+--------------------------------------------------------------------------------
+Use the following commands to adjust your environment:
+'module avail'            - show available modules
+'module add &lt;module&gt;'     - adds a module to your environment for this session
+'module initadd &lt;module&gt;' - configure module to be loaded at every login
+-------------------------------------------------------------------------------
+Last login: Mon Jun 17 19:18:38 2024 from 75.80.45.222
+connect /private/tmp/com.apple.launchd.HbagVgBfXZ/org.xquartz:0: Connection refused
+[train111@login02 ~]$ 
+</code></pre></div>        </div>
+      </li>
+      <li>Exercise 2: Clone the HPC Training GitHub Repo:
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>[train111@login02 ~]$ git clone https://github.com/sdsc-hpc-training-org/hpctr-examples.git
+Cloning into 'hpctr-examples'...
+remote: Enumerating objects: 485, done.
+remote: Counting objects: 100% (485/485), done.
+remote: Compressing objects: 100% (318/318), done.
+remote: Total 485 (delta 212), reused 421 (delta 158), pack-reused 0
+Receiving objects: 100% (485/485), 27.65 MiB | 27.87 MiB/s, done.
+Resolving deltas: 100% (212/212), done.
+Updating files: 100% (304/304), done.
+[train111@login02 ~]$ ll hpctr-examples/
+total 214
+drwxr-xr-x 15 train111 gue998    19 Jun 17 22:35 .
+drwxr-x--- 10 train111 gue998    20 Jun 17 22:35 ..
+drwxr-xr-x  9 train111 gue998    10 Jun 17 22:35 basic_par
+drwxr-xr-x  2 train111 gue998     6 Jun 17 22:35 calc-pi
+drwxr-xr-x  2 train111 gue998     5 Jun 17 22:35 calc-prime
+drwxr-xr-x  6 train111 gue998     7 Jun 17 22:35 cuda
+drwxr-xr-x  2 train111 gue998     5 Jun 17 22:35 env_info
+-rw-r--r--  1 train111 gue998  5772 Jun 17 22:35 file-tree.txt
+drwxr-xr-x  8 train111 gue998    13 Jun 17 22:35 .git
+[snip]
+drwxr-xr-x  2 train111 gue998    21 Jun 17 22:35 mpi
+drwxr-xr-x  2 train111 gue998     3 Jun 17 22:35 netcdf
+drwxr-xr-x  2 train111 gue998    17 Jun 17 22:35 openacc
+drwxr-xr-x  2 train111 gue998     8 Jun 17 22:35 openmp
+-rw-r--r--  1 train111 gue998  5772 Jun 17 22:35 README.md
+[train111@login02 ~]$ 
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 3: create an interactive CPU node
+The following example will request one regular compute node, 4 cores,  in the debug partition for 30 minutes.</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> [train111@exp-9-55 ~]$ hostname
+ login02
+ [train111@login02 ~]$ srun --partition=debug  --pty --account=gue998 --nodes=1 --ntasks-per-node=4 --mem=8G
+   -t 00:30:00 --wait=0 --export=ALL /bin/bash
+ srun: job 31426273 queued and waiting for resources
+ srun: job 31426273 has been allocated resources
+ [train111@exp-9-55 ~]$ hostname
+ exp-9-55
+ [train111@exp-9-55 ~]$ exit
+  [train111@login02 ~]$
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 4: create an interactive GPU node
+The following example will request a GPU node, 10 cores, 1 GPU and 96G  in the debug partition for 30 minutes.  To ensure the GPU environment is properly loaded, please be sure run both the module purge and module restore commands.</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  [train111@login02 ~]$ hostname
+ login02
+ login02$ srun --partition=gpu-debug --pty --account=gue998 --ntasks-per-node=10 
+  --nodes=1 --mem=96G --gpus=1 -t 00:30:00 --wait=0 --export=ALL /bin/bash
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 5: compile the MPI Hello World code.</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>cd hpctr-examples/mpi 
+[train111@login02 mpi]$ module purge
+[train111@login02 mpi]$ module load slurm
+[train111@login02 mpi]$ module load cpu/0.15.4  
+[train111@login02 mpi]$ module load gcc/10.2.0
+[train111@login02 mpi]$ module load openmpi/4.0.4
+[train111@login02 mpi]$ mpif90 -o hello_mpi hello_mpi.f90
+[train111@login02 mpi]$ 
+[train111@login02 mpi]$ mpicc -o mpi_hello mpi_hello.c
+[train111@login02 mpi]$ ll mpi_hello
+-rwxr-xr-x 1 train111 gue998 18120 Jun 17 23:22 mpi_hello
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Exercise 6: Log onto the Expanse User Portal:
+ Use your training account and password</p>
+
+        <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  https://portal.expanse.sdsc.edu/training
+</code></pre></div>        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+    
+      
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/GPU-computing/">Getting Started with Batch Job Scheduling</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/computing-pi-cuda-gpu-nvidia/">Computing Pi on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/distance-matrix-cuda-gpu/">Computing distance matrices on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/law-of-cosines-cuda-gpu/">Law of Cosines on a CUDA GPU (NVIDIA)</a>
+    
+  </li>
+
+  
+
+  <li class="my-2">
+    
+      <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/Expanse-Notebooks/blog/2025/hello-world-cpu/">Hello_World CPU</a>
+    
+  </li>
+
+
+
+    
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2025
+      
+      
+      . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/Expanse-Notebooks/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/Expanse-Notebooks/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/Expanse-Notebooks/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/Expanse-Notebooks/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/Expanse-Notebooks/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/Expanse-Notebooks/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/Expanse-Notebooks/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/Expanse-Notebooks/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/Expanse-Notebooks/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/Expanse-Notebooks/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+  <!-- Search -->
+  <script type="module" src="/Expanse-Notebooks/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script src="/Expanse-Notebooks/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script>
+  <script src="/Expanse-Notebooks/assets/js/search-data.js"></script>
+  <script src="/Expanse-Notebooks/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
+
+
+
+  </body>
+</html>
