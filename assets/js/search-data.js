@@ -16,21 +16,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Expanse-Notebooks/index.html";
           },
-        },{id: "dropdown-ciml-2025-archive",
-              title: "CIML 2025 Archive",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/Expanse-Notebooks/blog/";
-              },
-            },{id: "dropdown-ciml-2024-archive",
-              title: "CIML 2024 Archive",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/Expanse-Notebooks/blog/";
-              },
-            },{id: "post-getting-started-with-batch-job-scheduling",
+        },{id: "post-getting-started-with-batch-job-scheduling",
       
         title: "Getting Started with Batch Job Scheduling",
       
