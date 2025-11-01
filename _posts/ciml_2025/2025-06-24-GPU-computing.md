@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Batch Job Scheduling
+title: GPU Computing - Hardware architecture and software infrastructure
 date: 2025-06-24
-description: Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...
+description: Topic 2.5- Brief overview of the massively parallel GPU architecture that enables large-scale deep learning...
 tags: 
   - expanse
   - CIML-2025

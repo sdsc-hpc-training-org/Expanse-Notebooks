@@ -14,10 +14,10 @@ tags:
 categories:
 giscus_comments: false
 related_posts: true
-year_created: 
+year_created: 2025
 date_last_tested: 
-cpu_or_gpu: 
-hpc_system: 
+cpu_or_gpu: gpu
+hpc_system: expanse
 ---
 # SDSC Expanse Notebook: CUDA_GPU_NVIDIA
 This guide provides instructions for Expanse users to run CUDA notebooks on GPU nodes. Code authored by Abe Stern, NVIDIA.\

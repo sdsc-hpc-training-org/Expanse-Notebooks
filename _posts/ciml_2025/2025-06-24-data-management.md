@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Batch Job Scheduling
+title: Data Management and File Systems
 date: 2025-06-24
-description: Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...
+description: Topic 2.4- Managing data efficiently on a supercomputer is important from both users' and system's perspectives...
 tags: 
   - expanse
   - CIML-2025
