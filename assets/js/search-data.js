@@ -16,11 +16,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Expanse-Notebooks/index.html";
           },
-        },{id: "post-getting-started-with-batch-job-scheduling",
+        },{id: "post-data-management-and-file-systems",
       
-        title: "Getting Started with Batch Job Scheduling",
+        title: "Data Management and File Systems",
       
-      description: "Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...",
+      description: "Topic 2.4- Managing data efficiently on a supercomputer is important from both users&#39; and system&#39;s perspectives...",
       section: "Posts",
       handler: () => {
         
@@ -38,11 +38,11 @@ ninja.data = [{
           window.location.href = "/Expanse-Notebooks/blog/2025/batch-job-scheduling/";
         
       },
-    },{id: "post-getting-started-with-batch-job-scheduling",
+    },{id: "post-gpu-computing-hardware-architecture-and-software-infrastructure",
       
-        title: "Getting Started with Batch Job Scheduling",
+        title: "GPU Computing - Hardware architecture and software infrastructure",
       
-      description: "Topic 2.3- Batch job schedulers are used to manage and fairly distribute the shared resources of high-performance...",
+      description: "Topic 2.5- Brief overview of the massively parallel GPU architecture that enables large-scale deep learning...",
       section: "Posts",
       handler: () => {
         
