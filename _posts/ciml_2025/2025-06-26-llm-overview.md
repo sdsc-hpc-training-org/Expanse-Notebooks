@@ -64,7 +64,7 @@ hpc_system: expanse
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/CIML_2025/4-4/RAG_Starter.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/CIML_2025/4-4/RAG_Starter.ipynb%}{% endcapture %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/CIML_2025/4-4/RAG_Starter.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
 {% jupyter_notebook jupyter_path %}
 {% else %}
