@@ -16,7 +16,117 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Expanse-Notebooks/index.html";
           },
-        },{id: "post-data-management-and-file-systems",
+        },{id: "post-session-4-3-spark",
+      
+        title: "Session 4.3 Spark",
+      
+      description: "Session 4.3 An introduction to performing machine learning at scale, with hands-on exercises using Spark.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/spark/";
+        
+      },
+    },{id: "post-session-4-2-r-on-hpc-demo",
+      
+        title: "Session 4.2 R on HPC Demo",
+      
+      description: "Session 4.2 A presentation and demo of parallelizing R; also an example case study of several ML tools and R...",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/r-on-hpc/";
+        
+      },
+    },{id: "post-session-4-4-llm-overview",
+      
+        title: "Session 4.4 LLM Overview",
+      
+      description: "Session 4.4 In this session we will present an introduction to Large Language Models and the possible use cases",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/llm-overview/";
+        
+      },
+    },{id: "post-session-3-6-deep-learning-special-connections",
+      
+        title: "Session 3.6 Deep Learning – Special Connections",
+      
+      description: "Session 3.6 The architecture of many networks use paths and connections in flexible ways; we will review gate...",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/special-connections/";
+        
+      },
+    },{id: "post-session-3-3-practical-guidelines-for-training-deep-learning-on-hpc",
+      
+        title: "Session 3.3 Practical Guidelines for Training Deep Learning on HPC",
+      
+      description: "Session 3.3 Practical Multinode",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/practical-multinode/";
+        
+      },
+    },{id: "post-session-3-1-machine-learning-ml-experiment-tracking",
+      
+        title: "Session 3.1 Machine Learning (ML) Experiment Tracking",
+      
+      description: "Session 3.1 Introduction to tools for ML experiment tracking.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/machine-learning/";
+        
+      },
+    },{id: "post-session-3-2-introduction-to-neural-networks-and-convolution-neural-networks",
+      
+        title: "Session 3.2 Introduction to Neural Networks and Convolution Neural Networks",
+      
+      description: "Session 3.2 An overview of the main concepts of neural networks and feature discovery; the basic convolution neural...",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/intro-to-neural-networks/";
+        
+      },
+    },{id: "post-session-3-5-deep-learning-transfer-learning",
+      
+        title: "Session 3.5 Deep Learning Transfer Learning",
+      
+      description: "Session 3.5 Overview of deep learning concepts, including layers, architectures, applications, and libraries",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/deep-transfer-learning/";
+        
+      },
+    },{id: "post-session-3-4-deep-learning-layers-and-architectures",
+      
+        title: "Session 3.4 Deep Learning Layers and Architectures",
+      
+      description: "Session 3.4 Overview of deep learning concepts, including layers, architectures, applications, and libraries.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/deep-learning/";
+        
+      },
+    },{id: "post-session-2-6-software-containers-for-scientific-and-high-performance-computing",
+      
+        title: "Session 2.6 Software Containers for Scientific and High-Performance Computing",
+      
+      description: "Topic 2.6- Singularity is an open-source container engine designed to bring operating system-level virtualization...",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/Expanse-Notebooks/blog/2025/software-containers/";
+        
+      },
+    },{id: "post-data-management-and-file-systems",
       
         title: "Data Management and File Systems",
       
