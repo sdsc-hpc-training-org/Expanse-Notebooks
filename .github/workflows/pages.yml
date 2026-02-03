@@ -19,11 +19,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+            - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Setup Node (for ExecJS / terser)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Add CI platforms to lockfile
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle lock --add-platform ruby
+
+      - name: Install gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --destination _site --trace
 
       - name: Setup Node (for ExecJS / terser)
         uses: actions/setup-node@v4
