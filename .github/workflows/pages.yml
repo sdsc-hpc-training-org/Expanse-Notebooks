@@ -1,16 +1,15 @@
-name: Jekyll CI & Deploy to gh-pages
+name: Jekyll Build -> gh-pages
 
 on:
   push:
-    branches:
-      - "4 debugging"
+    branches: ["4-debugging"]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: "gh-pages"
+  group: gh-pages
   cancel-in-progress: true
 
 jobs:
@@ -29,8 +28,7 @@ jobs:
       - name: Build site
         env:
           JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --destination _site
+        run: bundle exec jekyll build --destination _site
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
