@@ -1,4 +1,4 @@
-name: Jekyll CI + Deploy to gh-pages
+name: Jekyll CI & Deploy to gh-pages
 
 on:
   push:
