@@ -25,10 +25,15 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true
 
-      - name: Build site
+      - name: Setup Node (for ExecJS / terser)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build site (with trace)
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --destination _site
+        run: bundle exec jekyll build --destination _site --trace
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
