@@ -1,23 +1,20 @@
-name: Build and Deploy Jekyll to GitHub Pages
+name: Jekyll CI + Deploy to gh-pages
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+    branches:
+      - "4 debugging"
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: "pages"
+  group: "gh-pages"
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,35 +26,16 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true
 
-      # If your repo uses submodules (some themes do), uncomment:
-      - name: Checkout submodules
-       run: git submodule update --init --recursive
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Jekyll
+      - name: Build site
         env:
           JEKYLL_ENV: production
         run: |
-          bundle exec jekyll build \
-            --destination "_site" \
-            --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build --destination _site
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
-
-  deploy:
-    if: github.event_name == 'push'
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site
+          force_orphan: true
