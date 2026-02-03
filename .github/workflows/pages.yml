@@ -36,7 +36,16 @@ jobs:
           bundle lock --add-platform ruby
 
       - name: Install gems
-        run: bundle install --jobs 4 --retry 3
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
+          BUNDLE_RETRY: "5"
+        run: |
+          bundle config set --local path vendor/bundle
+          bundle config set --local without "development test"
+          bundle lock --add-platform x86_64-linux
+          bundle lock --add-platform ruby
+          bundle install --jobs 1
+
 
       - name: Build site
         env:
