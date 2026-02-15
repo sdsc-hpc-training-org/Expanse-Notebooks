@@ -71,11 +71,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Build site (with trace)
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --destination _site --trace
-
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
