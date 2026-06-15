@@ -24,10 +24,12 @@ For specific information about launching Galyleo, please refer to [this GitHub r
 ## Environment Modules
 By utilizing --env-modules, we can load any software installed on Expanse. Since CUDA cannot run directly on a CPU, we need to load GPU modules to run in a GPU environment on Expanse. 
 
-Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the `--conda-env` option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to [this GitHub repository](https://github.com/mkandes/galyleo).
+Instead of using modules, we can also use conda environments supported by Galyleo, utilizing the `--conda-yml` option. The following command line launches a conda environment on Expanse for parallel GPU processing. For more information, please refer to [this other Github repository](https://github.com/sbl-sdsc/df-parallel).
 ```
-galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-env df-parallel-gpu --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
+galyleo launch --account sds173 --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 00:30:00 --conda-yml "/home/(username)/df-parallel/environment-gpu.yml" --mamba
 ```
+Note that for the command to work, you must clone the [df-parallel repository](https://github.com/sbl-sdsc/df-parallel). Replace "/home/(username)/df-parallel" in the above command with the path to your cloned df-parallel repository.
+
 ## Install Modules
 To run cuda_gpu_nvidia notebooks, no additional package installation is required.
 
